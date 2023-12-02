@@ -53,6 +53,7 @@ def run(playwright: Playwright) -> None:
         now = datetime.now()
         timestamp = now.strftime("%d/%m/%Y %H:%M:%S")
         df["date_created"] = timestamp
+        print(df.head())
 
     finally:
         page.close()
