@@ -1,1 +1,0 @@
-# jellycat-pipeline
