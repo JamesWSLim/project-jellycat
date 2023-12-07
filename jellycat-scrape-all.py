@@ -3,6 +3,7 @@ from playwright_stealth import stealth_sync
 from selectolax.parser import HTMLParser
 import pandas as pd
 from datetime import datetime
+import time
 # import jellycat_sizes
 
 def go_through_all_pages(page):
@@ -19,6 +20,11 @@ def run(playwright: Playwright) -> None:
         page = browser.new_page()
         stealth_sync(page)
         page.goto('https://www.jellycat.com/us/all-animals/?sort=422&page=30')
+
+        time.sleep(2)
+
+        if page.locator("#ajaxNewsletter").get_by_text("Close X").is_visible(timeout=2000):
+            page.locator("#ajaxNewsletter").get_by_text("Close X").click(timeout=2000)
 
         go_through_all_pages(page)
 
@@ -47,13 +53,13 @@ def run(playwright: Playwright) -> None:
                 category = webpage.child.attributes
                 categories.append(category['data-nq-product-category'])
 
-        df = pd.DataFrame({'name': names, 'price': prices, 'information': information, 'link': links, 'image_link': images})
+        df = pd.DataFrame({'jellycat_name': names, 'price':prices, 'information': information, 'link': links, 'image_link': images})
         
         # insert date created
         now = datetime.now()
         timestamp = now.strftime("%d/%m/%Y %H:%M:%S")
         df["date_created"] = timestamp
-        print(df.head())
+        df.to_csv("./data/jellycat.csv", index=False)
 
     finally:
         page.close()

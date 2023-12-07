@@ -4,12 +4,12 @@ services:
     container_name: postgres_container
     image: postgres
     restart: always
-    environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: root
-      POSTGRES_DB: jellycat_db
+    env_file: 
+      - .env
+    volumes:
+      - ./data:/docker-entrypoint-initdb.d
     ports:
-      - "5432:5432"
+      - 5432:5432
   pgadmin:
     container_name: pgadmin4_container
     image: dpage/pgadmin4

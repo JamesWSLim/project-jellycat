@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "jellycat_db",
+            "database": "jellycat_db",
+            "username": "root",
+            "password": "root"
+        }
+    ]
+}
