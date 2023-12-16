@@ -1,1 +1,1 @@
-select * from jellycat_data;
+select * from sizes;

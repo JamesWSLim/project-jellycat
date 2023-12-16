@@ -1,14 +1,18 @@
-CREATE TABLE jellycat_data (
-    Jellycat_name TEXT,
-    Price DECIMAL,
-    Information TEXT,
-    Link TEXT,
-    Image_link TEXT,
-    Date_created timestamp,
-    PRIMARY KEY (Jellycat_name, Date_created)
+CREATE TABLE jellycat (
+    jellycat_id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+    jellycat_name TEXT,
+    price DECIMAL,
+    information TEXT,
+    link TEXT,
+    image_link TEXT,
+    date_created timestamp
 );
 
-COPY jellycat_data
-FROM '/docker-entrypoint-initdb.d/jellycat.csv'
-DELIMITER ','
-CSV HEADER;
+CREATE TABLE size (
+    jellycat_size_id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+    jellycat_id uuid,
+    size TEXT,
+    price DECIMAL,
+    stock TEXT,
+    CONSTRAINT jellycat_size_id_fk FOREIGN KEY(jellycat_id) REFERENCES jellycat(jellycat_id)
+);

@@ -1,35 +1,39 @@
 from playwright.sync_api import Playwright, sync_playwright, expect
 from playwright_stealth import stealth_sync
+import pandas as pd
+import time
 
-def scrape_sizes_and_prices(website):
+def click_newletter_popup(page):
+    if page.locator("#ajaxNewsletter").get_by_text("Close X").is_visible(timeout=10000):
+            page.locator("#ajaxNewsletter").get_by_text("Close X").click(timeout=10000)
 
-    try:
-        browser = playwright.chromium.launch(headless=False)
-        page = browser.new_page()
-        stealth_sync(page)
-        page.goto(website)
-        
-        sizes = ["VERY BIG -", "REALLY BIG -", "HUGE -", "LARGE -", "MEDIUM -", "SMALL -", "TINY -", "ONE SIZE -"]
-        size_list = []
-        price_list = []
+def scrape_size_and_stock(jellycat_id, page):
+    size_measurement_list = []
+    price_list = []
+    stock_status_list = []
+    sizes = []
 
-        for size in sizes:
-            div = page.get_by_text(size)
-            if div.all_text_contents() != []:
-                div.click()
-                
-                size_list.append(size[:-2])
+    sizes_element_outer = page.locator(".f-13.nogaps")
+    sizes_element = sizes_element_outer.locator(".pointer.width6.height6.inline-block.mr0-5.mb0-5.f-upper").all()
+    for size in sizes_element:
+        sizes.append(size.locator(".ptb1-5.plr0-5.align-center.f-capi").text_content())
+    
+    if len(sizes) > 3:
+        time.sleep(2)
+        click_newletter_popup(page)
 
-                price = page.get_by_text("USD").all_text_contents()
-                price_list.append(price)
-        
-        print(size_list, price_list)
+    for i, size in enumerate(sizes):
 
-    finally:
-        page.close()
-        browser.close()
+        click_newletter_popup(page)
 
-website = '/us/amore-dog-am2d/'
+        div = sizes_element_outer.get_by_text(size)
+        div.click()
+        size_measurement_list.append(div.text_content())
+        price = page.get_by_text("USD").first.text_content()
+        price_list.append(price)
+        stock = page.locator(".mt0-25").first.text_content()
+        stock_status_list.append(stock)
 
-with sync_playwright() as playwright:
-    scrape_sizes_and_prices(f'https://www.jellycat.com{website}')
+    df = pd.DataFrame({'jellycat_id': jellycat_id, 'size': size_measurement_list, 'price': price_list, 'stock': stock_status_list})
+    
+    return df
