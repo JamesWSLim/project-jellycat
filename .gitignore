@@ -1,5 +1,5 @@
 jellycat-env/
 .env
-.DS-Store
+.DS_Store
 .vscode/
 __pycache__/
