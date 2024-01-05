@@ -1,1 +1,1 @@
-select * from sizes;
+select count(*) from size;
