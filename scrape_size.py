@@ -2,6 +2,7 @@ from playwright.sync_api import Playwright, sync_playwright, expect
 from playwright_stealth import stealth_sync
 import pandas as pd
 import time
+from datetime import datetime
 
 def click_newletter_popup(page):
     if page.locator("#ajaxNewsletter").get_by_text("Close X").is_visible(timeout=10000):
@@ -31,7 +32,12 @@ def scrape_size_and_stock(jellycat_id, page):
         stock = page.locator(".mt0-25").first.text_content()
         stock_status_list.append(stock)
 
-    df = pd.DataFrame({"jellycat_id": jellycat_id, 'size': size_measurement_list, 'price': price_list, 'stock': stock_status_list})
+    df = pd.DataFrame({"jellycatid": jellycat_id, 'size': size_measurement_list, 'price': price_list, 'stock': stock_status_list})
+    
+    # insert date created
+    now = datetime.now()
+    timestamp = now.strftime("%Y/%m/%d %H:%M:%S")
+    df["datecreated"] = timestamp
 
     return df
 

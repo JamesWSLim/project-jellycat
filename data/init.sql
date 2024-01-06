@@ -1,18 +1,17 @@
 CREATE TABLE jellycat (
-    jellycat_id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
-    jellycat_name TEXT,
-    price DECIMAL,
-    information TEXT,
+    jellycatid uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+    jellycatname TEXT,
+    category TEXT,
     link TEXT,
-    image_link TEXT,
+    imagelink TEXT,
     date_created timestamp
 );
 
 CREATE TABLE size (
-    jellycat_size_id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
-    jellycat_id uuid,
+    jellycatsizeid uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+    jellycatid uuid,
     size TEXT,
     price DECIMAL,
     stock TEXT,
-    CONSTRAINT jellycat_size_id_fk FOREIGN KEY(jellycat_id) REFERENCES jellycat(jellycat_id)
+    CONSTRAINT jellycatsizeidfk FOREIGN KEY(jellycatid) REFERENCES jellycat(jellycatid)
 );

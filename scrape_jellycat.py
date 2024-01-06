@@ -42,26 +42,30 @@ def scrape_all_jellycats(page):
 
     for i, webpage in enumerate(webpages):
         if ('data-nq-product-price' in webpage.child.attributes) & ('data-nq-product-category' in webpage.child.attributes):
-            index.append(i)
-            information.append(webpage.text(strip=False))
-            price = webpage.child.attributes
-            prices.append(price['data-nq-product-price'])
-            link = webpage.child.child.child.attributes
-            links.append(link['href'])
-            img = webpage.child.child.child.child.attributes
-            images.append(img['src'])
             name = webpage.child.child.child.child.attributes
             names.append(name['alt'])
             category = webpage.child.attributes
             categories.append(category['data-nq-product-category'])
+            link = webpage.child.child.child.attributes
+            links.append(link['href'])
+            img = webpage.child.child.child.child.attributes
+            images.append(img['src'])
+            # information.append(webpage.text(strip=False))
+            # price = webpage.child.attributes
+            # prices.append(price['data-nq-product-price'])
         
 
-    df = pd.DataFrame({'jellycat_name': names, 'price':prices, 'information': information, 'link': links, 'image_link': images})
+    df = pd.DataFrame({'jellycatname': names,
+                        'category': categories,
+                        # 'price':prices,
+                        # 'information': information,
+                        'link': links, 
+                        'imagelink': images
+                        })
 
     # insert date created
     now = datetime.now()
     timestamp = now.strftime("%Y/%m/%d %H:%M:%S")
-    df["date_created"] = timestamp
-    df.to_csv("./data/jellycat.csv", index=False)
+    df["datecreated"] = timestamp
 
     return df

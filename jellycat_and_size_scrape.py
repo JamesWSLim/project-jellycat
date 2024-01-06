@@ -6,11 +6,10 @@ import psycopg2
 import pandas as pd
 from sqlalchemy import create_engine
 from datetime import date
-import requests
 
 def scrape_main_page():
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=False)
+        browser = playwright.chromium.launch(headless=True)
         page = browser.new_page()
         stealth_sync(page)
         page.goto('https://www.jellycat.com/us/all-animals/?sort=422&page=30')
@@ -20,8 +19,8 @@ def scrape_main_page():
 def jellycat_sizes_by_id(df):
     ### run playwright
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=False)
-        df_sizes = pd.DataFrame(columns =['jellycat_id','size','price','stock'])
+        browser = playwright.chromium.launch(headless=True)
+        df_sizes = pd.DataFrame(columns =['jellycatid','size','price','stock'])
 
         ### loop through jellycat_ids
         for index, row in df.iterrows():
@@ -29,7 +28,7 @@ def jellycat_sizes_by_id(df):
                 try:
                     page = browser.new_page()
                     stealth_sync(page)
-                    jellycat_id = row['jellycat_id']
+                    jellycat_id = row['jellycatid']
                     link = row['link']
 
                     page.goto(f'https://www.jellycat.com{link}')
@@ -47,7 +46,7 @@ def jellycat_sizes_by_id(df):
 
 ### scrape main page
 df = scrape_main_page()
-df = df[["jellycat_name", "price", "information", "link", "image_link", "date_created"]]
+df = df[["jellycatname", "category", "link", "imagelink", "datecreated"]]
 
 ### Connect to your postgres DB
 conn = psycopg2.connect(
@@ -58,6 +57,20 @@ conn = psycopg2.connect(
 
 ### drop jellycat table if exist with cascade
 sql = """DROP TABLE IF EXISTS jellycat CASCADE"""
+cursor = conn.cursor()
+cursor.execute(sql)
+conn.commit()
+
+
+### create jellycat table
+sql = """CREATE TABLE jellycat (
+    jellycatid uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+    jellycatname TEXT,
+    category TEXT,
+    link TEXT,
+    imagelink TEXT,
+    datecreated timestamp
+);"""
 cursor = conn.cursor()
 cursor.execute(sql)
 conn.commit()
@@ -77,13 +90,12 @@ date_today = date.today()
 df.to_csv(f"./data/jellycat_with_primary_{date_today}.csv", index=False)
 
 ### retrieve needed columns
-df_primary = df.reset_index()[["jellycat_id", "jellycat_name", "link", "information"]]
+df_primary = df.reset_index()[["jellycatid", "jellycatname", "link"]]
 
 ### scrape jellycat sizes by jellycat_id
 df_sizes = jellycat_sizes_by_id(df_primary)
 ### reset index
 df_sizes.index = [x for x in range(1, len(df_sizes.values)+1)]
-
 ### change price column into float
 df_sizes["price"] = df_sizes["price"].str.replace('$','')
 df_sizes["price"] = df_sizes["price"].str.replace(' USD','')
@@ -91,10 +103,24 @@ df_sizes["price"] = df_sizes["price"].astype(float)
 print(df_sizes.head(10))
 
 ### create a csv file with today's date for tracking
-df_sizes.to_csv(f"./data/jellycat_sizes_with_primary_{date_today}.csv", index=True)
+df_sizes.to_csv(f"./data/jellycat_sizes_with_primary_{date_today}.csv", index=False)
 
 ### drop size table if exist with cascade (dropping all the foreign tables)
 sql = """DROP TABLE IF EXISTS size CASCADE"""
+cursor = conn.cursor()
+cursor.execute(sql)
+conn.commit()
+
+### create size table
+sql = """CREATE TABLE size (
+    jellycatsizeid uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+    jellycatid uuid,
+    size TEXT,
+    price DECIMAL,
+    stock TEXT,
+    datecreated timestamp,
+    CONSTRAINT jellycatsizeidfk FOREIGN KEY(jellycatid) REFERENCES jellycat(jellycatid)
+);"""
 cursor = conn.cursor()
 cursor.execute(sql)
 conn.commit()
