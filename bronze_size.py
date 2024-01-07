@@ -1,19 +1,21 @@
 from pyspark.sql import SparkSession
 from delta import *
 
-def merge_to_jellycat_table(spark, df):
+def merge_to_size_table(spark, df):
 
-    jellycatTable = DeltaTable.forPath(spark, "./spark-warehouse/bronze_jellycat")
+    sizeTable = DeltaTable.forPath(spark, "./spark-warehouse/bronze_size")
     updates = df
+    sizes = sizeTable.toDF().alias("sizes")
 
-    # Rows to INSERT new information of existing jellycats
+    # Rows to INSERT new information of existing sizes
     newAddressesToInsert = updates \
         .alias("updates") \
-        .join(jellycatTable.toDF().alias("jellycats"), "jellycatname") \
-        .where("jellycats.current = true AND \
-            updates.category <> jellycats.category OR \
-            updates.link <> jellycats.link OR \
-            updates.imagelink <> jellycats.imagelink")
+        .join(sizes, (updates.jellycatname == sizes.jellycatname)
+            & (updates.size == sizes.size)) \
+        .where("sizes.current = true AND \
+            updates.category <> sizes.category OR \
+            updates.link <> sizes.link OR \
+            updates.imagelink <> sizes.imagelink")
 
     # Stage the update by unioning two sets of rows
     # 1. Rows that will be inserted in the whenNotMatched clause
@@ -22,25 +24,25 @@ def merge_to_jellycat_table(spark, df):
     stagedUpdates = (
         newAddressesToInsert
         .selectExpr("Null as mergeKey", "updates.*") # Rows for 1
-        .union(updates.selectExpr("JellycatName as mergeKey", "*")) # Rows for 2
+        .union(updates.selectExpr("sizeID as mergeKey", "*")) # Rows for 2
     )
 
     # Apply SCD Type 2 operation using merge
-    jellycatTable.alias("jellycats").merge(
+    sizeTable.alias("sizes").merge(
         stagedUpdates.alias("staged_updates"),
-        "jellycats.JellycatID = mergeKey") \
+        "sizes.sizeID = mergeKey") \
     .whenMatchedUpdate(
-        condition = "jellycats.current = true AND \
-                    jellycats.category <> staged_updates.category OR \
-                    jellycats.link <> staged_updates.link OR \
-                    jellycats.imagelink <> staged_updates.imagelink",
+        condition = "sizes.current = true AND \
+                    sizes.category <> staged_updates.category OR \
+                    sizes.link <> staged_updates.link OR \
+                    sizes.imagelink <> staged_updates.imagelink",
         set = {
             "validto": "staged_updates.datecreated",
             "current": "false"
         }
     ).whenNotMatchedInsert(
         values = {
-            "jellycatname": "staged_updates.JellycatName",
+            "sizename": "staged_updates.sizeName",
             "category": "staged_updates.Category",
             "link": "staged_updates.Link",
             "imagelink": "staged_updates.ImageLink",
@@ -68,4 +70,4 @@ df_jellycat = spark.read \
     .option("driver", "org.postgresql.Driver") \
     .load()
 
-merge_to_jellycat_table(spark, df_jellycat)
+merge_to_size_table(spark, df_jellycat)

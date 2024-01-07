@@ -20,7 +20,7 @@ def jellycat_sizes_by_id(df):
     ### run playwright
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
-        df_sizes = pd.DataFrame(columns =['jellycatid','size','price','stock'])
+        df_sizes = pd.DataFrame(columns =['jellycatid','jellycatname','size','price','stock'])
 
         ### loop through jellycat_ids
         for index, row in df.iterrows():
@@ -28,11 +28,12 @@ def jellycat_sizes_by_id(df):
                 try:
                     page = browser.new_page()
                     stealth_sync(page)
-                    jellycat_id = row['jellycatid']
+                    jellycatid = row['jellycatid']
+                    jellycatname = row['jellycatname']
                     link = row['link']
 
                     page.goto(f'https://www.jellycat.com{link}')
-                    df_size = scrape_size_and_stock(jellycat_id, page)
+                    df_size = scrape_size_and_stock(jellycatid, jellycatname, page)
                     df_sizes = pd.concat([df_sizes, df_size])
                     if index % 50 == 0:
                         print(f"{index} Done :)")
@@ -43,6 +44,23 @@ def jellycat_sizes_by_id(df):
                     continue
                 break
         return df_sizes
+    
+def data_cleaning(df):
+    ### reset index
+    df.index = [x for x in range(1, len(df.values)+1)]
+    ### change price column into float
+    df["price"] = df["price"].str.replace('$','')
+    df["price"] = df["price"].str.replace(' USD','')
+    df["price"] = df["price"].astype(float)
+    ### split size and measurement
+    df[["size", "measurement"]] = df["size"].str.split(' - ', n=1, expand=True)
+    ### split height and width
+    df[["height", "width"]] = df["measurement"].str.split(' X ', n=1, expand=True)
+    ### clean height and width
+    df["height"] = df["height"].str.replace("H", "").str.replace("\"", "")
+    df["width"] = df["width"].str.replace("W", "").str.replace("\"", "")
+    df = df[["jellycatid","jellycatname","size","price","stock","datecreated","height","width"]]
+    return df
 
 ### scrape main page
 df = scrape_main_page()
@@ -87,23 +105,18 @@ print(df.head(10))
 
 ### create a csv file with today's date for tracking
 date_today = date.today()
-df.to_csv(f"./data/jellycat_with_primary_{date_today}.csv", index=False)
+# df.to_csv(f"./data/jellycat_with_primary_{date_today}.csv", index=False)
 
 ### retrieve needed columns
 df_primary = df.reset_index()[["jellycatid", "jellycatname", "link"]]
 
 ### scrape jellycat sizes by jellycat_id
 df_sizes = jellycat_sizes_by_id(df_primary)
-### reset index
-df_sizes.index = [x for x in range(1, len(df_sizes.values)+1)]
-### change price column into float
-df_sizes["price"] = df_sizes["price"].str.replace('$','')
-df_sizes["price"] = df_sizes["price"].str.replace(' USD','')
-df_sizes["price"] = df_sizes["price"].astype(float)
+df_sizes = data_cleaning(df_sizes)
 print(df_sizes.head(10))
 
 ### create a csv file with today's date for tracking
-df_sizes.to_csv(f"./data/jellycat_sizes_with_primary_{date_today}.csv", index=False)
+# df_sizes.to_csv(f"./data/jellycat_sizes_with_primary_{date_today}.csv", index=False)
 
 ### drop size table if exist with cascade (dropping all the foreign tables)
 sql = """DROP TABLE IF EXISTS size CASCADE"""
@@ -115,7 +128,10 @@ conn.commit()
 sql = """CREATE TABLE size (
     jellycatsizeid uuid DEFAULT gen_random_uuid() PRIMARY KEY,
     jellycatid uuid,
+    jellycatname TEXT,
     size TEXT,
+    height INTEGER,
+    width INTEGER,
     price DECIMAL,
     stock TEXT,
     datecreated timestamp,

@@ -31,6 +31,9 @@ spark.sql(
         size STRING, 
         price DECIMAL, 
         stock STRING
+        validfrom DATE, 
+        validto DATE,
+        current STRING
         ) USING delta 
         TBLPROPERTIES (delta.enableChangeDataFeed = true)"""
 )
