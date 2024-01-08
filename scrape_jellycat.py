@@ -28,11 +28,8 @@ def scrape_all_jellycats(page):
     go_through_all_pages(page)
 
     html = HTMLParser(page.content())
-
-    index = []
-    information = []
+    
     names = []
-    prices = []
     links = []
     images = []
     categories = []
@@ -50,15 +47,9 @@ def scrape_all_jellycats(page):
             links.append(link['href'])
             img = webpage.child.child.child.child.attributes
             images.append(img['src'])
-            # information.append(webpage.text(strip=False))
-            # price = webpage.child.attributes
-            # prices.append(price['data-nq-product-price'])
-        
 
     df = pd.DataFrame({'jellycatname': names,
                         'category': categories,
-                        # 'price':prices,
-                        # 'information': information,
                         'link': links, 
                         'imagelink': images
                         })
@@ -67,5 +58,8 @@ def scrape_all_jellycats(page):
     now = datetime.now()
     timestamp = now.strftime("%Y/%m/%d %H:%M:%S")
     df["datecreated"] = timestamp
+
+    # rename duplicated jellycatname (add index after duplicated names)
+    df.loc[df['jellycatname'].duplicated(keep=False), 'jellycatname'] = df['jellycatname'] + df.groupby('jellycatname').cumcount().map({0:' 1', 1:' 2', 2: ' 3'})
 
     return df

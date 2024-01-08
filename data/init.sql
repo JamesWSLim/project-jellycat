@@ -4,7 +4,7 @@ CREATE TABLE jellycat (
     category TEXT,
     link TEXT,
     imagelink TEXT,
-    date_created timestamp
+    date_created TIMESTAMP
 );
 
 CREATE TABLE size (

@@ -1,71 +1,45 @@
 from pyspark.sql import SparkSession
 from delta import *
-
-def merge_to_jellycat_table(spark, df):
-
-    jellycatTable = DeltaTable.forPath(spark, "./spark-warehouse/bronze_jellycat")
-    updates = df
-
-    # Rows to INSERT new information of existing jellycats
-    newAddressesToInsert = updates \
-        .alias("updates") \
-        .join(jellycatTable.toDF().alias("jellycats"), "jellycatname") \
-        .where("jellycats.current = true AND \
-            updates.category <> jellycats.category OR \
-            updates.link <> jellycats.link OR \
-            updates.imagelink <> jellycats.imagelink")
-
-    # Stage the update by unioning two sets of rows
-    # 1. Rows that will be inserted in the whenNotMatched clause
-    # 2. Rows that will either update the current addresses of existing agents 
-    #    or insert the new addresses of new agents
-    stagedUpdates = (
-        newAddressesToInsert
-        .selectExpr("Null as mergeKey", "updates.*") # Rows for 1
-        .union(updates.selectExpr("JellycatName as mergeKey", "*")) # Rows for 2
-    )
-
-    # Apply SCD Type 2 operation using merge
-    jellycatTable.alias("jellycats").merge(
-        stagedUpdates.alias("staged_updates"),
-        "jellycats.JellycatID = mergeKey") \
-    .whenMatchedUpdate(
-        condition = "jellycats.current = true AND \
-                    jellycats.category <> staged_updates.category OR \
-                    jellycats.link <> staged_updates.link OR \
-                    jellycats.imagelink <> staged_updates.imagelink",
-        set = {
-            "validto": "staged_updates.datecreated",
-            "current": "false"
-        }
-    ).whenNotMatchedInsert(
-        values = {
-            "jellycatname": "staged_updates.JellycatName",
-            "category": "staged_updates.Category",
-            "link": "staged_updates.Link",
-            "imagelink": "staged_updates.ImageLink",
-            "validfrom": "staged_updates.DateCreated",
-            "validto": "null",
-            "current": "true"
-        }
-    ).execute()
+from pyspark.sql.types import *
 
 builder = SparkSession \
-            .builder \
-            .appName("Jellycat-ETL") \
-            .config("spark.jars", "postgresql-42.7.1.jar") \
+            .builder.appName("Jellycat-ETL") \
             .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
             .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
 
 spark = configure_spark_with_delta_pip(builder).getOrCreate()
 
-df_jellycat = spark.read \
-    .format("jdbc") \
-    .option("url", "jdbc:postgresql://localhost:5432/jellycat_db") \
-    .option("dbtable", "jellycat") \
-    .option("user", "root") \
-    .option("password", "root") \
-    .option("driver", "org.postgresql.Driver") \
-    .load()
+jellycat_schema = StructType([
+    StructField("JellycatID", StringType(), nullable=False),
+    StructField("JellycatName", StringType(), nullable=False),
+    StructField("Category", StringType(), nullable=True),
+    StructField("Link", StringType(), nullable=True),
+    StructField("ImageLink", StringType(), nullable=True),
+    StructField("DateCreated", TimestampType(), nullable=False),
+])
 
-merge_to_jellycat_table(spark, df_jellycat)
+
+# df_jellycat = spark.read \
+#     .format("jdbc") \
+#     .option("url", "jdbc:postgresql://localhost:5432/jellycat_db") \
+#     .option("dbtable", "jellycat") \
+#     .option("user", "root") \
+#     .option("password", "root") \
+#     .option("driver", "org.postgresql.Driver") \
+#     .load()
+
+df_jellycat = spark.read.csv("data/jellycat_with_primary_2024-01-06.csv", header=True, schema=jellycat_schema, sep=",")
+df_jellycat.write.format("delta").mode("append").save("./spark-warehouse/bronzejellycat")
+
+# df_jellycat.createOrReplaceTempView("dfjellycat")
+
+# spark.sql(
+#     """
+#     INSERT OVERWRITE TABLE bronzejellycat SELECT * FROM dfjellycat
+# """
+# )
+
+# updates = spark.read.csv("data/jellycat_with_primary_2024-01-05.csv", header=True, sep=",")
+
+# merge_to_jellycat_table(spark, updates)
+# merge_to_jellycat_table(spark, df_jellycat)

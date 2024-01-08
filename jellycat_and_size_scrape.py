@@ -105,7 +105,7 @@ print(df.head(10))
 
 ### create a csv file with today's date for tracking
 date_today = date.today()
-# df.to_csv(f"./data/jellycat_with_primary_{date_today}.csv", index=False)
+df.to_csv(f"./data/jellycat_with_primary_{date_today}.csv", index=False)
 
 ### retrieve needed columns
 df_primary = df.reset_index()[["jellycatid", "jellycatname", "link"]]
@@ -116,7 +116,7 @@ df_sizes = data_cleaning(df_sizes)
 print(df_sizes.head(10))
 
 ### create a csv file with today's date for tracking
-# df_sizes.to_csv(f"./data/jellycat_sizes_with_primary_{date_today}.csv", index=False)
+df_sizes.to_csv(f"./data/jellycat_sizes_with_primary_{date_today}.csv", index=False)
 
 ### drop size table if exist with cascade (dropping all the foreign tables)
 sql = """DROP TABLE IF EXISTS size CASCADE"""

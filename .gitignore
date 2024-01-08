@@ -1,5 +1,7 @@
-jellycat-env/
+jellycat-env
 .env
 .DS_Store
-.vscode/
-__pycache__/
+.vscode
+__pycache__
+spark-warehouse
+scd2_jellycat.py
