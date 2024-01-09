@@ -28,5 +28,5 @@ spark = configure_spark_with_delta_pip(builder).getOrCreate()
 
 ### append data into delta table
 for date in date_list:
-    df_jellycat = spark.read.csv(f"data/jellycat_with_primary_{date}.csv", header=True, schema=jellycat_schema, sep=",")
+    df_jellycat = spark.read.csv(f"./data/jellycat_with_primary_{date}.csv", header=True, schema=jellycat_schema, sep=",")
     df_jellycat.write.format("delta").mode("append").save("./spark-warehouse/bronzejellycat")
