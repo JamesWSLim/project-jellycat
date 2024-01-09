@@ -22,13 +22,15 @@ spark.sql(
 )
 
 spark.sql(
-    """CREATE TABLE default.bronzesize ( 
-        jellycatsizeid STRING, 
+    """CREATE TABLE IF NOT EXISTS default.bronzesize (
         jellycatid STRING, 
+        jellycatname STRING, 
         size STRING, 
         price DECIMAL, 
         stock STRING,
-        datecreated DATE
+        datecreated TIMESTAMP,
+        height DECIMAL,
+        width DECIMAL
         ) USING delta 
         TBLPROPERTIES (delta.enableChangeDataFeed = true)"""
 )

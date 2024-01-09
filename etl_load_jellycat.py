@@ -12,6 +12,17 @@ jellycat_schema = StructType([
     StructField("DateCreated", TimestampType(), nullable=False),
 ])
 
+size_schema = StructType([
+    StructField("JellycatID", StringType(), nullable=False),
+    StructField("JellycatName", StringType(), nullable=False),
+    StructField("Size", StringType(), nullable=True),
+    StructField("Price", DecimalType(), nullable=True),
+    StructField("Stock", StringType(), nullable=True),
+    StructField("DateCreated", TimestampType(), nullable=False),
+    StructField("Height", DecimalType(), nullable=True),
+    StructField("Width", DecimalType(), nullable=True),
+])
+
 ### create a list of dates starting from 2024-01-05 till yesterday
 startdate = '2024-01-05'
 startdate = datetime.datetime.strptime(startdate, '%Y-%m-%d').date() - datetime.timedelta(days=1)
@@ -30,3 +41,5 @@ spark = configure_spark_with_delta_pip(builder).getOrCreate()
 for date in date_list:
     df_jellycat = spark.read.csv(f"./data/jellycat_with_primary_{date}.csv", header=True, schema=jellycat_schema, sep=",")
     df_jellycat.write.format("delta").mode("append").save("./spark-warehouse/bronzejellycat")
+    df_sizes = spark.read.csv(f"./data/jellycat_sizes_with_primary_{date}.csv", header=True, schema=size_schema, sep=",")
+    df_sizes.write.format("delta").mode("append").save("./spark-warehouse/bronzesize")
