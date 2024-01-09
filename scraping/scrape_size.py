@@ -35,6 +35,3 @@ def scrape_size_and_stock(jellycatid, jellycatname, page):
     timestamp = now.strftime("%Y/%m/%d %H:%M:%S")
     df["datecreated"] = timestamp
     return df
-
-def jellycat_sizes_cleaning(df):
-    pass

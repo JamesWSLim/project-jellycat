@@ -5,3 +5,4 @@ jellycat-env
 __pycache__
 spark-warehouse
 scd2_jellycat.py
+scraping/__pycache__

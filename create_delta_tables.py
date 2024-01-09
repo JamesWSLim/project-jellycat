@@ -21,14 +21,14 @@ spark.sql(
         TBLPROPERTIES (delta.enableChangeDataFeed = true)"""
 )
 
-# spark.sql(
-#     """CREATE TABLE default.bronzesize ( 
-#         jellycatsizeid STRING, 
-#         jellycatid STRING, 
-#         size STRING, 
-#         price DECIMAL, 
-#         stock STRING,
-#         datecreated DATE
-#         ) USING delta 
-#         TBLPROPERTIES (delta.enableChangeDataFeed = true)"""
-# )
+spark.sql(
+    """CREATE TABLE default.bronzesize ( 
+        jellycatsizeid STRING, 
+        jellycatid STRING, 
+        size STRING, 
+        price DECIMAL, 
+        stock STRING,
+        datecreated DATE
+        ) USING delta 
+        TBLPROPERTIES (delta.enableChangeDataFeed = true)"""
+)

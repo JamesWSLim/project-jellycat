@@ -1,0 +1,791 @@
+jellycatid,jellycatname,size,price,stock,datecreated,height,width
+58e1f63c-bbce-44b9-b6f3-a58324f472cf,Bashful Luxe Bunny Azure,HUGE,85.0,In Stock,2024/01/09 11:25:58,20,8
+58e1f63c-bbce-44b9-b6f3-a58324f472cf,Bashful Luxe Bunny Azure,MEDIUM,35.0,In Stock,2024/01/09 11:25:58,12,5
+105e606f-ca77-4ae4-bab6-a7937d143581,All Kinds of Cats Book,ONE SIZE,15.0,In Stock,2024/01/09 11:26:00,9,7
+ae5c5c47-8fa8-42de-a9f6-8f101ef5b41c,Fergus Frog,ONE SIZE,50.0,In Stock,2024/01/09 11:26:01,13,4
+21115ee4-fa55-40bc-9f98-f69501126bf8,Jellycat Head Giant,ONE SIZE,220.0,In Stock,2024/01/09 11:26:03,22,24
+ae0c3bfa-8bfa-4a0f-bb8b-4b8d96d5f755,Jellycat Jack,REALLY BIG,165.0,In Stock,2024/01/09 11:26:05,26,9
+ae0c3bfa-8bfa-4a0f-bb8b-4b8d96d5f755,Jellycat Jack,HUGE,110.0,In Stock,2024/01/09 11:26:05,19,6
+ae0c3bfa-8bfa-4a0f-bb8b-4b8d96d5f755,Jellycat Jack,MEDIUM,45.0,More on the way,2024/01/09 11:26:05,13,4
+5050fc95-89b7-45b4-972d-64da4c1e2252,Jellycat Bag Charm,ONE SIZE,28.0,In Stock,2024/01/09 11:26:07,5,4
+af01d2b3-e45c-4ecd-9a94-261814efcc71,Jellycat Bag,ONE SIZE,45.0,In Stock,2024/01/09 11:26:08,6,9
+438d9c7b-d595-4204-8932-d306e3ab8e84,Junglie Monkey,MEDIUM,55.0,In Stock,2024/01/09 11:26:10,18,7
+7e01ec69-3459-4f59-99de-7c24c56afdce,Truffles Sheep,LARGE,110.0,In Stock,2024/01/09 11:26:11,9,25
+0cadf2ed-6143-495d-9687-f79d1c17fd50,Golden Dragon,HUGE,120.0,In Stock,2024/01/09 11:26:13,7,26
+0cadf2ed-6143-495d-9687-f79d1c17fd50,Golden Dragon,LARGE,65.0,In Stock,2024/01/09 11:26:13,5,20
+0cadf2ed-6143-495d-9687-f79d1c17fd50,Golden Dragon,LITTLE,32.5,In Stock,2024/01/09 11:26:13,3,12
+7bcb748e-a3c3-4f6d-a87a-1bba1003f07c,Golden Dragon Bag Charm,ONE SIZE,28.0,In Stock,2024/01/09 11:26:15,5,9
+59324996-5ed8-456d-9280-e7579175196f,Lavender Dragon Bag Charm,ONE SIZE,28.0,In Stock,2024/01/09 11:26:16,5,9
+f7671a19-efe1-45af-9747-a159a0cf6510,Little Dragon Bag Charm,ONE SIZE,23.0,In Stock,2024/01/09 11:26:18,7,2
+854c0546-1534-405f-b411-4f089bddf7fc,Rose Dragon Bag Charm,ONE SIZE,28.0,In Stock,2024/01/09 11:26:20,5,9
+01a99789-5cc7-4942-9db4-cc0d9ed339de,Snow Dragon Bag Charm,ONE SIZE,28.0,In Stock,2024/01/09 11:26:21,5,9
+80dac738-afd7-45cd-a5f0-eeafba5f3362,Aimee Sheep,ONE SIZE,40.0,In Stock,2024/01/09 11:26:23,8,9
+79d145ed-f0a4-4d56-889d-3866779c8e54,Bashful Red Love Heart Bunny,MEDIUM,32.0,In Stock,2024/01/09 11:26:25,12,5
+79d145ed-f0a4-4d56-889d-3866779c8e54,Bashful Red Love Heart Bunny,SMALL,25.0,In Stock,2024/01/09 11:26:25,7,4
+a7975959-bfbe-49f4-ac00-cb06866ed098,Fabian Frog Prince,ONE SIZE,40.0,In Stock,2024/01/09 11:26:26,9,8
+ad9d7f0d-d409-4b5c-a6c3-78524bed17a6,Loulou Love Bug,ONE SIZE,20.0,In Stock,2024/01/09 11:26:28,2,5
+b04bc202-def1-4d16-bb54-b2a0c550d8e9,Amore Bunny,MEDIUM,40.0,In Stock,2024/01/09 11:26:30,10,7
+f1a45c76-068d-4cf1-9a34-cff2c10f69c4,Bibbly Bobbly Sheep,ONE SIZE,55.0,In Stock,2024/01/09 11:26:32,14,9
+f8a0e0fc-402b-4535-92dc-f53dcf031234,Brynlee Bee,ONE SIZE,28.0,In Stock,2024/01/09 11:26:34,5,6
+fc0bef1c-c702-4d90-baad-737121634be3,Bartholomew Bear Bathrobe,MEDIUM,45.0,In Stock,2024/01/09 11:26:35,10,5
+3156748c-149b-488c-97f0-fdf25262618d,Bashful Duckling,MEDIUM,28.0,In Stock,2024/01/09 11:26:37,12,5
+bd6f6271-662f-4743-b7fb-e09794e4453a,Bashful Moss Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:26:39,12,5
+bd6f6271-662f-4743-b7fb-e09794e4453a,Bashful Moss Bunny,SMALL,18.0,In Stock,2024/01/09 11:26:39,7,4
+04c6b927-0d74-4c86-a596-9b7682dd2ef2,Bashful Viola Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:26:41,12,5
+04c6b927-0d74-4c86-a596-9b7682dd2ef2,Bashful Viola Bunny,SMALL,18.0,In Stock,2024/01/09 11:26:41,7,4
+16db189d-87d0-4957-a050-1e5b87dfdd9b,Bashful Bunny with Carrot,SMALL,28.0,In Stock,2024/01/09 11:26:43,7,4
+3caa0b92-ab6b-4c75-8dfe-b44c12630326,Bashful Bunny with Daffodil,SMALL,28.0,In Stock,2024/01/09 11:26:44,7,4
+ead778d5-52db-448c-a1f3-6a00770daf41,Lottie Fairy Bunny Book,ONE SIZE,15.0,In Stock,2024/01/09 11:26:46,7,7
+e2fe0abf-f651-4a3c-a4f6-d50382a2519d,Blossom Cherry Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:26:48,12,5
+e2fe0abf-f651-4a3c-a4f6-d50382a2519d,Blossom Cherry Bunny,SMALL,18.0,In Stock,2024/01/09 11:26:48,7,4
+8473ed51-f53b-4a3b-a8e8-1e3d423b11d9,Dainty Dessert Bunny Macaron,ONE SIZE,28.0,In Stock,2024/01/09 11:26:49,5,5
+fd9bdd4f-864f-461e-bf66-895c6f311b0c,Lottie Bunny Fairy,ONE SIZE,32.5,In Stock,2024/01/09 11:26:51,11,3
+e10efd5c-8a0a-45b6-aa96-7ded82216628,Messenger Bunny,ONE SIZE,32.5,In Stock,2024/01/09 11:26:52,7,5
+128f0045-f6c6-440f-83d0-0d758298b1ea,Smudge Rabbit Big,BIG,75.0,In Stock,2024/01/09 11:26:54,6,17
+81004d40-8f9f-43b5-a755-39b22ce8a927,Amore Corgi,MEDIUM,40.0,In Stock,2024/01/09 11:26:55,10,7
+bb166253-4a41-4044-ad1c-3ab16c8f7a2a,Alexis Anglerfish,ONE SIZE,35.0,In Stock,2024/01/09 11:26:57,6,8
+19ca8070-8565-440a-8c3c-f4a02afcf63e,Bartholomew Bear Pumpkin,LARGE,55.0,In Stock,2024/01/09 11:26:58,14,8
+41b26810-9503-4fc3-9514-1d566029b152,Bashful Hedgehog,MEDIUM,28.0,In Stock,2024/01/09 11:27:00,12,5
+87e7cb04-6d82-44ce-8650-8baa48d14407,Bashful Pegasus,MEDIUM,28.0,In Stock,2024/01/09 11:27:02,12,5
+34c4137e-9acd-4c09-84d3-64a50bad94a8,If I Were an Owl Board Book,ONE SIZE,13.5,In Stock,2024/01/09 11:27:04,6,6
+aff4ad7b-eabc-405b-9393-be217c895ca4,Betty Corgi Bag Charm,ONE SIZE,23.0,In Stock,2024/01/09 11:27:05,4,2
+899d4a66-f15b-4649-bc85-69a8a4b8c86f,Rory Le Courageux Petit Lion Livre (The Very Brave Lion),ONE SIZE,15.0,In Stock,2024/01/09 11:27:07,9,9
+60a99fcd-4da0-4b4d-b954-c56006a24254,Lapin Timide Et Ses Petites Aventures Livre (Little Me),ONE SIZE,15.0,In Stock,2024/01/09 11:27:08,8,8
+a0eabd3d-be5a-4e19-a8c5-a34b9a539dec,Lapin Timide Veille Sur Tes Nuits Livre (The Magic Bunny),ONE SIZE,15.0,In Stock,2024/01/09 11:27:10,7,7
+fa3bc113-37c1-4c96-a693-b9fb63b2d26c,Lapin Timide Veut Grandir Livre (When I Am Big),ONE SIZE,15.0,In Stock,2024/01/09 11:27:11,8,8
+55104987-ffe3-4ef2-b847-d7a5bc481cd9,When I Am Sleepy Book,ONE SIZE,15.0,In Stock,2024/01/09 11:27:13,8,8
+7a1a9a6c-dbe3-4b48-9dea-c76379843ae0,Bodacious Beak Parrot,ONE SIZE,30.0,In Stock,2024/01/09 11:27:15,9,4
+c62ec12d-02c0-4dda-9e1c-333e8bcac6c9,Bodacious Beak Toucan,ONE SIZE,30.0,In Stock,2024/01/09 11:27:16,9,4
+80d28cb8-25e5-40cb-bf6e-e459923571a6,Bryno Dino,ONE SIZE,55.0,In Stock,2024/01/09 11:27:18,12,6
+e70efd34-c67e-4c65-b3d4-186f3ab5d6e7,Caractacus Chameleon,ONE SIZE,65.0,In Stock,2024/01/09 11:27:20,15,7
+6eed8f54-e560-41c5-91f1-3ae837c7f2b1,Coquette Cutie Bunny,ONE SIZE,32.5,In Stock,2024/01/09 11:27:21,10,2
+d3d63a96-72fa-4fcf-80c5-8a4cec0d6f36,Comfy Coat Bunny,ONE SIZE,25.0,In Stock,2024/01/09 11:27:23,7,3
+7a4613c2-b2aa-49a1-8867-fae3820ec97d,Comfy Coat Mouse,ONE SIZE,25.0,In Stock,2024/01/09 11:27:25,7,3
+e5374632-a8ff-40bc-82f2-76fb898743cd,Cuddlebud Bernard Bunny,ONE SIZE,28.0,In Stock,2024/01/09 11:27:26,6,4
+5f9922f8-e18f-42c8-82ae-0bac804a9e7b,Cuddlebud Darcy Dormouse,ONE SIZE,28.0,In Stock,2024/01/09 11:27:28,6,4
+bd807c63-f0b8-44cb-93f5-d367d0696a62,Cuddlebud Morgan Mole,ONE SIZE,28.0,In Stock,2024/01/09 11:27:29,6,4
+fb2ee2f4-7fca-491b-bb59-147eef25d650,Daphne Pomeranian,ONE SIZE,33.0,In Stock,2024/01/09 11:27:31,9,8
+57807f3c-09f7-4724-836a-12072204ab3a,Spooky Greta Gremlin,ONE SIZE,40.0,In Stock,2024/01/09 11:27:32,11,4
+ba527aae-c253-4d97-816e-79d83155af88,Harvey Bear,ONE SIZE,150.0,In Stock,2024/01/09 11:27:34,11,25
+3d5d9097-750d-41c7-a757-850ac94df88d,Huddles Grey Elephant,ONE SIZE,45.0,In Stock,2024/01/09 11:27:36,10,6
+7f9ef34f-c771-4187-b122-80c3598602c6,Isadora Unicorn,ONE SIZE,65.0,In Stock,2024/01/09 11:27:37,13,13
+8b88c96e-1a1e-4316-a166-ed65021e6067,Little Dragon,ONE SIZE,22.0,In Stock,2024/01/09 11:27:39,7,4
+9ee2ceba-01cf-4f9b-a7ad-4d598c17ea88,Lois Lionfish,ONE SIZE,35.0,In Stock,2024/01/09 11:27:41,6,10
+be39a19d-eb9e-40cb-b381-ea194941c6b0,Napping Nipper Westie,ONE SIZE,25.0,In Stock,2024/01/09 11:27:42,4,6
+da21735a-292c-4146-add2-aa920eef3489,Otto Sausage Dog Bag Charm,ONE SIZE,23.0,In Stock,2024/01/09 11:27:44,4,2
+2ee372dd-f852-4990-a55a-be8a0705858c,Ricky Rain Frog Bag Charm,ONE SIZE,23.0,In Stock,2024/01/09 11:27:46,3,3
+6068bb6d-af66-4565-b407-5c5c2d4c2fd2,Ricky Rain Frog Bag,ONE SIZE,40.0,In Stock,2024/01/09 11:27:47,7,7
+60ae9bb6-d5d9-4292-9e19-55b67f581d3b,Stellan Sabre Tooth Tiger,ONE SIZE,75.0,In Stock,2024/01/09 11:27:49,19,7
+26afd0ce-8476-4c8e-89a7-2846b6d6ee1e,Sweater French Bulldog Purple,ONE SIZE,32.5,In Stock,2024/01/09 11:27:50,7,7
+7da1b1ba-6abd-4f2b-bebc-dc298582d520,Bashful Snow Tiger Soother,ONE SIZE,25.0,In Stock,2024/01/09 11:27:52,13,13
+0b4283a4-0857-461b-9c6a-fbbc6d2feaed,Spindleshanks Spider,SMALL,27.5,In Stock,2024/01/09 11:27:53,3,14
+9689c301-3d8d-4f68-8159-ce1177bb571e,Stanley Stick Insect,ONE SIZE,28.0,In Stock,2024/01/09 11:27:55,3,11
+aa74701e-a45e-4eb7-9a43-25337908b6e7,Viggo Mammoth,ONE SIZE,75.0,In Stock,2024/01/09 11:27:56,19,7
+14f63722-9299-4197-9385-fcc8eee45cb1,Maya Octopus,REALLY BIG,130.0,In Stock,2024/01/09 11:27:59,30,12
+14f63722-9299-4197-9385-fcc8eee45cb1,Maya Octopus,LARGE,53.0,More on the way,2024/01/09 11:27:59,19,7
+14f63722-9299-4197-9385-fcc8eee45cb1,Maya Octopus,LITTLE,30.0,Returning to stock 3-4 weeks,2024/01/09 11:27:59,9,4
+14f63722-9299-4197-9385-fcc8eee45cb1,Maya Octopus,TINY,18.0,In Stock,2024/01/09 11:27:59,6,3
+dd2b3d4b-b5b8-4c01-bcd9-6f6fd06a8780,Albert Jack Russell,ONE SIZE,30.0,In Stock,2024/01/09 11:28:00,7,6
+14c599ae-c45d-4934-816f-117db7b0a71f,Birdling Hummingbird,ONE SIZE,17.0,In Stock,2024/01/09 11:28:02,4,2
+9a1ce8f0-4562-4ead-9239-e100e81b9845,Bashful Christmas Bunny,MEDIUM,27.5,In Stock,2024/01/09 11:28:04,12,5
+a505796e-87e9-47ec-9f82-29068796123b,Bashful Luxe Bunny Luna,HUGE,85.0,In Stock,2024/01/09 11:28:06,20,8
+a505796e-87e9-47ec-9f82-29068796123b,Bashful Luxe Bunny Luna,MEDIUM,35.0,In Stock,2024/01/09 11:28:06,12,5
+71da10f8-009a-4330-9330-b9672c7bb954,Bashful Christmas Bunny Decoration,TINY,15.0,In Stock,2024/01/09 11:28:13,5,2
+18a13b02-21bc-4e72-835d-7ce14bd8fbce,Merry Mouse Book,ONE SIZE,15.0,In Stock,2024/01/09 11:28:14,7,7
+39e07363-d553-4ec8-9310-6878bfe69cd8,Otto’s Snowy Christmas Book,ONE SIZE,15.0,In Stock,2024/01/09 11:28:16,7,9
+d389435a-e770-4f97-9a5f-932901ddffbe,The Playful Polar Bears Book,ONE SIZE,15.0,In Stock,2024/01/09 11:28:17,8,8
+a3689895-ada3-4807-bc39-1d7751081399,Mitzi Reindeer’s Dream Book,ONE SIZE,15.0,In Stock,2024/01/09 11:28:19,8,8
+77e645fc-a518-471b-89fd-fe6526df8ed9,Festive Folly Penguin,ONE SIZE,12.5,In Stock,2024/01/09 11:28:21,4,2
+2f3947bd-ff0c-44e9-97e9-791c88c82f8a,Sofia Reindeer,ONE SIZE,60.0,In Stock,2024/01/09 11:28:22,17,5
+ff0ef06e-ffb6-4a2a-adbd-b3a7e6e95064,Christmas Grizzo,ONE SIZE,37.5,In Stock,2024/01/09 11:28:24,11,4
+674a1da7-f3df-4ae9-8d10-35b464600cf1,Maurice Macaroni Penguin,ONE SIZE,32.5,In Stock,2024/01/09 11:28:25,8,5
+58f3ae05-f1ad-4663-b155-10f9dadca6c3,Merry Mouse,ONE SIZE,27.5,In Stock,2024/01/09 11:28:27,7,4
+630d0603-4f58-4e80-836f-b4fbe0d40b6b,Merry Mouse Present,ONE SIZE,27.5,In Stock,2024/01/09 11:28:29,7,4
+4709e80c-8f2e-4f3f-a726-a1eb27f97d59,Merry Mouse Skiing,ONE SIZE,37.5,In Stock,2024/01/09 11:28:30,8,5
+85254007-e334-467a-a79d-c8326e01029f,Winter Warmer Otto Sausage Dog,ONE SIZE,32.5,In Stock,2024/01/09 11:28:32,6,3
+c399ab83-1e62-4aa7-94a8-27d0d9e0a8a9,Personalised Bashful Luxe Bunny Luna Huge,HUGE,91.0,In Stock,2024/01/09 11:28:34,20,8
+b5b56f5b-098b-4138-abb4-d92caf399dfd,Personalised Bashful Luxe Bunny Luna Medium,MEDIUM,41.0,In Stock,2024/01/09 11:28:36,12,5
+abdf7355-eae2-428d-a3ee-f43d547d1d56,Winter Warmer Pippa Black Labrador,ONE SIZE,32.5,In Stock,2024/01/09 11:28:38,9,3
+dd3fae41-e34d-43bf-81bb-defe026660e6,Santa Ricky Rain Frog,ONE SIZE,35.0,In Stock,2024/01/09 11:28:39,6,5
+ceac7cc1-451c-495e-aa12-6f123808b84b,Otto's Snowy Christmas Book & Winter Warmer Otto Sausage Dog,ONE SIZE,47.5,In Stock,2024/01/09 11:28:41,,
+54cd1ed9-2479-45e9-8371-9cbfc06c73f7,Amuseabean Bunny,ONE SIZE,20.0,In Stock,2024/01/09 11:28:43,4,4
+de47e4ce-a068-4ddb-b57b-1e69a910e89e,Amuseabean Highland Cow,ONE SIZE,20.0,In Stock,2024/01/09 11:28:45,4,4
+e490f1a3-e271-4bd7-92ac-e2e1dae1fc87,Amuseabean Ram,ONE SIZE,20.0,In Stock,2024/01/09 11:28:46,4,4
+b1a18693-b54e-483e-9fd0-f0db0fe1f40f,Bartholomew Bear Bag Charm,ONE SIZE,23.0,In Stock,2024/01/09 11:28:48,5,2
+b031431e-d6c6-416e-9133-b00d8793e52e,Bashful Luxe Bunny Rosa,HUGE,85.0,More on the way,2024/01/09 11:28:50,20,8
+b031431e-d6c6-416e-9133-b00d8793e52e,Bashful Luxe Bunny Rosa,MEDIUM,35.0,In Stock,2024/01/09 11:28:50,12,5
+fe447c52-8ae8-47df-9c30-f99ab9f7b5a1,Bashful Sloth,MEDIUM,28.0,In Stock,2024/01/09 11:28:52,11,5
+30af4d14-5bd3-4c0e-be2e-eabcd8953e25,Bashful Luxe Bunny Willow,HUGE,85.0,More on the way,2024/01/09 11:28:54,20,8
+30af4d14-5bd3-4c0e-be2e-eabcd8953e25,Bashful Luxe Bunny Willow,MEDIUM,35.0,In Stock,2024/01/09 11:28:54,12,5
+5692f3d2-6f1d-4181-b112-5ea1a689ae45,Birdling Goldfinch,ONE SIZE,17.0,In Stock,2024/01/09 11:28:55,4,3
+03e84982-5331-4e7e-8f78-a441cbe648a1,Birdling Swallow,ONE SIZE,17.0,In Stock,2024/01/09 11:28:57,4,3
+78b5eccd-4a65-44fb-ade1-f501390dc283,Blowzy Belle Sheep,ONE SIZE,37.5,In Stock,2024/01/09 11:28:58,16,4
+a4d4ab00-d6df-405b-b85c-aad20b9b78e2,Fou Fou Ostrich,ONE SIZE,28.5,In Stock,2024/01/09 11:29:00,8,6
+0b152145-4553-4c4a-b9a3-5dc69ed9832e,Fou Fou Peacock,ONE SIZE,28.5,In Stock,2024/01/09 11:29:02,8,6
+f99e9969-18dd-4478-807c-f83b3d595c59,Fuzzkin Monkey,ONE SIZE,25.0,In Stock,2024/01/09 11:29:03,9,4
+c735cebd-ffd0-4a40-a252-30ac23264285,Ginny Goat,ONE SIZE,35.0,In Stock,2024/01/09 11:29:05,10,6
+1c34e8fb-7dc5-43a2-947a-efc690dc7f3a,Gracie Grouper Fish,ONE SIZE,30.0,In Stock,2024/01/09 11:29:07,4,10
+c455fbca-708d-4cfc-a60c-940f73055f50,Hector Fox Terrier,ONE SIZE,35.0,In Stock,2024/01/09 11:29:08,9,4
+6554ea9e-c945-4610-ad80-05e2b05ee5f9,Jinx Monster,ONE SIZE,35.0,In Stock,2024/01/09 11:29:10,17,6
+ff23e481-2ef8-4e39-9744-f89aba519061,Jollipop Cat,ONE SIZE,23.5,In Stock,2024/01/09 11:29:12,8,4
+8be4aee0-6988-40ff-b2d9-df75750c1f02,Jollipop Puppy,ONE SIZE,23.5,In Stock,2024/01/09 11:29:14,8,4
+8d4bbe26-ccf7-40b9-a0a2-842954926831,Bashful Sloth with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:29:16,11,5
+c53add1a-8094-4f58-851a-4b97bb2b70dc,Lavender Dragon,HUGE,120.0,In Stock,2024/01/09 11:29:18,7,26
+c53add1a-8094-4f58-851a-4b97bb2b70dc,Lavender Dragon,MEDIUM,65.0,In Stock,2024/01/09 11:29:18,5,20
+c53add1a-8094-4f58-851a-4b97bb2b70dc,Lavender Dragon,LITTLE,32.5,In Stock,2024/01/09 11:29:18,3,12
+79617f12-cec1-4454-b8c3-560ae7fb0a6c,Lila Ballerina Bunny,ONE SIZE,35.0,In Stock,2024/01/09 11:29:19,13,2
+4287b329-b3c8-49a5-9613-8b92c0804393,Madison Monkey,ONE SIZE,32.5,In Stock,2024/01/09 11:29:21,13,2
+d4fc164c-ebdf-4d4a-a117-e60a9a42a003,Ollivander the Orca,ONE SIZE,70.0,In Stock,2024/01/09 11:29:22,9,25
+99142a41-31d1-433d-947b-cd3a17a739f0,Oswald Orangutan,ONE SIZE,65.0,In Stock,2024/01/09 11:29:24,13,12
+88eb8a7b-c124-47b2-ba2d-67d428e1a0b3,Personalised Bashful Luxe Bunny Willow Huge,HUGE,91.0,In Stock,2024/01/09 11:29:26,20,8
+1b36a05b-9e20-42de-985b-f1e2859139c4,Personalised Bashful Luxe Bunny Rosa Medium,MEDIUM,41.0,In Stock,2024/01/09 11:29:28,12,5
+40e6101a-9e62-45a6-835f-843e34b5a02a,Wrapabat Black,ONE SIZE,20.0,In Stock,2024/01/09 11:29:30,6,2
+5065e37d-9c4b-4fca-8aaa-d47fbf9a39b1,Personalised Bashful Luxe Bunny Willow Medium,MEDIUM,41.0,In Stock,2024/01/09 11:29:31,12,5
+3b02b0e0-a03a-46df-a97e-1e38e551ca64,Personalised Lavender Dragon Huge,HUGE,126.0,In Stock,2024/01/09 11:29:33,7,26
+de541e0b-aadf-4b82-bcbf-d18ad619d08a,Pippa Black Labrador,ONE SIZE,33.0,In Stock,2024/01/09 11:29:35,9,4
+3d6f1ca9-d01b-459a-9d9b-f2a67623ccd3,Quaxy Elephant,ONE SIZE,35.0,In Stock,2024/01/09 11:29:37,10,6
+88abca46-5349-44de-bcb2-41b5c9bea98e,Quaxy Pig,ONE SIZE,35.0,In Stock,2024/01/09 11:29:38,10,6
+e73298b9-7dfb-4465-a769-10bee088e602,Ramonda Ostrich,ONE SIZE,40.0,In Stock,2024/01/09 11:29:40,22,6
+c1116896-b4d8-4038-ba97-81f2bba9ea57,Rock-a-Bye Kitten,ONE SIZE,30.0,In Stock,2024/01/09 11:29:42,7,4
+60d991dc-c736-4a7a-8bc2-dd7b46c10629,Sweetsicle Bunny,ONE SIZE,20.0,In Stock,2024/01/09 11:29:44,6,3
+df78e745-ec50-4d72-b533-c4c5752045cd,Syd Salamander,ONE SIZE,27.5,In Stock,2024/01/09 11:29:45,10,4
+50bd1314-e226-4981-80e1-0a70e4d580b4,Tumblie Elephant,ONE SIZE,30.0,In Stock,2024/01/09 11:29:47,5,14
+773985da-9317-46ac-9fad-50b4fb80137d,Bashful Hot Pink Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:29:49,12,5
+773985da-9317-46ac-9fad-50b4fb80137d,Bashful Hot Pink Bunny,SMALL,18.0,In Stock,2024/01/09 11:29:49,7,4
+c1598334-dd58-4caa-9b93-fb070b0086e7,Bashful Sunshine Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:29:52,12,5
+c1598334-dd58-4caa-9b93-fb070b0086e7,Bashful Sunshine Bunny,SMALL,18.0,In Stock,2024/01/09 11:29:52,7,4
+d6946e33-866d-4347-bde0-34f5c7794032,Goodnight Bunny Book,ONE SIZE,15.0,In Stock,2024/01/09 11:29:53,7,7
+23ddb022-d716-4529-a087-d13ecb2e2da3,Bluebell Butterfly,ONE SIZE,33.0,In Stock,2024/01/09 11:29:55,8,13
+9bcd1d43-b21a-4238-ba80-6ad66257d0b0,Bonnie Bunny with Egg,ONE SIZE,23.5,In Stock,2024/01/09 11:29:57,6,3
+10ee5bd1-723c-4bb5-8bdd-98e3169c341d,Burly Boo Sheep,ONE SIZE,25.0,In Stock,2024/01/09 11:29:58,7,5
+9341f97f-e206-492e-87bc-2a4383056b85,Cluny Cockerel,ONE SIZE,35.0,In Stock,2024/01/09 11:30:00,9,5
+bb3500f3-55d1-4312-8615-6b09b8a4145d,Escarfgot Purple,ONE SIZE,20.0,In Stock,2024/01/09 11:30:02,6,3
+c1e9aa50-2685-43b3-8385-749ce00dc48c,Escarfgot Pink,ONE SIZE,20.0,In Stock,2024/01/09 11:30:04,5,2
+d8f52b03-9deb-44b1-b5f6-80c2fcc98eed,Bashful Hot Pink Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:30:06,12,5
+3a3729f8-cad9-41eb-b529-a9fdfa0cb416,Bashful Sunshine Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:30:08,12,5
+dde2f26e-1f38-4673-8b7a-5d19f1c85df6,Bashful Hot Pink Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:30:10,12,5
+88634de2-31e2-41d8-94ac-2129469fc1ab,Bashful Sunshine Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:30:12,12,5
+05f480ef-9ffd-4e39-a60e-0182c16712d7,Bashful Sunshine Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:30:14,12,5
+2cd67ab6-fd5d-4ac8-9e50-f027394959fe,Layla Ladybird,ONE SIZE,25.0,In Stock,2024/01/09 11:30:16,3,6
+bab6a823-f933-47d4-9318-06118229fb05,Nesting Bunnies,ONE SIZE,35.0,In Stock,2024/01/09 11:30:18,4,6
+52d05673-96a7-400a-84b6-b44016f5d580,Personalised Bashful Hot Pink Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:30:20,12,5
+00de728d-1c86-4379-891a-3be0b39b276a,Personalised Bashful Sunshine Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:30:22,12,5
+5c516653-0df1-4200-a4d3-c824dfa0dd0d,Blossom Heart Blush Bunny,ONE SIZE,17.5,In Stock,2024/01/09 11:30:23,6,3
+01bdc570-ea6d-4d0c-8818-a095d33fd711,Blossom Heart Tulip Bunny,ONE SIZE,17.5,In Stock,2024/01/09 11:30:25,6,3
+24af1f1d-85ce-420d-84d9-08aa83d99d07,Crowning Croaker Green Frog,ONE SIZE,17.5,In Stock,2024/01/09 11:30:27,5,3
+785d96e6-1dd0-4b19-be02-58cf6bce3a53,Love-Me Lobster,ONE SIZE,24.0,In Stock,2024/01/09 11:30:29,6,3
+4bd5a95d-0fc2-40dc-b2eb-7d54866eb8bb,Ambrosie Fox,ONE SIZE,35.0,In Stock,2024/01/09 11:30:30,9,5
+f359de4a-1c55-4e24-b016-92ba4824ce91,Ambrosie Hare,ONE SIZE,35.0,In Stock,2024/01/09 11:30:32,9,4
+f72cdf60-17f5-4498-aec2-96b4d9e29a8a,Anoraknid Black Spider,ONE SIZE,20.0,In Stock,2024/01/09 11:30:33,5,4
+472cdee5-e169-4c24-bb0b-6ab4bd05aed5,Andie Axolotl,MEDIUM,32.5,In Stock,2024/01/09 11:30:35,11,5
+472cdee5-e169-4c24-bb0b-6ab4bd05aed5,Andie Axolotl,SMALL,22.0,Out of stock,2024/01/09 11:30:35,7,2
+50bed1cc-ab5f-4ee7-afce-91750a402631,Bashful Golden Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:30:38,12,5
+50bed1cc-ab5f-4ee7-afce-91750a402631,Bashful Golden Bunny,SMALL,18.0,In Stock,2024/01/09 11:30:38,7,4
+e2ef935c-c023-4865-aa01-bebc1e5c1e73,Bashful Mineral Blue Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:30:40,12,5
+e2ef935c-c023-4865-aa01-bebc1e5c1e73,Bashful Mineral Blue Bunny,SMALL,18.0,Out of stock,2024/01/09 11:30:40,7,4
+33016ab0-077a-4a01-9b7b-69bd7586e8f3,Bashful Wolf,MEDIUM,28.0,In Stock,2024/01/09 11:30:42,12,5
+5a363f57-0210-46d2-84d3-9a61a7bb39ec,Beatnik Buddy Poodle,ONE SIZE,28.0,In Stock,2024/01/09 11:30:44,11,3
+6671cc18-e953-4497-b8ec-9820b7284bac,Beatnik Buddy Sausage Dog,ONE SIZE,28.0,In Stock,2024/01/09 11:30:45,11,3
+75ca1b8d-9804-4dac-ad2e-f4b3bd56a7a1,Daddy Loves Me Book,ONE SIZE,20.0,In Stock,2024/01/09 11:30:47,6,6
+15fc3bfe-78bd-4ae9-8644-b7d01e388f43,Mummy Loves Me Book,ONE SIZE,20.0,In Stock,2024/01/09 11:30:48,6,6
+26cafc57-a736-4264-a2df-17425ed16aaa,Backpack Wolf,ONE SIZE,30.0,In Stock,2024/01/09 11:30:50,9,4
+0bbcc301-bd84-4043-bb20-ab2747163ae9,Big Spottie Unicorn,ONE SIZE,75.0,In Stock,2024/01/09 11:30:52,17,6
+3842b93c-5008-4504-9805-30a1da2831e3,Cozy Crew Seahorse,ONE SIZE,25.0,In Stock,2024/01/09 11:30:54,7,2
+b2f7f2cb-5162-4adf-a0c6-fb4c49ecefde,Davey Dilophosaurus,ONE SIZE,32.5,In Stock,2024/01/09 11:30:56,11,5
+a3898bf3-df62-4638-970a-70e155d01a7e,Delano Dorado Fish,ONE SIZE,27.5,In Stock,2024/01/09 11:30:57,5,10
+50be40ee-7b12-43b4-8ea1-cd37359099fc,Evelyn Swan,ONE SIZE,40.0,In Stock,2024/01/09 11:30:59,19,6
+06f80ccf-0f02-48a3-8754-9e9727206f68,Fishiful Blue,ONE SIZE,17.5,In Stock,2024/01/09 11:31:00,5,6
+6945c0e9-32f4-4629-ac12-457052ce3d16,Fishiful Orange,ONE SIZE,17.5,In Stock,2024/01/09 11:31:02,5,6
+28dfaa52-fc70-4e64-b90d-70dd54f51506,Fishiful Pink,ONE SIZE,17.5,In Stock,2024/01/09 11:31:04,5,6
+a98556bd-1213-462f-9b51-925a5250c5f1,Forest Fauna Bear,ONE SIZE,32.5,In Stock,2024/01/09 11:31:05,7,6
+35208b44-c9eb-4fe6-8996-146a07099263,Forest Fauna Frog,ONE SIZE,32.5,In Stock,2024/01/09 11:31:07,8,4
+5f0bb727-607f-44f9-ae01-a253e64f7b10,Forest Fauna Owl,ONE SIZE,32.5,In Stock,2024/01/09 11:31:09,7,4
+83628a13-da68-4658-b753-1156d381af73,Freddie Sausage Dog,LARGE,30.0,Out of stock,2024/01/09 11:31:10,7,7
+83628a13-da68-4658-b753-1156d381af73,Freddie Sausage Dog,SMALL,22.0,In Stock,2024/01/09 11:31:10,5,7
+271a57e8-1977-4c64-8c1a-a46d860405a6,Gilbert the Great Blue Whale,ONE SIZE,85.0,In Stock,2024/01/09 11:31:12,7,22
+51c6aac7-7490-4fc7-9893-752da4b9bbdb,Glamorama Cat,ONE SIZE,40.0,In Stock,2024/01/09 11:31:14,16,4
+87fe1552-0bb9-4a80-a7b0-ed4b15c48905,Glamorama Pig,ONE SIZE,40.0,In Stock,2024/01/09 11:31:15,11,6
+f20858e0-06e1-4bf9-a982-076812103643,Grizzo Gremlin,ONE SIZE,35.0,In Stock,2024/01/09 11:31:17,11,4
+c7d576f9-1575-4141-abd8-134dbe08d156,Hamish Hedgehog,ONE SIZE,75.0,In Stock,2024/01/09 11:31:19,8,16
+4dd7a575-e7d0-45c6-b427-131d56b98ea2,Humphrey the Humpback Whale,ONE SIZE,85.0,In Stock,2024/01/09 11:31:20,8,20
+1f9fa062-e4a5-418f-911c-9cc85bd23c05,Bashful Golden Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:31:22,12,5
+6dddaa63-e001-4d16-8714-f4c859f08cdd,Bashful Mineral Blue Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:31:24,12,5
+036aa370-f354-4a07-b152-2a87f87872f0,Bashful Golden Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:31:26,12,5
+8ac2abfa-4ba5-4fd4-bd09-137b46862845,Bashful Mineral Blue Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:31:28,12,5
+72a215c8-387f-44aa-b5b3-686e0dfc6034,Bashful Golden Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:31:30,12,5
+208a31a5-7e2a-4f1e-93fa-eb4cb887081e,Bashful Mineral Blue Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:31:32,12,5
+b73cb5ca-f016-4231-a894-b9b9f9ee3ff1,Bashful Wolf with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:31:34,12,5
+5212e403-7ce0-4086-b223-df7531fa2055,Little Tiger,ONE SIZE,22.0,In Stock,2024/01/09 11:31:36,7,4
+6006768d-b4cf-4b9b-8013-a2e9d7baa1fc,Letty Jellyfish,ONE SIZE,39.5,In Stock,2024/01/09 11:31:38,23,6
+921a32cd-9da7-4706-b2f5-90c2c9c1f16c,Napping Nipper Dog,ONE SIZE,25.0,In Stock,2024/01/09 11:31:39,4,6
+27674e30-48f2-4cd6-b841-39242c0c5ee0,Nippit Beaver,ONE SIZE,15.0,In Stock,2024/01/09 11:31:41,5,3
+76967275-f08a-4956-b36f-006b5390da8b,Nippit Owl,ONE SIZE,15.0,In Stock,2024/01/09 11:31:43,5,3
+9152a42f-a80d-4fd6-8f0e-a3868eb1902b,Oakley Owl,ONE SIZE,32.5,In Stock,2024/01/09 11:31:44,9,5
+d32d4181-7dd6-4837-9854-4b9f4085ba72,Oberon Owl,ONE SIZE,30.0,In Stock,2024/01/09 11:31:46,10,5
+a8ff688a-705c-4a50-9c35-a063118b3568,Pongo Orangutan,HUGE,65.0,In Stock,2024/01/09 11:31:48,23,7
+74d3b2c9-4f25-40ea-80ef-47ed0f2ac3c8,Otto Sausage Dog,HUGE,75.0,Out of stock,2024/01/09 11:31:50,11,13
+74d3b2c9-4f25-40ea-80ef-47ed0f2ac3c8,Otto Sausage Dog,LARGE,30.0,In Stock,2024/01/09 11:31:50,7,7
+74d3b2c9-4f25-40ea-80ef-47ed0f2ac3c8,Otto Sausage Dog,SMALL,22.0,In Stock,2024/01/09 11:31:50,5,7
+42044c92-7fa9-42ed-9c42-7d6534c4ae2b,Personalised Bashful Golden Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:31:52,12,5
+0f99b9aa-6f70-4020-8663-6cff889c5b6a,Personalised Bashful Mineral Blue Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:31:54,12,5
+7b60daef-1717-43f8-95d9-7db2ad7799e1,Pip Monster,SMALL,22.5,In Stock,2024/01/09 11:31:56,9,4
+0e4e0c0f-8970-46cf-8cab-e41f4b9d1ad1,Rock-a-Bye Mouse,ONE SIZE,30.0,In Stock,2024/01/09 11:31:57,7,4
+c7991358-562a-4d6d-b339-b55d3a901b7f,Sweater Sausage Dog Pink,ONE SIZE,32.5,In Stock,2024/01/09 11:31:59,6,3
+cc7e1233-c36f-4e45-aeca-2d1a7bcb8803,Sweater Sausage Dog Yellow,ONE SIZE,32.5,In Stock,2024/01/09 11:32:01,6,3
+478cab23-3dd8-48c9-9125-b5f036f2d714,Seraphina Pegasus,ONE SIZE,68.5,In Stock,2024/01/09 11:32:02,9,20
+83a9f537-8d09-4b44-9840-1098b2c3413b,Sigmund Seal,ONE SIZE,50.0,In Stock,2024/01/09 11:32:05,7,13
+45c012e7-f72f-417f-94d3-260e57202b2a,Snoozling Hedgehog,ONE SIZE,36.0,In Stock,2024/01/09 11:32:07,11,6
+f517fd62-fdaa-4c95-aaaa-61e2530abacc,Spindleshanks Crab,ONE SIZE,33.0,In Stock,2024/01/09 11:32:08,3,15
+a189fb9e-9b28-4d81-b79e-a15596114401,Splootie Elephant,ONE SIZE,68.0,In Stock,2024/01/09 11:32:10,7,22
+305aec44-8fa0-4cbe-9626-cc0f5c61c1f5,Birdling Robin,ONE SIZE,17.0,In Stock,2024/01/09 11:32:12,4,3
+5ea97fe9-3790-49fd-a6ee-4fce517303a6,Shimmer Stocking Bunny,ONE SIZE,28.5,In Stock,2024/01/09 11:32:13,8,4
+975a49f9-9d08-4d59-a2da-611bfa5347eb,Ambalie Bear,ONE SIZE,30.0,In Stock,2024/01/09 11:32:15,9,6
+380bc688-f8c6-44ef-9d90-e4b4d23f2bc7,Ambalie Bunny,ONE SIZE,30.0,In Stock,2024/01/09 11:32:17,9,6
+55508414-7005-4b19-a5d7-bdb90abcfe0e,Bashful Zebra,MEDIUM,28.0,In Stock,2024/01/09 11:32:19,12,5
+a0fe0bf3-0f7f-484f-a2f5-fdfa68658dc2,If I Were An Owl Book,ONE SIZE,13.5,In Stock,2024/01/09 11:32:20,6,6
+57683e98-354a-4816-8315-2293b4a8369d,Betty Corgi,HUGE,75.0,More on the way,2024/01/09 11:32:22,13,13
+57683e98-354a-4816-8315-2293b4a8369d,Betty Corgi,MEDIUM,30.0,In Stock,2024/01/09 11:32:22,7,10
+3f862437-b424-43b6-b33e-2d24f95c77b3,Big Spottie Giraffe,ONE SIZE,75.0,In Stock,2024/01/09 11:32:24,19,6
+f8291feb-3b15-443d-99ed-9020071d5cdd,Big Spottie T-Rex,ONE SIZE,75.0,In Stock,2024/01/09 11:32:26,18,6
+ca702d2f-18db-4888-be4d-a9d4d7c0e239,Cruz Crested Newt,ONE SIZE,32.5,In Stock,2024/01/09 11:32:27,12,4
+a370b64e-9959-4f1f-beaf-780da2ccce71,Cooper Doodle Dog,ONE SIZE,33.0,In Stock,2024/01/09 11:32:29,9,8
+6108614b-2423-4bed-a183-1b840debf193,Flumpie Frog,ONE SIZE,28.0,In Stock,2024/01/09 11:32:31,7,5
+590cda64-0687-4592-9f8a-1a8678a9aacb,Happihoop Owl,ONE SIZE,32.0,In Stock,2024/01/09 11:32:33,8,4
+92ba5ba6-a770-45a4-a6c2-2f62f1ef28a6,Harper Pup,ONE SIZE,55.0,In Stock,2024/01/09 11:32:35,15,9
+9f3139ad-b311-4a09-aa70-1bd85f5823bf,Hibernating Bunny,ONE SIZE,22.0,In Stock,2024/01/09 11:32:37,5,5
+2a68dde6-f8f5-4e5f-a577-30ad0c0d5374,Higgledy Piggledy Old Spot,REALLY BIG,175.0,In Stock,2024/01/09 11:33:15,17,22
+2a68dde6-f8f5-4e5f-a577-30ad0c0d5374,Higgledy Piggledy Old Spot,HUGE,130.0,In Stock,2024/01/09 11:33:15,13,16
+2a68dde6-f8f5-4e5f-a577-30ad0c0d5374,Higgledy Piggledy Old Spot,SMALL,22.0,In Stock,2024/01/09 11:33:15,4,6
+98a801e7-8311-4968-b458-35c3ac7f772d,Huddles Bunny,ONE SIZE,45.0,In Stock,2024/01/09 11:33:17,9,6
+9f206572-fa88-4934-b0bb-ea6081019e32,Huddles Duck,ONE SIZE,45.0,In Stock,2024/01/09 11:33:18,9,6
+42987359-e221-4455-a256-d3562f2e4603,Jubjub Gookie,ONE SIZE,30.0,In Stock,2024/01/09 11:33:20,9,4
+6f4a8264-58e0-4f75-9e93-bbe34310b78a,Mack Mudskipper,ONE SIZE,28.5,In Stock,2024/01/09 11:33:22,10,4
+2f7a2752-fada-4169-a7f6-955d882bd4d3,Obbie Octopus,ONE SIZE,40.0,In Stock,2024/01/09 11:33:23,11,10
+eb3ff42b-5182-4691-b3a6-27285c37f5dc,Orson Horse,ONE SIZE,35.0,In Stock,2024/01/09 11:33:25,14,5
+cf59f1a8-6689-4beb-b66d-58e8c98afc9d,Peek-a-Boo Elly Activity Toy,ONE SIZE,32.0,In Stock,2024/01/09 11:33:26,6,5
+34308496-de41-4da4-8895-a0d0abe5adb6,Penny Praying Mantis,ONE SIZE,32.5,In Stock,2024/01/09 11:33:28,9,8
+e1837faa-0812-4485-ab5c-67cb92fe240d,Ribble Dog,ONE SIZE,30.0,In Stock,2024/01/09 11:33:30,14,4
+d51c3a96-2a6a-476b-b29d-2e39c2ab5b38,Ribble Elephant,ONE SIZE,30.0,In Stock,2024/01/09 11:33:31,15,4
+3654487c-9836-4cae-8fed-3f4a0ca05f71,Ribble Giraffe,ONE SIZE,30.0,In Stock,2024/01/09 11:33:33,16,4
+a553dd63-cf76-4d9c-9916-1d8d0811d4b0,Rose Dragon,HUGE,120.0,In Stock,2024/01/09 11:33:35,7,26
+a553dd63-cf76-4d9c-9916-1d8d0811d4b0,Rose Dragon,MEDIUM,65.0,In Stock,2024/01/09 11:33:35,5,20
+a553dd63-cf76-4d9c-9916-1d8d0811d4b0,Rose Dragon,LITTLE,32.5,In Stock,2024/01/09 11:33:35,3,12
+88da202d-66a1-47c3-b6f8-0a7dc7ae461d,Ricky Rain Frog,LARGE,60.0,In Stock,2024/01/09 11:33:37,10,12
+88da202d-66a1-47c3-b6f8-0a7dc7ae461d,Ricky Rain Frog,MEDIUM,28.0,More on the way,2024/01/09 11:33:37,5,7
+30ae8d37-f520-48d3-ba02-606d4ddd407d,Rufus Bear,LARGE,45.0,In Stock,2024/01/09 11:33:40,15,5
+30ae8d37-f520-48d3-ba02-606d4ddd407d,Rufus Bear,MEDIUM,27.5,In Stock,2024/01/09 11:33:40,11,4
+152ff7a4-592a-443e-844a-b0cf14cda4c0,Snuggler Puppy,ONE SIZE,25.0,In Stock,2024/01/09 11:33:41,9,5
+6e326a4d-2593-4aa2-ae30-70820722f64b,Taylor Tiger,LARGE,80.0,More on the way,2024/01/09 11:33:43,6,18
+6e326a4d-2593-4aa2-ae30-70820722f64b,Taylor Tiger,LITTLE,35.0,In Stock,2024/01/09 11:33:43,3,11
+28768a71-7471-4a4a-bc3b-8223c575e8db,Willow Hedgehog,ONE SIZE,23.5,In Stock,2024/01/09 11:33:45,7,4
+5ef38d95-580c-42f3-b530-656680f62da2,Wriggidig Ant,ONE SIZE,23.5,In Stock,2024/01/09 11:33:47,5,6
+3d08e7b0-1917-4fd6-94db-bd23c4e727b3,Wriggidig Bug,ONE SIZE,23.5,In Stock,2024/01/09 11:33:48,7,2
+790b9d8a-eb6a-42aa-be91-d3651984c30a,Bashful Lilac Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:33:51,12,5
+790b9d8a-eb6a-42aa-be91-d3651984c30a,Bashful Lilac Bunny,SMALL,18.0,Out of stock,2024/01/09 11:33:51,7,4
+0a05f406-0f84-4064-9a86-44a25a92e9cf,Bashful Petal Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:33:53,12,5
+0a05f406-0f84-4064-9a86-44a25a92e9cf,Bashful Petal Bunny,SMALL,18.0,In Stock,2024/01/09 11:33:53,7,4
+e2480a08-85c8-4fdc-84ea-8733fd448c9c,Bashful Fudge Bunny,MEDIUM,28.0,More on the way,2024/01/09 11:33:56,12,5
+e2480a08-85c8-4fdc-84ea-8733fd448c9c,Bashful Fudge Bunny,SMALL,18.0,In Stock,2024/01/09 11:33:56,7,4
+5f2146d8-eeff-4580-ba56-d9e58af4f353,Who Can I Find Book,ONE SIZE,15.0,In Stock,2024/01/09 11:33:57,7,7
+d1f1d11b-fb28-4479-84c2-53d96fba1e16,Blossom Sage Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:33:59,12,5
+d1f1d11b-fb28-4479-84c2-53d96fba1e16,Blossom Sage Bunny,SMALL,18.0,More on the way,2024/01/09 11:33:59,7,4
+3e457118-6c33-4610-a5ec-b2288da62ad4,Blossom Jasmine Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:34:02,12,5
+3e457118-6c33-4610-a5ec-b2288da62ad4,Blossom Jasmine Bunny,SMALL,18.0,Returning to stock 2-3 months,2024/01/09 11:34:02,7,4
+eb159f84-0d23-4085-9364-ff4fc56cdb04,Bashful Lilac Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:04,12,5
+121cb97d-99b2-408d-b029-384312367a1c,Bashful Petal Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:06,12,5
+73a29780-d91c-4649-9e11-9e3437ef351a,Blossom Sage Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:08,12,5
+5d896782-f6f8-42a0-ba8a-3be8b6bb96e4,Blossom Jasmine Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:10,12,5
+22e006a2-17de-497f-81cb-d70336bedf83,Bashful Lilac Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:12,12,5
+7a03324d-f188-41ee-bce1-778cd67e2224,Bashful Petal Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:14,12,5
+714f8681-3c83-4df3-ad86-183a22b9cc50,Blossom Sage Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:16,12,5
+7d1397de-8c9b-41c5-9ab0-19c9eb13cf57,Blossom Jasmine Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:18,12,5
+74dd0c1c-424b-4403-8fcd-ae5e37648dd1,Bashful Lilac Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:20,12,5
+fd063215-aba6-447f-929f-94ea8fa0586f,Bashful Petal Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:23,12,5
+6f6eecc4-4bc2-44e7-8f86-3be92c3d11d2,Blossom Sage Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:25,12,5
+f5dec334-ac05-4328-a047-ff0ddc6c01e2,Blossom Jasmine Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:26,12,5
+2896cc45-b627-44c0-a39d-80567a851999,Personalised Bashful Lilac Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:34:29,12,5
+50c7b5ea-7c3f-4504-84f3-c409863b0d07,Personalised Bashful Petal Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:34:31,12,5
+96d5d70f-e66a-4a0f-9672-bd48ac4396d8,Alice Axolotl,MEDIUM,32.5,In Stock,2024/01/09 11:34:33,11,5
+96d5d70f-e66a-4a0f-9672-bd48ac4396d8,Alice Axolotl,SMALL,22.0,In Stock,2024/01/09 11:34:33,7,2
+51abcde7-1828-4e15-b75d-6d7853a5bd15,Bashful Shimmer Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:34:35,12,5
+51abcde7-1828-4e15-b75d-6d7853a5bd15,Bashful Shimmer Bunny,SMALL,18.0,In Stock,2024/01/09 11:34:35,7,4
+7d9c26c8-b632-4931-a533-028c2cd52e64,If I Were A Pony Book,ONE SIZE,13.5,In Stock,2024/01/09 11:34:37,6,6
+3f1114d0-e25d-4f95-af02-c6a1f7b39cbc,Blossom Bea Beige Bunny Comforter,ONE SIZE,17.0,In Stock,2024/01/09 11:34:38,10,9
+e8689fd6-1973-4930-a216-0fac209e324a,Cozy Crew Octopus,ONE SIZE,25.0,In Stock,2024/01/09 11:34:40,8,4
+da660763-c93e-4f8e-b422-d531ed6fb15e,Fossilly Stegosaurus,MEDIUM,38.0,In Stock,2024/01/09 11:34:42,6,5
+da660763-c93e-4f8e-b422-d531ed6fb15e,Fossilly Stegosaurus,SMALL,15.0,More on the way,2024/01/09 11:34:42,3,2
+0ec27f73-f207-461e-a3ab-fea0f97d4ab5,Fuddlewuddle Lion Soother,ONE SIZE,25.0,In Stock,2024/01/09 11:34:44,13,13
+bce8468d-c0d6-45d7-9bc3-f41f7ee551da,Bashful Inky Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:46,12,5
+94d4db61-4916-4ab7-bd75-214011cc4469,Bashful Cream Kitten with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:48,12,5
+e10e0707-a430-4af4-9dda-8c0e74e2bd02,Bashful Shimmer Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:50,12,5
+c9ba9b66-1c4a-4911-99c5-b51b496a5b8c,Bashful Inky Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:52,12,5
+32afa296-39b4-4b2b-82a0-0f8d92f2ce0a,Bashful Cream Kitten with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:54,12,5
+7560861d-bd68-44a3-9d57-7063a818084d,Bashful Bunny Truffle Bag Charm,ONE SIZE,19.0,More on the way,2024/01/09 11:34:56,7,2
+612479b2-ac45-40f2-875e-ebe8e5817987,Bashful Shimmer Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:34:58,12,5
+d651fbf0-4fd7-42b9-85a0-ae7c98459d2f,Bashful Inky Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:00,12,5
+9b508a3c-81d0-40f1-be3d-85f5d5b221b1,Bashful Cream Kitten with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:02,12,5
+de6b7dc0-7454-46e1-926e-2d2fe3999024,Bashful Shimmer Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:04,12,5
+2aa0b717-140d-4153-95ea-d413c648a5c0,Lingley Bunny Soother,ONE SIZE,20.0,In Stock,2024/01/09 11:35:06,11,7
+08ce7bb3-27c6-4d2e-9a1b-5322921b4925,Lingley Elephant Soother,ONE SIZE,20.0,In Stock,2024/01/09 11:35:08,11,7
+e7cb8a2d-351c-4f65-ab2a-79a84e3819a2,Tartan Lottie Bunny,ONE SIZE,27.5,In Stock,2024/01/09 11:35:10,11,4
+12415604-2410-40d9-b58a-0a9a3c0b4961,Onyx Dragon,HUGE,120.0,Out of stock,2024/01/09 11:35:12,7,26
+12415604-2410-40d9-b58a-0a9a3c0b4961,Onyx Dragon,MEDIUM,65.0,In Stock,2024/01/09 11:35:12,5,20
+12415604-2410-40d9-b58a-0a9a3c0b4961,Onyx Dragon,LITTLE,32.5,More on the way,2024/01/09 11:35:12,3,12
+5ee7adef-3895-4aeb-8155-652a07144345,Personalised Bashful Shimmer Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:35:14,12,5
+ae78d72b-14f6-4d99-9629-a210e43e8005,Personalised Fuddlewuddle Lion Soother,ONE SIZE,31.0,In Stock,2024/01/09 11:35:16,13,13
+51f673c6-9c51-45d7-8cbc-52b10de45f1b,Personalised Onyx Dragon Huge,HUGE,126.0,In Stock,2024/01/09 11:35:18,7,26
+4599fe2d-0edd-4b6e-9f42-82d9a621a249,Personalised Snow Dragon Huge,HUGE,126.0,In Stock,2024/01/09 11:35:20,7,26
+3343c503-f40f-4717-a3ec-ae71ea827584,Rumpletum Lion,ONE SIZE,40.0,In Stock,2024/01/09 11:35:22,11,8
+bc284f3b-07e3-457b-8d0d-185a0db6f8fa,Snuggler Cat,ONE SIZE,25.0,In Stock,2024/01/09 11:35:24,9,5
+a20cddc6-16ce-40bf-8c14-12a93930335c,Cordy Roy Baby Bunny Soother,ONE SIZE,23.0,In Stock,2024/01/09 11:35:25,11,9
+ae1bbed8-9776-4d0b-bf34-a64b444580d5,Cordy Roy Baby Lion Soother,ONE SIZE,23.0,In Stock,2024/01/09 11:35:27,11,9
+1c913f40-dc20-4865-885c-375976b58deb,Bashful Tiger,HUGE,80.0,In Stock,2024/01/09 11:35:29,20,8
+1c913f40-dc20-4865-885c-375976b58deb,Bashful Tiger,MEDIUM,28.0,More on the way,2024/01/09 11:35:29,12,5
+1c913f40-dc20-4865-885c-375976b58deb,Bashful Tiger,SMALL,18.0,In Stock,2024/01/09 11:35:29,7,4
+4ae022ed-91ff-4f6a-bcda-9df91555960b,Bashful Cerise Bunny,MEDIUM,28.0,Out of stock,2024/01/09 11:35:32,12,5
+4ae022ed-91ff-4f6a-bcda-9df91555960b,Bashful Cerise Bunny,SMALL,18.0,In Stock,2024/01/09 11:35:32,7,4
+c9efaea8-db6b-4cf8-8397-f43a7fe4c4bb,Beatrice Butterfly,LARGE,33.0,In Stock,2024/01/09 11:35:34,8,13
+86e5ca1f-a98c-4a93-8c63-e142cc22f439,Little Me Book,ONE SIZE,15.0,In Stock,2024/01/09 11:35:35,8,8
+5d5bc909-acf4-410d-95b1-4672c08babe8,Blossom Dusky Blue Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:35:37,12,5
+5d5bc909-acf4-410d-95b1-4672c08babe8,Blossom Dusky Blue Bunny,SMALL,18.0,In Stock,2024/01/09 11:35:37,7,4
+d4e49ec8-3363-4f14-b0aa-85e173d48ef9,Fossilly T-Rex,MEDIUM,38.0,In Stock,2024/01/09 11:35:39,11,6
+d4e49ec8-3363-4f14-b0aa-85e173d48ef9,Fossilly T-Rex,SMALL,15.0,More on the way,2024/01/09 11:35:39,5,3
+e1c7c477-28a8-447b-aa23-3e7ae057aa27,Bashful Dusky Blue Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:42,12,5
+91bbced9-c5bb-499f-8170-3b761a97e742,Bashful Lion with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:44,12,5
+e88c2365-bd88-41e6-9fa2-1a75ab0205d7,Bashful Tiger with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:46,12,5
+52430b60-d962-4dfc-8f55-9c7bd418cebd,Blossom Dusky Blue with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:48,12,5
+1bb5724d-5d45-4d42-839e-a34f67fb78a1,Blossom Bea Beige Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:50,12,5
+17a682d3-d198-44f4-85de-c8209541dec8,Bashful Dusky Blue Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:52,12,5
+82a57e6a-5367-4c1f-9338-a9526b209fba,Bashful Lion with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:54,12,5
+d1a77b8f-93c9-4afb-8472-9a07e96161cc,Bashful Tiger with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:56,12,5
+6b9056e0-bbbd-450d-97eb-d91f3d6a0e51,Blossom Dusky Blue with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:35:58,12,5
+504997e3-3b23-4408-ac61-be7ba1b49538,Blossom Bea Beige Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:01,12,5
+744060c5-288b-490d-b5db-571980256cc9,Bashful Dusky Blue Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:03,12,5
+6195c8d6-2fa7-4df0-b703-56f54eaf40b7,Bashful Lion with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:05,12,5
+2efd28b0-6eee-4fb0-8e0b-50e25d001086,Bashful Tiger with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:07,12,5
+57719531-691f-4d1c-9250-4389433a1b37,Blossom Dusky Blue Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:09,12,5
+3de87ebe-a195-43bf-b96d-10d5dabb3698,Blossom Bea Beige Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:11,12,5
+e7e13449-0b55-4a89-8b1f-1062cab75954,Odyssey Octopus,REALLY BIG,130.0,More on the way,2024/01/09 11:36:15,30,12
+e7e13449-0b55-4a89-8b1f-1062cab75954,Odyssey Octopus,HUGE,68.5,Out of stock,2024/01/09 11:36:15,21,9
+e7e13449-0b55-4a89-8b1f-1062cab75954,Odyssey Octopus,LARGE,53.0,More on the way,2024/01/09 11:36:15,19,7
+e7e13449-0b55-4a89-8b1f-1062cab75954,Odyssey Octopus,LITTLE,30.0,In Stock,2024/01/09 11:36:15,9,4
+e7e13449-0b55-4a89-8b1f-1062cab75954,Odyssey Octopus,TINY,18.0,In Stock,2024/01/09 11:36:15,6,3
+e30fd362-f7db-4f20-adcc-816314943cbc,Sage Dragon,HUGE,120.0,More on the way,2024/01/09 11:36:17,7,26
+e30fd362-f7db-4f20-adcc-816314943cbc,Sage Dragon,MEDIUM,65.0,Returning to stock 2-3 months,2024/01/09 11:36:17,5,20
+e30fd362-f7db-4f20-adcc-816314943cbc,Sage Dragon,LITTLE,32.5,In Stock,2024/01/09 11:36:17,3,12
+8de5e85b-7dc1-4061-a8d1-0f27c71f8865,Sienna Seahorse,MEDIUM,30.0,More on the way,2024/01/09 11:36:20,11,4
+8de5e85b-7dc1-4061-a8d1-0f27c71f8865,Sienna Seahorse,SMALL,20.0,In Stock,2024/01/09 11:36:20,7,2
+d7e3640d-29a0-4d10-b029-af61c016d8bd,Bashful Plum Bunny,HUGE,80.0,Out of stock,2024/01/09 11:36:23,20,8
+d7e3640d-29a0-4d10-b029-af61c016d8bd,Bashful Plum Bunny,MEDIUM,25.0,Out of stock,2024/01/09 11:36:23,12,5
+d7e3640d-29a0-4d10-b029-af61c016d8bd,Bashful Plum Bunny,SMALL,18.0,In Stock,2024/01/09 11:36:23,7,4
+809268c9-e072-444f-b305-4b2ba0a189d8,Fossilly Brontosaurus,MEDIUM,38.0,In Stock,2024/01/09 11:36:25,10,5
+809268c9-e072-444f-b305-4b2ba0a189d8,Fossilly Brontosaurus,SMALL,15.0,More on the way,2024/01/09 11:36:25,3,2
+1a3c6b1c-485f-4845-b1fd-81779ab4721d,Fossilly Triceratops,MEDIUM,38.0,In Stock,2024/01/09 11:36:27,7,4
+1a3c6b1c-485f-4845-b1fd-81779ab4721d,Fossilly Triceratops,SMALL,15.0,Out of stock,2024/01/09 11:36:27,4,2
+a1690cce-8843-4192-84e0-bc3c61d8b22a,Bashful Fudge Puppy with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:29,12,5
+38bf51a7-1b91-4010-a2e4-3bd621e66445,Bashful Fudge Puppy with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:31,12,5
+ff3b4e10-55d4-4274-94f4-2c10b484a091,Bashful Fudge Puppy with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:33,12,5
+6e6d19ad-250e-43f8-bd46-ce4782b0fb73,Snow Dragon,HUGE,120.0,In Stock,2024/01/09 11:36:36,7,26
+6e6d19ad-250e-43f8-bd46-ce4782b0fb73,Snow Dragon,MEDIUM,65.0,In Stock,2024/01/09 11:36:36,5,20
+6e6d19ad-250e-43f8-bd46-ce4782b0fb73,Snow Dragon,LITTLE,32.5,In Stock,2024/01/09 11:36:36,3,12
+40678c6a-6631-425e-b1aa-c8d6c8331a56,Blossom Blush Bunny,LARGE,43.0,Out of stock,2024/01/09 11:36:38,14,6
+40678c6a-6631-425e-b1aa-c8d6c8331a56,Blossom Blush Bunny,MEDIUM,28.0,Out of stock,2024/01/09 11:36:38,12,5
+40678c6a-6631-425e-b1aa-c8d6c8331a56,Blossom Blush Bunny,SMALL,18.0,In Stock,2024/01/09 11:36:38,7,4
+e6643a41-2c56-4a4e-8724-50ec243ff256,Blossom Blush Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:40,12,5
+e597d367-656f-4c8e-959a-e383c35a6d40,Blossom Blush Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:42,12,5
+e8483745-5833-4e43-bc0f-6ff938a706d6,Blossom Blush Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:36:44,12,5
+bfc09072-58b3-4dc3-b451-0e72fc1341c1,Little Bunny,ONE SIZE,22.0,In Stock,2024/01/09 11:36:45,7,4
+b3c4e898-562f-431c-a3b2-e9cc5a00753f,Personalised Odell Octopus Soother,ONE SIZE,31.0,In Stock,2024/01/09 11:36:47,13,13
+dc974e1f-dbeb-485a-98e2-ac1f7b8f7da3,Wiley Whale,HUGE,90.0,In Stock,2024/01/09 11:36:49,8,31
+dc974e1f-dbeb-485a-98e2-ac1f7b8f7da3,Wiley Whale,LARGE,53.0,In Stock,2024/01/09 11:36:49,7,20
+0591204f-5824-43c7-9334-a96e93120e5c,Bailey Sloth,MEDIUM,35.0,In Stock,2024/01/09 11:36:51,16,3
+0591204f-5824-43c7-9334-a96e93120e5c,Bailey Sloth,SMALL,28.0,Out of stock,2024/01/09 11:36:51,13,2
+63a74ce1-a4ae-4db7-a443-a5cb180a830a,Storm Octopus,LARGE,53.0,In Stock,2024/01/09 11:36:53,19,7
+63a74ce1-a4ae-4db7-a443-a5cb180a830a,Storm Octopus,LITTLE,30.0,Returning to stock 3-4 weeks,2024/01/09 11:36:53,9,4
+63a74ce1-a4ae-4db7-a443-a5cb180a830a,Storm Octopus,TINY,18.0,More on the way,2024/01/09 11:36:53,6,3
+8dd03835-7048-433b-a6a9-5658d5a1dc5d,Bashful Dragon,VERY BIG,275.0,In Stock,2024/01/09 11:36:56,43,18
+8dd03835-7048-433b-a6a9-5658d5a1dc5d,Bashful Dragon,REALLY BIG,125.0,More on the way,2024/01/09 11:36:56,26,12
+8dd03835-7048-433b-a6a9-5658d5a1dc5d,Bashful Dragon,HUGE,69.5,Out of stock,2024/01/09 11:36:56,20,8
+8dd03835-7048-433b-a6a9-5658d5a1dc5d,Bashful Dragon,MEDIUM,28.0,More on the way,2024/01/09 11:36:56,12,5
+8dd03835-7048-433b-a6a9-5658d5a1dc5d,Bashful Dragon,SMALL,18.0,In Stock,2024/01/09 11:36:56,7,4
+564a1f14-8054-4911-a447-d751d6e5555d,Bashful Dino,VERY BIG,275.0,In Stock,2024/01/09 11:36:58,43,18
+564a1f14-8054-4911-a447-d751d6e5555d,Bashful Dino,REALLY BIG,125.0,In Stock,2024/01/09 11:36:58,26,12
+564a1f14-8054-4911-a447-d751d6e5555d,Bashful Dino,HUGE,80.0,In Stock,2024/01/09 11:36:58,20,8
+564a1f14-8054-4911-a447-d751d6e5555d,Bashful Dino,MEDIUM,28.0,In Stock,2024/01/09 11:36:58,12,5
+564a1f14-8054-4911-a447-d751d6e5555d,Bashful Dino,SMALL,18.0,More on the way,2024/01/09 11:36:58,7,4
+d1dc14e5-47bf-4fd3-93c6-b81d9347ad0f,Bashful Turtle,MEDIUM,28.0,Returning to stock 2-3 months,2024/01/09 11:37:00,12,5
+d1dc14e5-47bf-4fd3-93c6-b81d9347ad0f,Bashful Turtle,SMALL,18.0,In Stock,2024/01/09 11:37:00,7,4
+f729e1dc-69b1-498f-8c22-218bb8dc6c3b,Elly Ballerina Book,ONE SIZE,15.0,In Stock,2024/01/09 11:37:02,12,
+a388a1c0-f280-4f78-8fbd-5ebb40c03fbd,Livi Leopard,LARGE,80.0,In Stock,2024/01/09 11:37:04,5,18
+a388a1c0-f280-4f78-8fbd-5ebb40c03fbd,Livi Leopard,LITTLE,35.0,Out of stock,2024/01/09 11:37:04,3,11
+e46aaf96-9724-4567-84bd-c3ec2fe3d75a,Bashful Navy Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:37:07,12,5
+e46aaf96-9724-4567-84bd-c3ec2fe3d75a,Bashful Navy Bunny,SMALL,18.0,In Stock,2024/01/09 11:37:07,7,4
+afa59509-81a5-48d5-a2ab-db174ed3ff17,Bashful Navy Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:37:09,12,5
+2ed45727-c61b-4e01-9b73-b36fd0f8d3c4,Bashful Navy Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:37:11,12,5
+c5999268-dc91-482c-b7f4-99874146d849,Personalised Bashful Navy Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:37:13,12,5
+1d9f6b45-4382-41f9-a02b-1e3171313682,Bashful Blush Bunny,HUGE,80.0,Out of stock,2024/01/09 11:37:15,20,8
+1d9f6b45-4382-41f9-a02b-1e3171313682,Bashful Blush Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:37:15,12,5
+1d9f6b45-4382-41f9-a02b-1e3171313682,Bashful Blush Bunny,SMALL,18.0,In Stock,2024/01/09 11:37:15,7,4
+8b5ea00b-5c22-45e8-b03f-adf38859bec1,Bashful Giraffe,MEDIUM,28.0,In Stock,2024/01/09 11:37:18,12,5
+8b5ea00b-5c22-45e8-b03f-adf38859bec1,Bashful Giraffe,SMALL,18.0,Returning to stock 2-3 months,2024/01/09 11:37:18,7,4
+71c32c54-2ba4-4a2c-ab6b-5b30b134d642,My Friend Bunny Book,ONE SIZE,15.0,In Stock,2024/01/09 11:37:19,9,9
+2965e2c2-eb47-47e5-baa2-0dd01d86d29a,Bashful Blue Bunny Blanket,ONE SIZE,45.0,In Stock,2024/01/09 11:37:21,40,30
+595a5b76-95f1-407d-afed-3d6b04c79c93,Bashful Pink Bunny Blanket,ONE SIZE,45.0,In Stock,2024/01/09 11:37:22,40,30
+2f69ce3f-783e-4761-81b4-64a877566c22,Harry Panda Cub,HUGE,120.0,Out of stock,2024/01/09 11:37:25,20,10
+2f69ce3f-783e-4761-81b4-64a877566c22,Harry Panda Cub,LARGE,65.0,More on the way,2024/01/09 11:37:25,15,8
+2f69ce3f-783e-4761-81b4-64a877566c22,Harry Panda Cub,MEDIUM,35.0,In Stock,2024/01/09 11:37:25,11,6
+2f69ce3f-783e-4761-81b4-64a877566c22,Harry Panda Cub,TINY,13.0,Out of stock,2024/01/09 11:37:25,5,3
+19ede5f3-ba0d-436c-a89b-6e49157b0f0b,Bashful Giraffe with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:37:27,12,5
+19ee4c94-1c18-4491-8689-3b24c07e765f,Bashful Giraffe with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:37:29,12,5
+0a9de080-627f-4ce3-a355-cd746bcdda96,Bashful Giraffe with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:37:31,12,5
+6f4de24e-1f0e-4ee4-bc8c-b3eb7d354009,Bashful Lamb with Personalied Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:37:35,12,5
+f295e16d-9096-4992-be21-7ca3952fe92d,Larry Lobster,MEDIUM,33.0,In Stock,2024/01/09 11:37:37,11,4
+f295e16d-9096-4992-be21-7ca3952fe92d,Larry Lobster,SMALL,25.0,Returning to stock 2-3 months,2024/01/09 11:37:37,8,3
+05e3e993-15cf-47ef-a13f-07f67c8c665d,Bashful Truffle Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:37:39,12,5
+05e3e993-15cf-47ef-a13f-07f67c8c665d,Bashful Truffle Bunny,SMALL,18.0,Out of stock,2024/01/09 11:37:39,7,4
+9c8018de-65be-4eb1-9170-257d044bd79c,Colin Chameleon,ONE SIZE,29.0,In Stock,2024/01/09 11:37:42,11,4
+c4ae7bfb-bd99-4df7-b1b4-0cb9a30466cc,Bashful Truffle Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:37:45,12,5
+627ab31e-bc7c-4c5f-8e32-cf573086d32e,Bashful Truffle Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:37:48,12,5
+4f072f8e-b395-4e06-ae17-96764586f8e1,Bashful Truffle Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:37:51,12,5
+27b00980-1a8b-4659-a8e9-78c00a387e25,Bashful Fox Cub,HUGE,80.0,In Stock,2024/01/09 11:37:53,20,8
+27b00980-1a8b-4659-a8e9-78c00a387e25,Bashful Fox Cub,MEDIUM,28.0,More on the way,2024/01/09 11:37:53,12,5
+27b00980-1a8b-4659-a8e9-78c00a387e25,Bashful Fox Cub,SMALL,16.5,Out of stock,2024/01/09 11:37:53,7,4
+90a71d62-e284-442a-9b92-d8318178fb72,Bashful Toffee Puppy,VERY BIG,275.0,In Stock,2024/01/09 11:37:56,43,18
+90a71d62-e284-442a-9b92-d8318178fb72,Bashful Toffee Puppy,REALLY BIG,125.0,In Stock,2024/01/09 11:37:56,26,12
+90a71d62-e284-442a-9b92-d8318178fb72,Bashful Toffee Puppy,MEDIUM,28.0,Returning to stock 2-3 months,2024/01/09 11:37:56,12,5
+90a71d62-e284-442a-9b92-d8318178fb72,Bashful Toffee Puppy,SMALL,18.0,Returning to stock 2-3 months,2024/01/09 11:37:56,7,4
+169bfef7-e18b-492b-9b68-e88d8d42b843,If I Were A Bunny Book,ONE SIZE,13.5,In Stock,2024/01/09 11:37:58,6,6
+1c76dc25-faa8-4eab-b223-715767497cc6,The Very Brave Lion Book,ONE SIZE,15.0,In Stock,2024/01/09 11:38:00,9,9
+7673c25f-3d36-45be-b13e-2a270e6777a8,Bashful Toffee Puppy with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:38:03,12,5
+9d8eddf2-30dc-4b8a-9fe6-761406511874,If I Were A Bunny Book and Bashful Bunny,SMALL,31.5,In Stock,2024/01/09 11:38:04,,
+3019ed8a-9d2a-45ce-b26b-57a229580e8c,The Very Brave Lion Book and Fuddlewuddle Lion,MEDIUM,45.0,In Stock,2024/01/09 11:38:07,,
+8da6774e-3394-4cf5-a7d6-a6e2a0f4d218,Bashful Twinkle Bunny,MEDIUM,28.0,More on the way,2024/01/09 11:38:10,12,5
+8da6774e-3394-4cf5-a7d6-a6e2a0f4d218,Bashful Twinkle Bunny,SMALL,18.0,In Stock,2024/01/09 11:38:10,7,4
+32a65986-c290-46e8-8ce0-434ec2e131cb,Blossom Tulip Bunny,HUGE,80.0,Out of stock,2024/01/09 11:38:16,20,8
+32a65986-c290-46e8-8ce0-434ec2e131cb,Blossom Tulip Bunny,LARGE,43.0,In Stock,2024/01/09 11:38:16,14,6
+32a65986-c290-46e8-8ce0-434ec2e131cb,Blossom Tulip Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:38:16,12,5
+32a65986-c290-46e8-8ce0-434ec2e131cb,Blossom Tulip Bunny,SMALL,18.0,In Stock,2024/01/09 11:38:16,7,4
+32a65986-c290-46e8-8ce0-434ec2e131cb,Blossom Tulip Bunny,TINY,10.0,Out of stock,2024/01/09 11:38:16,5,
+90b9692f-f46b-43d5-80af-8af4669d4e0f,Blossom Tulip Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:38:20,12,5
+12bf46e8-b181-4d9c-a7c2-ecc504b7a0a5,Blossom Tulip Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:38:22,12,5
+e6931723-9997-43bb-a2ea-5f2ec692c656,Blossom Tulip Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:38:25,12,5
+d10a2ddb-5a5f-45ff-b3d3-8034de6bbf2b,Personalised Bashful Silver Bunny Huge,HUGE,86.0,In Stock,2024/01/09 11:38:28,20,8
+4ff1654c-b146-49eb-b2cb-3b391badd868,If I Were An Elephant Book,ONE SIZE,13.5,In Stock,2024/01/09 11:38:30,6,6
+12bdd055-4759-41dc-9f03-0d945600a58b,The Magic Bunny Book,ONE SIZE,15.0,In Stock,2024/01/09 11:38:33,7,7
+53195fea-af7d-437f-9ef0-692c9162a67b,When I am Big Book,ONE SIZE,15.0,In Stock,2024/01/09 11:38:35,8,8
+a340a1d4-f556-4ec4-a3cc-b4257b032930,Bumbly Bear,HUGE,99.0,Out of stock,2024/01/09 11:38:37,23,9
+a340a1d4-f556-4ec4-a3cc-b4257b032930,Bumbly Bear,LARGE,60.0,In Stock,2024/01/09 11:38:37,20,7
+a340a1d4-f556-4ec4-a3cc-b4257b032930,Bumbly Bear,MEDIUM,43.0,In Stock,2024/01/09 11:38:37,15,6
+a340a1d4-f556-4ec4-a3cc-b4257b032930,Bumbly Bear,SMALL,28.0,More on the way,2024/01/09 11:38:37,11,4
+3fe320f7-efdb-44ae-8f25-ec4ea806581d,The Magic Bunny Book and Bashful Cottontail Bunny,MEDIUM,43.0,In Stock,2024/01/09 11:38:40,,
+a720f8a9-8f5b-478e-a6e7-3be3aa2280b0,Bashful Unicorn,MEDIUM,28.0,In Stock,2024/01/09 11:38:44,12,5
+a720f8a9-8f5b-478e-a6e7-3be3aa2280b0,Bashful Unicorn,SMALL,18.0,In Stock,2024/01/09 11:38:44,7,4
+ec1288e3-ab04-4258-89c1-e40576366c88,Fuddlewuddle Monkey,MEDIUM,30.0,In Stock,2024/01/09 11:38:47,9,5
+0e979555-9562-49a8-8d02-8402f6843018,Bashful Beige Bunny Grabber,ONE SIZE,15.0,In Stock,2024/01/09 11:38:50,7,3
+bdb2bc04-d216-4f39-acad-e655997013fd,If I Were A Rabbit Book,ONE SIZE,13.5,In Stock,2024/01/09 11:38:52,6,6
+6bf5acbc-ec6f-429d-bb8d-c593954d72fd,If I Were A Rabbit Book and Bashful Tulip Bunny,SMALL,31.5,In Stock,2024/01/09 11:38:53,,
+55603317-42d5-4011-9e9e-fab5464d78e5,Fuddlewuddle Lion,HUGE,69.0,Out of stock,2024/01/09 11:38:55,17,9
+55603317-42d5-4011-9e9e-fab5464d78e5,Fuddlewuddle Lion,LARGE,50.0,More on the way,2024/01/09 11:38:55,12,6
+55603317-42d5-4011-9e9e-fab5464d78e5,Fuddlewuddle Lion,MEDIUM,30.0,In Stock,2024/01/09 11:38:55,9,5
+465471a6-8a4d-48fb-afe7-23a75257b810,Bartholomew Bear,REALLY BIG,140.0,In Stock,2024/01/09 11:38:57,22,13
+465471a6-8a4d-48fb-afe7-23a75257b810,Bartholomew Bear,HUGE,55.0,In Stock,2024/01/09 11:38:57,19,7
+465471a6-8a4d-48fb-afe7-23a75257b810,Bartholomew Bear,LARGE,40.0,In Stock,2024/01/09 11:38:57,14,7
+465471a6-8a4d-48fb-afe7-23a75257b810,Bartholomew Bear,MEDIUM,28.0,More on the way,2024/01/09 11:38:57,11,5
+465471a6-8a4d-48fb-afe7-23a75257b810,Bartholomew Bear,TINY,18.5,In Stock,2024/01/09 11:38:57,6,3
+c4dca1f0-24df-4bcf-8e10-9da5c237c594,Bashful Silver Bunny,VERY BIG,275.0,In Stock,2024/01/09 11:40:40,43,18
+c4dca1f0-24df-4bcf-8e10-9da5c237c594,Bashful Silver Bunny,REALLY BIG,125.0,In Stock,2024/01/09 11:40:40,26,11
+c4dca1f0-24df-4bcf-8e10-9da5c237c594,Bashful Silver Bunny,HUGE,80.0,In Stock,2024/01/09 11:40:40,20,8
+c4dca1f0-24df-4bcf-8e10-9da5c237c594,Bashful Silver Bunny,LARGE,43.0,Out of stock,2024/01/09 11:40:40,14,6
+c4dca1f0-24df-4bcf-8e10-9da5c237c594,Bashful Silver Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:40:40,12,5
+c4dca1f0-24df-4bcf-8e10-9da5c237c594,Bashful Silver Bunny,SMALL,18.0,In Stock,2024/01/09 11:40:40,7,4
+215c37f3-ba4a-48ca-8508-d467278cf1a2,Bashful Silver Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:40:42,12,5
+a64893fb-791b-4779-be5e-2825c3063f66,Bashful Silver Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:40:44,12,5
+a632bdab-df91-4fd4-a77a-a86b0e366010,Bashful Silver Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:40:46,12,5
+047b12cc-1d6d-47dd-8047-19f0a1eb1a74,Personalised Bashful Silver Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:40:48,12,5
+74070130-60a2-4cc8-9435-219b5c43f8ec,Bashful Cottontail Bunny,VERY BIG,275.0,In Stock,2024/01/09 11:40:51,43,18
+74070130-60a2-4cc8-9435-219b5c43f8ec,Bashful Cottontail Bunny,REALLY BIG,125.0,In Stock,2024/01/09 11:40:51,26,12
+74070130-60a2-4cc8-9435-219b5c43f8ec,Bashful Cottontail Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:40:51,12,5
+74070130-60a2-4cc8-9435-219b5c43f8ec,Bashful Cottontail Bunny,SMALL,17.5,Out of stock,2024/01/09 11:40:51,7,4
+35a38008-9f11-4f39-9860-c4fc285f0981,Blossom Cream Bunny,LARGE,43.0,Out of stock,2024/01/09 11:40:53,14,6
+35a38008-9f11-4f39-9860-c4fc285f0981,Blossom Cream Bunny,MEDIUM,28.0,Returning to stock 3-4 weeks,2024/01/09 11:40:53,12,5
+35a38008-9f11-4f39-9860-c4fc285f0981,Blossom Cream Bunny,SMALL,18.0,In Stock,2024/01/09 11:40:53,7,4
+1c1009ba-56fb-41f6-ac5e-5335d6fd8d92,Bashful Cottontail Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:40:55,12,5
+9f534fbb-e3fb-46b5-9544-7323c044fbfe,Bashful Cottontail Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:40:57,12,5
+7fe314ca-0430-470a-a0fe-d80a5b7a4bf2,Bashful Cottontail Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:40:59,12,5
+ca572b49-81e6-4367-a01a-22885fc108f8,Personalised Bashful Cottontail Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:41:01,12,5
+0e8c92c0-82a7-4b14-80a7-d0b16aa84b51,Bashful Monkey Soother,ONE SIZE,25.0,In Stock,2024/01/09 11:41:03,13,13
+6a85654c-c5ee-4c04-9e9a-314882675428,Bashful Black & Cream Puppy,VERY BIG,275.0,In Stock,2024/01/09 11:41:05,43,18
+6a85654c-c5ee-4c04-9e9a-314882675428,Bashful Black & Cream Puppy,MEDIUM,28.0,In Stock,2024/01/09 11:41:05,12,5
+6a85654c-c5ee-4c04-9e9a-314882675428,Bashful Black & Cream Puppy,SMALL,18.0,In Stock,2024/01/09 11:41:05,7,4
+8dc4f6f6-a28c-4f9f-ab1c-a877b879449f,Bashful Blue Bunny,HUGE,67.5,Out of stock,2024/01/09 11:41:08,20,8
+8dc4f6f6-a28c-4f9f-ab1c-a877b879449f,Bashful Blue Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:41:08,12,5
+8dc4f6f6-a28c-4f9f-ab1c-a877b879449f,Bashful Blue Bunny,TINY,10.0,Out of stock,2024/01/09 11:41:08,5,2
+b1cdeb57-12b9-4641-b804-13d25cf840ca,Bashful Pink Bunny,HUGE,67.5,Out of stock,2024/01/09 11:41:11,20,8
+b1cdeb57-12b9-4641-b804-13d25cf840ca,Bashful Pink Bunny,LARGE,43.0,Out of stock,2024/01/09 11:41:11,14,6
+b1cdeb57-12b9-4641-b804-13d25cf840ca,Bashful Pink Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:41:11,12,5
+b1cdeb57-12b9-4641-b804-13d25cf840ca,Bashful Pink Bunny,TINY,10.0,Out of stock,2024/01/09 11:41:11,5,2
+cf0f3e6f-d02a-400c-b551-1cdefd6dc862,Fuddlewuddle Puppy,MEDIUM,30.0,In Stock,2024/01/09 11:41:13,9,5
+02ebf4af-d41e-426c-8787-c34228abe7c1,Bashful Black & Cream Puppy with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:41:14,12,5
+918a4f21-a48c-4f24-8fdc-8aa7406aa793,Bashful Blue Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:41:16,12,5
+cdb230c1-6957-4580-96ee-b8b6512e7932,Bashful Pink Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:41:18,12,5
+ab1b6c93-fddf-4ab6-9e81-c02c96ed6132,Bashful Black & Cream Puppy with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:41:20,12,5
+001a4f77-4df5-4a6e-8eee-001c5686cdfe,Bashful Blue Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:41:23,12,5
+645f2611-53fa-4bfd-a073-3fb8ead36f10,Bashful Pink Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:41:25,12,5
+b4390dca-f560-4b18-a500-d5dfd9bd7631,Bashful Black & Cream Puppy with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:41:28,12,5
+fb022921-2da7-4340-9bcf-22e9f24a0a8a,Bashful Blue Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:41:31,12,5
+20b7dc31-cdf2-4ba9-a34d-35dc556239da,Bashful Pink Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:41:33,12,5
+7bb158be-35f0-4a40-9d99-030d7da22869,Personalised Bashful Blue Bunny Medium,MEDIUM,34.0,In Stock,2024/01/09 11:41:35,12,5
+6138e460-db10-432a-bbff-ae383fb285ba,Bashful Pink Bunny Rattle,SMALL,15.0,In Stock,2024/01/09 11:41:38,7,4
+bed6822f-1c02-47a9-a1a9-86ab531b167b,Bashful Pink Bunny Soother,ONE SIZE,25.0,In Stock,2024/01/09 11:41:42,13,13
+7182fc76-145c-4e7c-8045-b1aded5870de,Personalised Bashful Cream Bunny Huge,HUGE,86.0,In Stock,2024/01/09 11:41:45,20,8
+46941ebe-57c9-4e98-88a4-8a5d9a8351c8,Edward Bear,MEDIUM,30.0,In Stock,2024/01/09 11:42:20,13,6
+46941ebe-57c9-4e98-88a4-8a5d9a8351c8,Edward Bear,SMALL,23.0,Out of stock,2024/01/09 11:42:20,10,5
+0b1dc95b-46b4-43cb-be33-f9f79f99a595,Personalised Bashful Beige Bunny Huge,HUGE,86.0,In Stock,2024/01/09 11:42:22,20,8
+43585e90-8fb4-4120-9d92-5e689632335a,Bashful Beige Bunny,VERY BIG,275.0,In Stock,2024/01/09 11:42:25,43,18
+43585e90-8fb4-4120-9d92-5e689632335a,Bashful Beige Bunny,REALLY BIG,125.0,In Stock,2024/01/09 11:42:25,26,12
+43585e90-8fb4-4120-9d92-5e689632335a,Bashful Beige Bunny,HUGE,80.0,In Stock,2024/01/09 11:42:25,20,8
+43585e90-8fb4-4120-9d92-5e689632335a,Bashful Beige Bunny,LARGE,43.0,In Stock,2024/01/09 11:42:25,14,6
+43585e90-8fb4-4120-9d92-5e689632335a,Bashful Beige Bunny,MEDIUM,28.0,Out of stock,2024/01/09 11:42:25,12,5
+43585e90-8fb4-4120-9d92-5e689632335a,Bashful Beige Bunny,SMALL,18.0,In Stock,2024/01/09 11:42:25,7,4
+43585e90-8fb4-4120-9d92-5e689632335a,Bashful Beige Bunny,TINY,14.0,In Stock,2024/01/09 11:42:25,5,2
+d0419712-f475-4b19-8bb7-6519c3ca5605,Bashful Cream Bunny,VERY BIG,275.0,Returning to stock 2-3 months,2024/01/09 11:42:28,43,18
+d0419712-f475-4b19-8bb7-6519c3ca5605,Bashful Cream Bunny,REALLY BIG,125.0,In Stock,2024/01/09 11:42:28,26,11
+d0419712-f475-4b19-8bb7-6519c3ca5605,Bashful Cream Bunny,HUGE,80.0,In Stock,2024/01/09 11:42:28,20,8
+d0419712-f475-4b19-8bb7-6519c3ca5605,Bashful Cream Bunny,LARGE,43.0,In Stock,2024/01/09 11:42:28,14,6
+d0419712-f475-4b19-8bb7-6519c3ca5605,Bashful Cream Bunny,MEDIUM,28.0,In Stock,2024/01/09 11:42:28,12,5
+d0419712-f475-4b19-8bb7-6519c3ca5605,Bashful Cream Bunny,SMALL,18.0,In Stock,2024/01/09 11:42:28,7,4
+d0419712-f475-4b19-8bb7-6519c3ca5605,Bashful Cream Bunny,TINY,14.0,Out of stock,2024/01/09 11:42:28,5,2
+b9db68d3-6e89-41ac-b864-2b065b67dc65,Bashful Cream Bunny with Personalised Cream Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:42:30,12,5
+5183041a-4d59-4ad6-a179-08dc2715b3d1,Bashful Cream Bunny with Personalised Navy Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:42:32,12,5
+968ae14b-95d0-4630-95ee-af4974907474,Bashful Cream Bunny with Personalised Red Jumper,MEDIUM,38.0,In Stock,2024/01/09 11:42:34,12,5
+7cc86de1-c3a5-4552-a460-d537358882cb,Personalised Rose Dragon Huge,HUGE,126.0,In Stock,2024/01/09 11:42:36,7,26
+0e1b8d33-4ca1-4968-965e-3b460b132fde,Personalised Bashful Pink Bunny Soother,ONE SIZE,31.0,In Stock,2024/01/09 11:42:38,13,13
+eb577fa4-af68-403b-b328-e48bb218b8fb,Rory Le Courageux Petit Lion & Fuddlewuddle Lion,MEDIUM,45.0,In Stock,2024/01/09 11:42:40,,
+5046c4ac-7f65-4022-a74f-4bc66a7be4f5,All Kinds of Cats Book and Jellycat Jack,MEDIUM,60.0,In Stock,2024/01/09 11:42:42,,
+8f23d385-6b01-4586-ab31-1578318cf1f3,Lapin Timide Et Ses Petites Aventures & Bashful Beige Bunny,MEDIUM,43.0,In Stock,2024/01/09 11:42:44,,
+e2ad5547-daea-48e1-b91d-f384b55ad5b7,Lottie Fairy Bunny Book and Lottie Bunny Fairy,ONE SIZE,47.5,In Stock,2024/01/09 11:42:46,,
+021f4fd5-6851-4fde-97b4-a2f3fc948c14,Lapin Timide Veille Sur Tes Nuits & Bashful Cottontail Bunny,MEDIUM,43.0,In Stock,2024/01/09 11:42:48,,
+340c0320-dbc6-44d1-adb3-0329a92aaa76,Merry Mouse Book and Merry Mouse,ONE SIZE,42.5,In Stock,2024/01/09 11:42:50,,
+3195143f-106a-4ff1-b3f3-db836f28c23f,Who Can I Find Book and Little Bunny,ONE SIZE,32.5,In Stock,2024/01/09 11:42:52,,
+4528857f-9db6-4daa-a4e1-409136e2d7f6,Lapin Timide Veut Grandir & Bashful Cream Bunny,MEDIUM,43.0,In Stock,2024/01/09 11:42:53,,
+817a4bc8-25d2-437c-89c9-ec08bb701935,Archie Dinosaur,ONE SIZE,35.0,More on the way,2024/01/09 11:42:55,9,6
+580e7e37-0b68-4359-865b-5260cbb0858f,Bashful Grey Kitty,MEDIUM,28.0,More on the way,2024/01/09 11:42:57,12,5
+ad0d5451-c03f-4ad8-a6a8-955e210cac35,If I Were a Bunny Board Book,ONE SIZE,13.5,Returning to stock 2-3 months,2024/01/09 11:42:59,6,6
+0c868ec4-3c61-4cbf-bef8-07bddeebdb5d,Blossom Beige Bunny Bag Charm,ONE SIZE,23.0,More on the way,2024/01/09 11:43:00,7,2
+8174848f-89c6-4985-a348-3f54ff68d447,Blossom Blush Bunny Bag Charm,ONE SIZE,23.0,More on the way,2024/01/09 11:43:03,7,2
+0295bb73-f05f-498a-88f4-a4067d73231e,Blossom Jasmine Bunny Bag Charm,ONE SIZE,23.0,More on the way,2024/01/09 11:43:05,7,2
+e11a95f7-59e5-479b-acb2-fbb72c82141b,Backpack Panda,ONE SIZE,30.0,More on the way,2024/01/09 11:43:06,9,4
+216b1471-6090-40c9-9833-b1e1d0728060,Caboodle Puppy,ONE SIZE,20.0,More on the way,2024/01/09 11:43:08,4,4
+f3609852-e2b7-4996-9193-499a95b37961,Carissa Persian Cat,ONE SIZE,45.0,Returning to stock 2-3 months,2024/01/09 11:43:10,10,10
+b2b75380-4731-4b5d-ac54-68146783c1f3,Clyde Capybara,ONE SIZE,43.0,Out of stock,2024/01/09 11:43:12,8,9
+93da66fc-fce9-4917-b4df-09eb87bd89e7,Dara Giraffe,ONE SIZE,75.0,More on the way,2024/01/09 11:43:14,22,7
+850e7e93-e6ed-49ea-8876-5e4b41a7782b,Dario Donkey,ONE SIZE,60.0,More on the way,2024/01/09 11:43:16,14,7
+c0ac774d-3692-4168-8ca1-e445195bc4c3,Fuddlewuddle Ginger Cat,MEDIUM,30.0,More on the way,2024/01/09 11:43:18,9,5
+ca898dae-9799-4915-877e-16f7e8b02271,Gordy Guinea Pig,ONE SIZE,30.0,More on the way,2024/01/09 11:43:19,8,6
+99f1ad8e-cd23-44be-817b-e41f6b2e5874,Huddles Kangaroo,ONE SIZE,45.0,Returning to stock 2-3 months,2024/01/09 11:43:21,10,6
+8d893bf1-2c3b-42de-b11d-75d269d7bd45,Iris Siamese Cat,ONE SIZE,33.0,More on the way,2024/01/09 11:43:22,11,5
+ae46453d-5c51-439b-8c76-6caf6713b981,Little Goat,ONE SIZE,22.0,More on the way,2024/01/09 11:43:24,7,4
+eb0962d7-1aba-4a7c-90be-57d20678f23f,Little Pig Bag,ONE SIZE,40.0,More on the way,2024/01/09 11:43:26,7,7
+3c9cc07c-80cd-43d3-b6de-4cf7f73c106e,Little Pup Bag Charm,ONE SIZE,25.0,More on the way,2024/01/09 11:43:27,7,2
+381187b8-f2a5-4dbc-884b-010e5beeb3ad,Randall Basset Hound,ONE SIZE,35.0,More on the way,2024/01/09 11:43:29,9,13
+e6d7f0c2-1915-4b03-9243-4e4d1b1c136d,Richie Dromedary,ONE SIZE,60.0,More on the way,2024/01/09 11:43:31,11,17
+139f31f6-3d60-4b6f-8794-6ab10f529630,Tilly Golden Retriever,ONE SIZE,35.0,More on the way,2024/01/09 11:43:32,11,6
+cbb84225-bfed-41fd-b5de-765e1af05d93,Wanderlust Elly,ONE SIZE,100.0,More on the way,2024/01/09 11:43:34,7,14
+df0e67f7-fdca-49e4-81a0-4b183779d1d6,Yummy Puppy,ONE SIZE,20.0,Returning to stock 2-3 months,2024/01/09 11:43:36,6,3
+bf6b41b9-c881-4a10-8b0b-5794fc783ed4,Festival Dragon,ONE SIZE,55.0,Returning to stock next week,2024/01/09 11:43:38,4,17
+113a2cd6-52de-4797-8f6e-8f3b1226b4f3,Dainty Dessert Bunny Cupcake,ONE SIZE,28.0,Returning to stock 2-3 months,2024/01/09 11:43:40,6,4
+a2e9c7d6-5985-40e2-9241-ce074d778ca8,Fluffy Duck,ONE SIZE,15.0,Returning to stock 2-3 months,2024/01/09 11:43:41,4,2
+d41e1045-c1a3-4c1a-8617-1a788c2accbe,Finnegan Frog,ONE SIZE,20.0,More on the way,2024/01/09 11:43:43,9,3
+62fe802d-453f-4061-837e-4adb9ce3276f,Honeyhome Bee,ONE SIZE,35.0,More on the way,2024/01/09 11:43:45,7,7
+2d09d546-bf57-4ca4-952d-f8313202b329,Bartholomew Bear Bag,ONE SIZE,38.0,Returning to stock 3-4 weeks,2024/01/09 11:43:46,6,7
+ba39220f-3ad8-49d1-a256-4dc30c415ee3,Bashful Bunny Cream Bag Charm,ONE SIZE,19.0,Out of stock,2024/01/09 11:43:48,7,2
+15028cc5-e20c-44a0-a22e-899eb5147980,Bashful Bunny Inky Bag Charm,ONE SIZE,19.0,More on the way,2024/01/09 11:43:50,7,2
+d7be4e03-47da-431c-8f85-bfec6777da8c,Kitten Tails Activity Book,ONE SIZE,18.5,More on the way,2024/01/09 11:43:53,9,5
+a3346b67-edd7-4569-b14b-2a1547f43a32,Backpack Puppy,ONE SIZE,30.0,More on the way,2024/01/09 11:43:55,9,4
+5f0c8eec-8eca-4e5b-ae22-08a526e815d7,Cauldron Cuties,ONE SIZE,35.0,More on the way,2024/01/09 11:43:57,6,5
+18672930-56c6-470a-a99f-e722a98b60b5,Coquette Cutie Cat,ONE SIZE,32.5,More on the way,2024/01/09 11:43:58,10,2
+9c381d29-f4be-4826-9df0-84cc739a21c0,Floofie St Bernard,ONE SIZE,80.0,More on the way,2024/01/09 11:44:00,7,16
+27ed847e-af97-4be1-9bb2-e40a039fac64,Freya Pony,ONE SIZE,65.0,More on the way,2024/01/09 11:44:02,13,13
+6310d350-06a7-4b23-8ede-4c47f4251bb5,Georgiana Poodle,ONE SIZE,33.0,More on the way,2024/01/09 11:44:03,9,5
+08cd0eda-53a9-4dc0-831a-a6e80544e7e6,Jackson Husky,ONE SIZE,35.0,More on the way,2024/01/09 11:44:05,10,6
+1829d818-2f7c-406a-ad16-571ca58dc29b,Kitten Caboodle Grey,ONE SIZE,20.0,Returning to stock 3-4 weeks,2024/01/09 11:44:07,4,4
+388b7376-c647-48ca-a123-a9b216b16be8,Little Snake,ONE SIZE,22.0,Returning to stock 2-3 months,2024/01/09 11:44:08,6,8
+3f56c7f6-3d5f-4163-af6e-12aea504153d,Munro Scottie Dog Bag Charm,ONE SIZE,23.0,Returning to stock 2-3 months,2024/01/09 11:44:10,4,2
+6d9a1311-6afe-4744-94d1-2384192a0dee,Munro Scottie Dog Bag,ONE SIZE,40.0,Out of stock,2024/01/09 11:44:12,9,5
+d3efcf4a-0536-4108-bbb2-a044b9c9850d,Myrtle Hippopotamus,ONE SIZE,45.0,More on the way,2024/01/09 11:44:14,15,6
+f7ca9283-ca8b-40bb-9468-4bcea5b2c0a7,Nessie Nessa,ONE SIZE,30.0,Out of stock,2024/01/09 11:44:15,9,14
+7de54314-4084-4b30-8a24-8fa629870769,Ooky Bat,ONE SIZE,20.0,More on the way,2024/01/09 11:44:17,6,2
+3f1b2845-fa8a-4628-9239-d69aa44051d4,Otto Sausage Dog Bag,ONE SIZE,40.0,Returning to stock 2-3 months,2024/01/09 11:44:19,6,9
+667de7c7-b8ef-4812-b7c1-0fed6da9cf82,Timmy Turtle,ONE SIZE,40.0,More on the way,2024/01/09 11:44:21,11,8
+5c1f15c8-1a62-4dbb-a0fd-029301ebabc6,Yummy Bear,ONE SIZE,20.0,Returning to stock 2-3 months,2024/01/09 11:44:23,6,3
+694e1c4a-7245-447f-bf71-3926a79da201,Birdling Seagull,ONE SIZE,17.0,More on the way,2024/01/09 11:44:24,4,3
+80a60889-fc66-4d15-946c-5bac08128c33,Bartholomew Bear Bedtime,MEDIUM,30.0,More on the way,2024/01/09 11:44:26,10,5
+425debea-563b-4de5-bc95-9ba11fc9885f,Little Reindeer,ONE SIZE,20.0,More on the way,2024/01/09 11:44:28,7,4
+a1251263-23ef-4883-8ffd-a8269da218dd,Merry Mouse Sleighing,ONE SIZE,42.5,Out of stock,2024/01/09 11:44:30,7,4
+845d5fcf-5049-4a8b-af81-ac44a0f4aeee,Winter Warmer Munro Scottie Dog,ONE SIZE,32.5,Out of stock,2024/01/09 11:44:32,8,5
+d802d858-2f10-4e2c-8e90-52a14b072b8c,Nesting Penguins,ONE SIZE,35.0,More on the way,2024/01/09 11:44:33,4,5
+b3aeceaa-7827-47d0-9614-e58e0face607,Ronnie Rockhopper Penguin,ONE SIZE,25.0,More on the way,2024/01/09 11:44:35,10,4
+3a032210-5a29-4058-a24d-36763336a7db,Wee Reindeer,ONE SIZE,17.5,Out of stock,2024/01/09 11:44:37,5,3
+b2a70e36-b9a7-4b88-acb7-41b78ab3cd36,Blowzy Belle Cat,ONE SIZE,37.5,More on the way,2024/01/09 11:44:38,17,4
+b4149c3d-f20b-4d02-8534-44eb8a78c361,Fuzzkin Lamb,ONE SIZE,25.0,More on the way,2024/01/09 11:44:40,9,4
+52b4162d-f275-443e-9c7b-cf07330a7440,Herbie Highland Cow,ONE SIZE,35.0,More on the way,2024/01/09 11:44:41,10,6
+c8951dd8-8ecb-4270-b023-81715a426314,Little Monkey,ONE SIZE,22.0,More on the way,2024/01/09 11:44:43,7,4
+b250f249-9750-4533-b585-b16b38b77eb2,Little Mouse,ONE SIZE,22.0,More on the way,2024/01/09 11:44:45,7,4
+17c261f0-0dd5-4e85-995b-94de437a223e,Personalised Bashful Luxe Bunny Rosa Huge,HUGE,91.0,More on the way,2024/01/09 11:44:47,20,8
+9e4888e9-f48c-4dbb-bb15-a4bbcceb693c,Sweetsicle Elephant,ONE SIZE,20.0,More on the way,2024/01/09 11:44:48,6,3
+d58cfcf8-39ec-4805-a3d0-41f1edec68d8,Wavelly Whale Blue,ONE SIZE,15.0,More on the way,2024/01/09 11:44:50,2,6
+35c62962-dcb6-4b32-9904-3472f44c717e,Wavelly Whale Grey,ONE SIZE,15.0,Returning to stock 2-3 months,2024/01/09 11:44:52,3,5
+4c8dca95-4beb-49f6-8bf5-e2cbcb4736c9,Lottie The Ballet Bunny Book,ONE SIZE,15.0,Returning to stock 3-4 weeks,2024/01/09 11:44:54,7,7
+38a38545-a7ab-4f14-bc34-cdbaccf4752f,Sandy Snail,ONE SIZE,27.0,Returning to stock 2-3 months,2024/01/09 11:44:55,5,3
+fbd04a80-21e1-4652-8129-603cbaf95a1b,Yummy Duckling,ONE SIZE,20.0,More on the way,2024/01/09 11:44:57,6,4
+4c1a8bbc-0d4e-4b4c-aa59-b2025928692a,Yummy Lamb,ONE SIZE,20.0,More on the way,2024/01/09 11:44:59,6,4
+7e534609-00e3-41bd-86d4-70065734847a,Amore Dog,ONE SIZE,40.0,More on the way,2024/01/09 11:45:00,10,7
+69bdbf0b-b65d-4bef-8ccc-9efc35ca5381,Ambrosie Squirrel,ONE SIZE,35.0,More on the way,2024/01/09 11:45:02,9,4
+114fc9a9-fe11-4de0-8cd4-bd14d1fb0df5,Archibald Elephant,MEDIUM,28.0,Returning to stock 2-3 months,2024/01/09 11:45:04,10,5
+8d1e97ca-18d5-4fa0-af8f-85e2ec92cfac,Barnabus Pig,HUGE,55.0,Out of stock,2024/01/09 11:45:07,17,7
+8d1e97ca-18d5-4fa0-af8f-85e2ec92cfac,Barnabus Pig,MEDIUM,28.0,Returning to stock 2-3 months,2024/01/09 11:45:07,10,5
+c8eb6b77-57a7-4f42-9358-6d428fba1acd,Bashful Koala,MEDIUM,28.0,More on the way,2024/01/09 11:45:08,11,5
+573d8638-1c60-433c-bdb0-342bd2b515ec,Backpack Unicorn,ONE SIZE,30.0,More on the way,2024/01/09 11:45:10,9,4
+4812eaf0-7639-4589-8e89-4230b9cf8861,Floofie Sheepdog,ONE SIZE,80.0,More on the way,2024/01/09 11:45:12,10,16
+33c3b1f4-22a3-4ce3-ba92-8b2a905c7575,Magnus Manatee,ONE SIZE,50.0,More on the way,2024/01/09 11:45:14,6,14
+96d31c56-d5e4-4a5c-aa27-48f38f3868c2,Napping Nipper Cat,ONE SIZE,25.0,More on the way,2024/01/09 11:45:16,4,6
+e405edac-190a-45db-8aab-066db6f973f9,Hibernating Penguin,ONE SIZE,22.0,More on the way,2024/01/09 11:45:18,5,5
+d4ecdf51-317b-4252-a579-96b863f76778,Little Penguin,ONE SIZE,22.0,More on the way,2024/01/09 11:45:20,7,3
+3926ce62-9e68-4998-b8ec-cf33ce7b13ad,Merry Mouse Candy Cane,ONE SIZE,27.5,More on the way,2024/01/09 11:45:23,7,4
+27a83aa9-074a-4ccc-8843-e42616f2b5a8,Mitzi Reindeer,LARGE,50.0,More on the way,2024/01/09 11:45:25,14,4
+27a83aa9-074a-4ccc-8843-e42616f2b5a8,Mitzi Reindeer,MEDIUM,32.5,More on the way,2024/01/09 11:45:25,10,3
+59fbb612-0fd6-44d2-bb38-76abdc54fb3b,Bashful Black Kitten,MEDIUM,28.0,More on the way,2024/01/09 11:45:26,12,5
+465b4817-a53f-490b-b65c-4bfc12f05903,Bashful Snow Tiger,REALLY BIG,125.0,Out of stock,2024/01/09 11:45:29,26,12
+465b4817-a53f-490b-b65c-4bfc12f05903,Bashful Snow Tiger,HUGE,80.0,Out of stock,2024/01/09 11:45:29,20,8
+465b4817-a53f-490b-b65c-4bfc12f05903,Bashful Snow Tiger,MEDIUM,28.0,Returning to stock 3-4 weeks,2024/01/09 11:45:29,12,5
+42c50542-2252-47c7-a78b-4932b2348dd9,Birdling Blue Jay,ONE SIZE,17.0,More on the way,2024/01/09 11:45:31,4,3
+12ea3b00-906a-4584-b01b-3524a4ea3d70,Birdling Mallard,ONE SIZE,17.0,More on the way,2024/01/09 11:45:33,4,3
+2b28c4fe-c899-4ad5-9065-a70ce6bbf7ff,Birdling Pigeon,ONE SIZE,17.0,More on the way,2024/01/09 11:45:34,4,3
+0d8ceb1e-f2fc-4e0c-b5e0-622264ca927d,My Dad and Me Book,ONE SIZE,15.0,Returning to stock 3-4 weeks,2024/01/09 11:45:36,8,8
+d7e689d6-6e02-45ee-80ad-2912b62d723b,Backpack Elephant,ONE SIZE,30.0,Returning to stock 2-3 months,2024/01/09 11:45:38,9,4
+8f6e6ee1-6592-4850-9c6d-d972a35e27c7,Bruce Bush Baby,ONE SIZE,27.5,More on the way,2024/01/09 11:45:40,7,5
+194497c2-e4e2-461b-bef4-14028c2cc847,Curvie Sheep Dog,ONE SIZE,33.0,More on the way,2024/01/09 11:45:43,9,6
+d61dd1b9-be4e-4f4f-a4a7-cf1b01547922,Huggady Panda,LARGE,67.5,Out of stock,2024/01/09 11:45:45,13,7
+d61dd1b9-be4e-4f4f-a4a7-cf1b01547922,Huggady Panda,MEDIUM,30.0,More on the way,2024/01/09 11:45:45,9,5
+0dd30376-fcd4-4206-89cc-dd9f137aab74,Bashful Snow Tiger with Personalised Cream Jumper,MEDIUM,38.0,Returning to stock 3-4 weeks,2024/01/09 11:45:47,12,5
+a1ccd900-e36c-40a6-baaf-c8340aab1d9a,Bashful Snow Tiger with Personalised Navy Jumper,MEDIUM,38.0,Returning to stock 3-4 weeks,2024/01/09 11:45:49,12,5
+a08fc2f2-f8ba-4e99-949a-2da57a4974a9,Bashful Snow Tiger with Personalised Red Jumper,MEDIUM,38.0,Returning to stock 3-4 weeks,2024/01/09 11:45:52,12,5
+20462396-f55f-4b7a-9c1d-7e74c7d5d058,Kitten Caboodle Ginger,ONE SIZE,20.0,More on the way,2024/01/09 11:45:53,4,4
+b6748cd4-45f5-41b1-8534-1049de31a778,Little Frog,ONE SIZE,22.0,More on the way,2024/01/09 11:45:55,7,4
+6606af3a-f1a5-4739-abcb-63598585359c,Munro Scottie Dog,HUGE,75.0,Out of stock,2024/01/09 11:45:57,17,9
+6606af3a-f1a5-4739-abcb-63598585359c,Munro Scottie Dog,MEDIUM,30.0,Returning to stock 2-3 months,2024/01/09 11:45:57,9,5
+cf567c61-a782-4818-b062-21bfdc5371f9,Pacey Pufferfish,ONE SIZE,33.0,Returning to stock 2-3 months,2024/01/09 11:45:59,6,9
+13f62a6f-22ac-41ab-a473-9941178f9676,Rock-a-Bye Bunny,ONE SIZE,30.0,More on the way,2024/01/09 11:46:01,7,4
+0c147364-201a-462b-a83f-4e6198846d31,Sleepee Panda,MEDIUM,25.0,Out of stock,2024/01/09 11:46:03,14,6
+0c147364-201a-462b-a83f-4e6198846d31,Sleepee Panda,SMALL,18.0,Out of stock,2024/01/09 11:46:03,9,4
+624d9b94-3838-45f0-b23e-058a71c5d4f1,Tommy Turtle,ONE SIZE,27.5,More on the way,2024/01/09 11:46:05,12,6
+aa1a9876-13c7-459b-aea3-a25d654cfb44,Tully Turtle,ONE SIZE,33.0,Returning to stock 3-4 weeks,2024/01/09 11:46:07,4,10
+bdae857f-69f0-4a95-a167-d98d3ba75371,Willow Owl,ONE SIZE,23.5,More on the way,2024/01/09 11:46:09,8,4
+9e8209a7-1518-4d9f-a996-0d454ed9f84c,Bashful Fudge Bunny with Personalised Cream Jumper,MEDIUM,38.0,More on the way,2024/01/09 11:46:11,12,5
+e5380d5d-ae8e-4262-8369-724f773871a9,Bashful Fudge Bunny with Personalised Navy Jumper,MEDIUM,38.0,More on the way,2024/01/09 11:46:13,12,5
+2c416f3c-98df-4d95-bead-9efc697c2c7d,Bashful Fudge Bunny with Personalised Red Jumper,MEDIUM,38.0,More on the way,2024/01/09 11:46:15,12,5
+b526beb5-402b-4f29-8d04-ecdef4dabe54,Personalised Bashful Fudge Bunny Medium,MEDIUM,34.0,More on the way,2024/01/09 11:46:17,12,5
+05253ae5-a584-4354-a244-418eef69b1e1,Tumblie Duck,ONE SIZE,30.0,Returning to stock 3-4 weeks,2024/01/09 11:46:19,5,14
+0dc9c1af-6ab0-4c76-91e7-6e3b49c97591,Yummy Bunny Mint,ONE SIZE,20.0,More on the way,2024/01/09 11:46:21,5,4
+294b2b3e-1c11-4955-a31a-8d3c0cb11b9a,Pet Tails Book,ONE SIZE,18.5,More on the way,2024/01/09 11:46:23,8,5
+91200ad2-00e0-401d-970f-17a8489678e8,Bonbon Monkey,ONE SIZE,16.0,More on the way,2024/01/09 11:46:25,9,4
+5382e1d9-0ae5-4d52-a2e5-afdc62e07387,Backpack Bunny,ONE SIZE,30.0,More on the way,2024/01/09 11:46:27,9,4
+244f5879-94e5-4b2b-ac5b-0e2dfd9d4c66,Backpack Dino,ONE SIZE,30.0,More on the way,2024/01/09 11:46:29,9,4
+a567dcfd-008f-4d27-b255-8126e5581682,Cosie Bunny,ONE SIZE,22.5,More on the way,2024/01/09 11:46:31,7,4
+ae6a693b-f5ac-4006-af0c-6bb567547b9c,Kitten Caboodle Cream,ONE SIZE,20.0,More on the way,2024/01/09 11:46:33,4,4
+90483950-b027-4abc-aaaf-bddcf993fb18,Little Panda,ONE SIZE,22.0,More on the way,2024/01/09 11:46:34,7,4
+52bbfc96-83ba-4135-8491-c375d13abe7a,Lottie Bunny Ballet,ONE SIZE,30.0,More on the way,2024/01/09 11:46:36,11,4
+49323ee0-d47f-407f-bb9c-98b7817a3192,Personalised Sage Dragon Huge,HUGE,126.0,More on the way,2024/01/09 11:46:38,7,26
+3c8035a2-6bbb-41c2-b05e-e14e62826e28,Smudge Bear,MEDIUM,35.0,More on the way,2024/01/09 11:46:40,9,6
+5806874e-1d32-4136-82e5-5662966fa801,Sensational Seafood Crab,ONE SIZE,12.5,More on the way,2024/01/09 11:46:42,4,4
+767e87df-7720-4775-80cc-26a0844ab6d1,Sensational Seafood Lobster,ONE SIZE,12.5,More on the way,2024/01/09 11:46:44,6,4
+b93fa878-a213-4ddf-a932-bf41427ca807,Bashful Dusky Blue Bunny,MEDIUM,28.0,More on the way,2024/01/09 11:46:47,12,5
+b93fa878-a213-4ddf-a932-bf41427ca807,Bashful Dusky Blue Bunny,SMALL,18.0,Out of stock,2024/01/09 11:46:47,7,4
+33799d95-cfcd-4355-b8aa-07cbd43aaa86,Bashful Lion,MEDIUM,28.0,Returning to stock 2-3 months,2024/01/09 11:46:49,12,5
+33799d95-cfcd-4355-b8aa-07cbd43aaa86,Bashful Lion,SMALL,18.0,More on the way,2024/01/09 11:46:49,7,4
+658b7c68-daec-453a-b5f7-dcd8985a5a03,Bashful Blush Bunny Bag Charm,ONE SIZE,19.0,More on the way,2024/01/09 11:46:51,7,1
+b684b73e-71d6-4386-9b9e-0c810b6d7aec,Birdling Blue Tit,ONE SIZE,17.0,More on the way,2024/01/09 11:46:52,4,3
+4df66c76-c810-4229-bb20-f6d324cbcffe,Blossom Bea Beige Bunny,MEDIUM,28.0,Returning to stock 2-3 months,2024/01/09 11:46:54,12,5
+4df66c76-c810-4229-bb20-f6d324cbcffe,Blossom Bea Beige Bunny,SMALL,18.0,Returning to stock 2-3 months,2024/01/09 11:46:54,7,4
+07dd0b49-359b-4fc8-9ddb-bd1fcdf2a925,Little Pup,ONE SIZE,22.0,More on the way,2024/01/09 11:46:56,7,4
+d28963c0-b900-4c63-9e52-9c9284612847,Cordy Roy Lion Activity Toy,ONE SIZE,30.0,Out of stock,2024/01/09 11:46:58,11,4
+d77c8f0a-4037-4307-a82f-dd620541401c,Sensational Seafood Sardine,ONE SIZE,12.0,More on the way,2024/01/09 11:47:00,1,6
+3fb327c3-23cb-4d09-b19d-aaa6b4837879,Yummy Tulip Pink Bunny,ONE SIZE,20.0,More on the way,2024/01/09 11:47:02,5,4
+a0013494-8b06-4925-9dac-0d3939145284,Bashful Fudge Puppy,MEDIUM,28.0,More on the way,2024/01/09 11:47:04,12,5
+a0013494-8b06-4925-9dac-0d3939145284,Bashful Fudge Puppy,SMALL,16.5,Out of stock,2024/01/09 11:47:04,7,4
+0ac238f0-2f62-49cb-b084-7a661335c903,Callie Cow,SMALL,25.0,Returning to stock 2-3 months,2024/01/09 11:47:06,8,4
+03ee7659-f153-44d2-a729-9bead2829c7d,Curvie Elephant,ONE SIZE,33.0,More on the way,2024/01/09 11:47:07,9,6
+04db07bd-4880-45dd-ace5-bf6e11cd1004,Curvie Pig,ONE SIZE,33.0,More on the way,2024/01/09 11:47:09,9,6
+376e9337-55e2-4619-89b1-bc70f1f6ae56,Fuddlewuddle Cat,MEDIUM,30.0,More on the way,2024/01/09 11:47:11,9,4
+043e8b7f-c61c-4aa5-8935-c9dfe35d8bab,Little Bear,ONE SIZE,22.0,More on the way,2024/01/09 11:47:13,7,4
+5bb8974e-fb21-4067-a777-6ca9cb5e51cc,Crumble Fox,ONE SIZE,25.0,Out of stock,2024/01/09 11:47:14,11,5
+46eca1e1-9c83-438c-940a-ced45c8d87d6,Fuddlewuddle Dragon,HUGE,69.0,Out of stock,2024/01/09 11:47:17,17,9
+46eca1e1-9c83-438c-940a-ced45c8d87d6,Fuddlewuddle Dragon,MEDIUM,30.0,More on the way,2024/01/09 11:47:17,9,4
+4bf66740-09f6-477a-b021-ce82d4d44cf8,Little Lamb,ONE SIZE,22.0,More on the way,2024/01/09 11:47:18,7,4
+33476dad-d441-40cd-8961-f752f3d0c6f9,Little Pig,ONE SIZE,22.0,More on the way,2024/01/09 11:47:20,7,4
+bcdf8950-3695-4917-a206-26095d436bec,Louie Lion,HUGE,120.0,Out of stock,2024/01/09 11:47:22,9,22
+bcdf8950-3695-4917-a206-26095d436bec,Louie Lion,LARGE,80.0,More on the way,2024/01/09 11:47:22,6,18
+bcdf8950-3695-4917-a206-26095d436bec,Louie Lion,LITTLE,35.0,More on the way,2024/01/09 11:47:22,3,11
+ab6888e4-e0e9-481f-b93a-9e3e39b680bd,Bashful Stardust Bunny,MEDIUM,28.0,Returning to stock 2-3 months,2024/01/09 11:47:24,12,5
+ab6888e4-e0e9-481f-b93a-9e3e39b680bd,Bashful Stardust Bunny,SMALL,18.0,Returning to stock 2-3 months,2024/01/09 11:47:24,7,4
+05090f36-7a31-46cc-9bab-313b9f5134a1,Bashful Bunny Tulip Bag Charm,ONE SIZE,19.0,More on the way,2024/01/09 11:47:26,7,1
+34b6727b-f60e-4334-ae57-7eea405ea9aa,Dexter Dragon,MEDIUM,65.0,Returning to stock 2-3 months,2024/01/09 11:47:28,5,20
+34b6727b-f60e-4334-ae57-7eea405ea9aa,Dexter Dragon,LITTLE,32.5,Returning to stock 2-3 months,2024/01/09 11:47:28,3,12
+fbf36c08-d151-4db0-9cad-ed134fc7b936,Fluffy Crab,ONE SIZE,15.0,More on the way,2024/01/09 11:47:29,2,4
+c09b0a7e-6ec4-44f5-a084-6d958ffbce78,Fluffy Octopus,ONE SIZE,15.0,More on the way,2024/01/09 11:47:31,3,3
+0a9c50c1-ee5d-46be-abdb-f96e84757440,Fluffy Starfish,ONE SIZE,15.0,More on the way,2024/01/09 11:47:32,4,4
+211d3788-f7ca-425e-bed4-1b893ce8cfd7,Fluffy Whale,ONE SIZE,15.0,Returning to stock 2-3 months,2024/01/09 11:47:34,4,2
+ebe8a53b-ae66-42f2-836e-d378c434f07c,If I Were A Lamb Book and Bashful Lamb,SMALL,31.5,Out of stock,2024/01/09 11:47:36,,
+55172a67-6220-4c38-b709-a64613d082d2,Sheldon Shrimp,ONE SIZE,24.0,More on the way,2024/01/09 11:47:37,9,3
+df003025-abba-4407-825a-29dc65d056c7,Smudge Puppy,MEDIUM,35.0,Returning to stock 2-3 months,2024/01/09 11:47:39,9,5
+fb19fa85-7d7a-42a0-9839-81039a666941,Wally Whale,MEDIUM,32.5,More on the way,2024/01/09 11:47:41,6,14
+fb19fa85-7d7a-42a0-9839-81039a666941,Wally Whale,SMALL,23.5,Out of stock,2024/01/09 11:47:41,6,8
+fb19fa85-7d7a-42a0-9839-81039a666941,Wally Whale,TINY,13.5,Out of stock,2024/01/09 11:47:41,4,6
+91f8d7b8-7644-402f-b41b-57956c55c0ea,Herman Hermit,ONE SIZE,33.0,Returning to stock 3-4 weeks,2024/01/09 11:47:43,11,7
+216e3cce-910a-4f74-8c1c-3443672b3f5b,Perry Polar Bear,MEDIUM,27.5,Returning to stock 2-3 months,2024/01/09 11:47:45,10,6
+216e3cce-910a-4f74-8c1c-3443672b3f5b,Perry Polar Bear,SMALL,23.5,More on the way,2024/01/09 11:47:45,7,4
+216e3cce-910a-4f74-8c1c-3443672b3f5b,Perry Polar Bear,TINY,13.0,Out of stock,2024/01/09 11:47:45,5,2
+4cb2922b-6399-4442-be06-3a05c811ffbb,Percy Penguin,LARGE,40.0,More on the way,2024/01/09 11:47:47,14,6
+4cb2922b-6399-4442-be06-3a05c811ffbb,Percy Penguin,LITTLE,27.5,More on the way,2024/01/09 11:47:47,9,4
+4cb2922b-6399-4442-be06-3a05c811ffbb,Percy Penguin,TINY,18.0,More on the way,2024/01/09 11:47:47,6,3
+943dc830-59ae-44a1-95be-58cf23681104,Smudge Rabbit,MEDIUM,35.0,More on the way,2024/01/09 11:47:49,5,9
+7d2a02e0-75b3-45e7-a058-2f1b93ee0dfd,Smudge Elephant 1,LARGE,75.0,More on the way,2024/01/09 11:47:51,22,9
+da3969f7-5bc0-4956-a2dd-d53ca4bdf278,Bashful Lamb,MEDIUM,28.0,More on the way,2024/01/09 11:47:53,12,5
+da3969f7-5bc0-4956-a2dd-d53ca4bdf278,Bashful Lamb,SMALL,18.0,More on the way,2024/01/09 11:47:53,7,4
+170c912b-ca61-4711-ba82-5f48b25fed26,Elephants Can't Fly Book,ONE SIZE,15.0,Returning to stock 3-4 weeks,2024/01/09 11:47:54,9,
+703b2357-2558-4897-81b9-2ec053899da2,Bashful Beige Bunny Blanket,ONE SIZE,45.0,More on the way,2024/01/09 11:47:56,40,30
+7e9fd1be-b213-497b-be6d-d59494c4ccef,My Friend Bunny Book and Bashful Beige Bunny,MEDIUM,43.0,Out of stock,2024/01/09 11:47:58,,
+6313bec8-5d52-4caa-b497-2c8bf06fca9b,Smudge Elephant 2,MEDIUM,35.0,More on the way,2024/01/09 11:48:00,9,5
+460fc527-84c4-4f78-a6e2-b932a7f703a1,Bashful Bat,SMALL,18.0,More on the way,2024/01/09 11:48:01,7,4
+8b15e52c-e55d-47a1-9ded-606809ea90da,Fuddlewuddle Dino,MEDIUM,30.0,More on the way,2024/01/09 11:48:03,9,5
+c9ba3420-7fb7-495c-9db7-0ffb0e2719e1,Bashful Toffee Puppy with Personalised Cream Jumper,MEDIUM,38.0,Out of stock,2024/01/09 11:48:05,12,5
+bc67cdd6-0a5d-48b4-a185-94ce921693aa,Bashful Toffee Puppy with Personalised Red Jumper,MEDIUM,38.0,Out of stock,2024/01/09 11:48:07,12,5
+b7e0eb13-0237-4cff-9ee8-29db896eaa3b,Cordy Roy Baby Elephant Soother,ONE SIZE,23.0,Returning to stock next week,2024/01/09 11:48:09,9,7
+a7d3ab75-509e-4ec3-bd46-be0a7dca1b6d,Cordy Roy Baby Hare Soother,ONE SIZE,23.0,Returning to stock next week,2024/01/09 11:48:10,9,7
+5b4478da-861f-4643-bed2-4f451d586142,My Mum and Me Book and Bashful Lamb,MEDIUM,43.0,Out of stock,2024/01/09 11:48:12,,
+9edea8b3-05c8-4cc7-87de-bcf85dedfd56,When I am Big Book and Bashful Cream Bunny,MEDIUM,43.0,Out of stock,2024/01/09 11:48:13,,
+e9cc1daf-f880-4e96-b917-4d27ada23e15,Bashful Silver Bunny Soother,ONE SIZE,25.0,More on the way,2024/01/09 11:48:15,13,13
+2cecb9ef-9011-4523-9932-fc988093ea39,Cordy Roy Fox Baby,ONE SIZE,25.0,Returning to stock next week,2024/01/09 11:48:17,13,4
+83ac89df-7df1-48d3-8589-90dab36f9ac5,Bashful Kitty,MEDIUM,28.0,Returning to stock this week,2024/01/09 11:48:19,12,
+83ac89df-7df1-48d3-8589-90dab36f9ac5,Bashful Kitty,SMALL,16.5,Out of stock,2024/01/09 11:48:19,7,
+125d8955-5f8f-4c89-a6f7-8ab427ac10fb,Odette Ostrich,LARGE,40.0,Returning to stock 2-3 months,2024/01/09 11:48:22,19,8
+0408f0d5-0694-4bda-aeae-99d33632cedf,Bashful Blue Bunny Grabber,ONE SIZE,15.0,Returning to stock 3-4 weeks,2024/01/09 11:48:24,7,3
+f681363a-4947-49c2-a3fe-fe7766a45c9f,Fuddlewuddle Lamb,MEDIUM,30.0,More on the way,2024/01/09 11:48:25,9,5
+f656b771-76a7-4a17-9430-1f4106cc60ce,Merryday Giraffe,MEDIUM,30.0,More on the way,2024/01/09 11:48:27,16,4
+cbf3cd2e-2c4b-4cf6-b0cb-8c67546ed9d6,Peanut Penguin,LARGE,40.0,More on the way,2024/01/09 11:48:30,13,8
+cbf3cd2e-2c4b-4cf6-b0cb-8c67546ed9d6,Peanut Penguin,MEDIUM,28.0,Returning to stock 2-3 months,2024/01/09 11:48:30,9,4
+cbf3cd2e-2c4b-4cf6-b0cb-8c67546ed9d6,Peanut Penguin,SMALL,15.0,More on the way,2024/01/09 11:48:30,4,2
+114c8f7f-a4e5-4d5b-bea4-ca9d598ed367,Fuddlewuddle Elephant,HUGE,69.0,Out of stock,2024/01/09 11:48:32,17,9
+114c8f7f-a4e5-4d5b-bea4-ca9d598ed367,Fuddlewuddle Elephant,LARGE,40.0,Out of stock,2024/01/09 11:48:32,12,6
+114c8f7f-a4e5-4d5b-bea4-ca9d598ed367,Fuddlewuddle Elephant,MEDIUM,30.0,More on the way,2024/01/09 11:48:32,9,5
+114c8f7f-a4e5-4d5b-bea4-ca9d598ed367,Fuddlewuddle Elephant,TINY,15.0,Out of stock,2024/01/09 11:48:32,5,3
+4bf23d26-8daf-43eb-9fad-8cb5e99f9ace,Cordy Roy Fox,MEDIUM,27.5,More on the way,2024/01/09 11:48:34,15,6
+4bf23d26-8daf-43eb-9fad-8cb5e99f9ace,Cordy Roy Fox,SMALL,17.0,Out of stock,2024/01/09 11:48:34,10,4
+02507974-d66e-418e-b1de-99f50fe82ec0,Tumblie Sheep Dog,MEDIUM,30.0,Returning to stock 2-3 months,2024/01/09 11:48:36,5,14
+81384392-c44c-47af-8537-b721fd22b49b,Blossom Cream Bunny with Personalised Cream Jumper,MEDIUM,38.0,Returning to stock 3-4 weeks,2024/01/09 11:48:38,12,5
+75c7e3bf-9652-4533-98fe-8c251a9d2abd,Bashful Beige Bunny Soother,ONE SIZE,25.0,More on the way,2024/01/09 11:48:40,13,13
+a88a67dc-fc76-469b-a3cb-bf99942d0811,Bashful Blue Bunny Rattle,SMALL,15.0,Returning to stock 3-4 weeks,2024/01/09 11:48:41,7,4
+ffac2181-b0c8-40d8-9162-29837c8f4883,Truffles Highland Cow,MEDIUM,33.0,Returning to stock 2-3 months,2024/01/09 11:48:43,9,14
+ff8b1f33-83f8-4eca-bfdf-64659f1668d2,Bashful Bunny Beige Spots A6 Note Book,ONE SIZE,3.0,Out of stock,2024/01/09 11:48:45,6,
+278e8702-2777-4462-978c-541b96cf8927,Little Me Book and Bashful Beige Bunny,MEDIUM,43.0,Out of stock,2024/01/09 11:48:46,,
+4b81b717-f2bd-409d-8f76-56195c5ed3c4,Otto the Loyal Long Dog Book and Otto Sausage Dog,LARGE,45.0,Out of stock,2024/01/09 11:48:48,,
