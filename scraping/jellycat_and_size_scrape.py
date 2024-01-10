@@ -115,9 +115,6 @@ df_sizes = jellycat_sizes_by_id(df_primary)
 df_sizes = data_cleaning(df_sizes)
 print(df_sizes.head(10))
 
-### create a csv file with today's date for tracking
-df_sizes.to_csv(f"./data/jellycat_sizes_with_primary_{date_today}.csv", index=False)
-
 ### drop size table if exist with cascade (dropping all the foreign tables)
 sql = """DROP TABLE IF EXISTS size CASCADE"""
 cursor = conn.cursor()
@@ -143,3 +140,13 @@ conn.commit()
 
 ### insert sizes data into postgresql
 df_sizes.to_sql('size', engine, if_exists='append', index=False)
+
+### Retrieve query results (to get primary keys)
+sql = '''select * 
+    from size'''
+df_sizes = pd.read_sql_query(sql, conn)
+print(df_sizes.head(10))
+
+### create a csv file with today's date for tracking
+date_today = date.today()
+df_sizes.to_csv(f"./data/jellycat_sizes_with_primary_{date_today}.csv", index=False)

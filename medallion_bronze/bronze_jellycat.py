@@ -4,6 +4,7 @@ from pyspark.sql.types import *
 
 builder = SparkSession \
             .builder.appName("Jellycat-ETL") \
+            .config("spark.jars", "postgresql-42.7.1.jar") \
             .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
             .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
 
@@ -29,4 +30,3 @@ df_jellycat = spark.read \
     .load()
 
 df_jellycat.show()
-
