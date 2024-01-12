@@ -13,20 +13,21 @@ jellycat_schema = StructType([
 ])
 
 size_schema = StructType([
+    StructField("JellycatSizeID", StringType(), nullable=False),
     StructField("JellycatID", StringType(), nullable=False),
     StructField("JellycatName", StringType(), nullable=False),
     StructField("Size", StringType(), nullable=True),
+    StructField("Height", DecimalType(), nullable=True),
+    StructField("Width", DecimalType(), nullable=True),
     StructField("Price", DecimalType(), nullable=True),
     StructField("Stock", StringType(), nullable=True),
     StructField("DateCreated", TimestampType(), nullable=False),
-    StructField("Height", DecimalType(), nullable=True),
-    StructField("Width", DecimalType(), nullable=True),
 ])
 
-### create a list of dates starting from 2024-01-05 till yesterday
+### create a list of dates starting from 2024-01-05 till today
 startdate = '2024-01-05'
 startdate = datetime.datetime.strptime(startdate, '%Y-%m-%d').date() - datetime.timedelta(days=1)
-enddate = datetime.date.today() - datetime.timedelta(days=1)
+enddate = datetime.date.today()
 total_days = enddate - startdate
 date_list = [enddate - datetime.timedelta(days=x) for x in reversed(range(total_days.days))]
 
