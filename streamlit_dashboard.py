@@ -40,3 +40,13 @@ returning_stock_list.remove("Out of stock")
 selected_stock = st.selectbox('Returning options', returning_stock_list)
 df_returning_stock = df[df["stock"]==selected_stock]
 st.dataframe(df_returning_stock.reset_index()[["jellycatname","size",'price',"category",'height','width']])
+
+### Sold out within 3 days
+st.header(f'Jellycats sold out within 3 days')
+df_sold_out_within_3days = DeltaTable("./spark-warehouse/outofstock-within-3-days").to_pandas()
+st.dataframe(df_sold_out_within_3days.reset_index()[["jellycatname","size",'price',"category"]])
+
+### Just restocked within these 3 days
+st.header(f'Jellycats restocked within 3 days')
+df_restocked_within_3_days = DeltaTable("./spark-warehouse/restocked-within-3-days").to_pandas()
+st.dataframe(df_restocked_within_3_days.reset_index()[["jellycatname","size",'price',"category"]])
