@@ -9,7 +9,7 @@ spark = configure_spark_with_delta_pip(builder).getOrCreate()
 
 ### load df
 df_joined = spark.read.format("delta") \
-    .load("./spark-warehouse/silver-all")
+    .load("./spark-warehouse/all")
 df_joined.createOrReplaceTempView("alltemp")
 
 ### returning this week

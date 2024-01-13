@@ -1,0 +1,3 @@
+scrape->postgres(overwrite)->delta lake(parquet to df)->streamlit
+
+photon
