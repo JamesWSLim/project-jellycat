@@ -30,7 +30,7 @@ with col2:
     st.image(list(df_selected_jellycat["imagelink"])[0], caption=selected_jellycat)
 
 st.header(f'Display Jellycat Stock Availability, Price, and Information on {most_recent_date.date()}')
-st.dataframe(df_selected_jellycat.reset_index()[["size",'price','stock',"category",'height','width']])
+st.dataframe(df_selected_jellycat.reset_index()[["size",'price','stock',"category",'height','width']],use_container_width=True)
 
 ### Returning stock
 st.header(f'Returning Jellycats')
@@ -39,14 +39,14 @@ returning_stock_list = sorted(df_out_of_stock["stock"].unique())
 returning_stock_list.remove("Out of stock")
 selected_stock = st.selectbox('Returning options', returning_stock_list)
 df_returning_stock = df[df["stock"]==selected_stock]
-st.dataframe(df_returning_stock.reset_index()[["jellycatname","size",'price',"category",'height','width']])
+st.dataframe(df_returning_stock.reset_index()[["jellycatname","size",'price',"category",'height','width']],use_container_width=True)
 
 ### Sold out within last 3 days
 st.header(f'Jellycats sold out within last 3 days')
 df_sold_out_within_3days = DeltaTable("./spark-warehouse/outofstock-within-3-days").to_pandas()
-st.dataframe(df_sold_out_within_3days.reset_index()[["jellycatname","size",'price',"category"]])
+st.dataframe(df_sold_out_within_3days.reset_index()[["jellycatname","size",'price',"category"]],use_container_width=True)
 
 ### Just restocked within last 3 days
 st.header(f'Jellycats restocked within last 3 days')
 df_restocked_within_3_days = DeltaTable("./spark-warehouse/restocked-within-3-days").to_pandas()
-st.dataframe(df_restocked_within_3_days.reset_index()[["jellycatname","size",'price',"category"]])
+st.dataframe(df_restocked_within_3_days.reset_index()[["jellycatname","size",'price',"category"]],use_container_width=True)
