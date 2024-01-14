@@ -4,7 +4,7 @@ from selectolax.parser import HTMLParser
 import pandas as pd
 from datetime import datetime
 import time
-from scrape_size import *
+from scraping.scrape_size import *
 
 def go_through_all_pages(page):
     click = 0

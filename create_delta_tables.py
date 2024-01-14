@@ -29,7 +29,7 @@ spark.sql(
         size STRING,
         height DECIMAL,
         width DECIMAL,
-        price DECIMAL, 
+        price DECIMAL,
         stock STRING,
         datecreated TIMESTAMP
         ) USING delta 

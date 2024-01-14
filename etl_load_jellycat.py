@@ -27,7 +27,7 @@ size_schema = StructType([
 ### create a list of dates starting from 2024-01-05 till today
 startdate = '2024-01-05'
 startdate = datetime.datetime.strptime(startdate, '%Y-%m-%d').date() - datetime.timedelta(days=1)
-enddate = datetime.date.today()
+enddate = datetime.date.today() - datetime.timedelta(days=1)
 total_days = enddate - startdate
 date_list = [enddate - datetime.timedelta(days=x) for x in reversed(range(total_days.days))]
 

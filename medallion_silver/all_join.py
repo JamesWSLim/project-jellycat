@@ -1,90 +1,79 @@
 import pyspark
 from delta import *
 
-builder = pyspark.sql.SparkSession.builder.appName("Jellycat-ETL") \
-    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
-    .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
+def silver_all_join(spark):
+    ### load df
+    bronzejellycat = spark.read.format("delta") \
+        .load("./spark-warehouse/bronzejellycat")
+    bronzejellycat.createOrReplaceTempView("jellycattemp")
 
-spark = configure_spark_with_delta_pip(builder).getOrCreate()
+    bronzesize = spark.read.format("delta") \
+        .load("./spark-warehouse/bronzesize")
+    bronzesize.createOrReplaceTempView("sizetemp")
 
-### load df
-bronzejellycat = spark.read.format("delta") \
-    .load("./spark-warehouse/bronzejellycat")
-bronzejellycat.createOrReplaceTempView("jellycattemp")
+    ### select all data
+    all_df = spark.sql(
+        """SELECT t1.jellycatid,t1.jellycatname,t1.category,t1.link,t1.imagelink,t1.datecreated as jellycatdatecreated,
+        t2.size,t2.height,t2.width,t2.price,t2.stock,t2.datecreated as sizedatecreated
+        FROM jellycattemp t1
+        LEFT JOIN sizetemp t2 on t1.jellycatid=t2.jellycatid
+        """
+    )
+    all_df.createOrReplaceTempView("alltemp")
+    all_df.write.format("delta").mode("overwrite").save("./spark-warehouse/all")
 
-bronzesize = spark.read.format("delta") \
-    .load("./spark-warehouse/bronzesize")
-bronzesize.createOrReplaceTempView("sizetemp")
-
-### select all data
-all_df = spark.sql(
-    """SELECT t1.jellycatid,t1.jellycatname,t1.category,t1.link,t1.imagelink,t1.datecreated as jellycatdatecreated,
-    t2.size,t2.height,t2.width,t2.price,t2.stock,t2.datecreated as sizedatecreated
-    FROM jellycattemp t1
-    LEFT JOIN sizetemp t2 on t1.jellycatid=t2.jellycatid
+    ### out of stock
+    df_out_of_stock = spark.sql(
+        """
+        SELECT * from alltemp
+        WHERE LOWER(stock) NOT LIKE LOWER('%In Stock%')
     """
-)
-all_df.createOrReplaceTempView("alltemp")
-all_df.write.format("delta").mode("overwrite").save("./spark-warehouse/all")
+    )
+    df_out_of_stock.write.format("delta").mode("overwrite").save("./spark-warehouse/out-of-stock")
 
-### in stock
-df_in_stock = spark.sql(
+    ### join table today with data 3 days ago
+    df_3_days_diff = spark.sql(
+        """
+        SELECT t1.jellycatname,t1.jellycatdatecreated,t1.category,
+        t2.jellycatname as t2jellycatname,t2.sizedatecreated,t2.stock as stock3daysago,
+        t1.stock as stocktoday,t1.link,t1.imagelink,t1.price,t1.size,t1.height,t1.width
+        FROM alltemp t1
+        LEFT JOIN (
+            SELECT * FROM alltemp
+            WHERE DATE(sizedatecreated)=DATEADD(day, -3, DATE(CURRENT_TIMESTAMP))
+        ) t2 ON t2.jellycatname=t1.jellycatname AND t2.size=t1.size
+        WHERE DATE(t1.jellycatdatecreated) = DATE(CURRENT_TIMESTAMP)
     """
-    SELECT * from alltemp
-    WHERE LOWER(stock) LIKE LOWER('%In Stock%')
-"""
-)
-df_in_stock.write.format("delta").mode("overwrite").save("./spark-warehouse/in-stock")
+    )
+    df_3_days_diff.createOrReplaceTempView("df3daysdiff")
 
-### out of stock
-df_out_of_stock = spark.sql(
+    df_restocked_within_3_days = spark.sql(
+        """
+        SELECT jellycatname,size,stocktoday,category,stock3daysago,link,imagelink,price,height,width FROM df3daysdiff
+        WHERE LOWER(stocktoday) LIKE LOWER('%In Stock%')
+        AND LOWER(stock3daysago) NOT LIKE LOWER('%In Stock%')
+        AND stock3daysago IS NOT NULL
     """
-    SELECT * from alltemp
-    WHERE LOWER(stock) NOT LIKE LOWER('%In Stock%')
-"""
-)
-df_out_of_stock.write.format("delta").mode("overwrite").save("./spark-warehouse/out-of-stock")
+    )
+    df_restocked_within_3_days.write.format("delta").mode("overwrite").save("./spark-warehouse/restocked-within-3-days")
+    df_restocked_within_3_days.createOrReplaceTempView("restock")
 
-### returning this week
-df_returning_this_week = spark.sql(
-    """
-    SELECT * from alltemp
-    WHERE LOWER(stock) LIKE LOWER('%Returning to stock this week%')
-    AND DATE(jellycatdatecreated) = DATE(CURRENT_TIMESTAMP)
-    ORDER BY jellycatname ASC;
-"""
-)
-df_returning_this_week.write.format("delta").mode("overwrite").save("./spark-warehouse/returning-this-week")
 
-### returning next week
-df_returning_next_week = spark.sql(
+    df_outofstock_within_3_days = spark.sql(
+        """
+        SELECT jellycatname,size,stocktoday,category,stock3daysago,link,imagelink,price,height,width FROM df3daysdiff
+        WHERE LOWER(stocktoday) NOT LIKE LOWER('%In Stock%')
+        AND LOWER(stock3daysago) LIKE LOWER('%In Stock%')
     """
-    SELECT * from alltemp
-    WHERE LOWER(stock) LIKE LOWER('%Returning to stock next week%')
-    AND DATE(jellycatdatecreated) = DATE(CURRENT_TIMESTAMP)
-    ORDER BY jellycatname ASC;
-"""
-)
-df_returning_next_week.write.format("delta").mode("overwrite").save("./spark-warehouse/returning-next-week")
+    )
+    df_outofstock_within_3_days.write.format("delta").mode("overwrite").save("./spark-warehouse/outofstock-within-3-days")
 
-### returning 3-4 weeks
-df_returning_3_4_weeks = spark.sql(
+    
+    df_new_in = spark.sql(
+        """
+        SELECT jellycatname,size,stocktoday,category,stock3daysago,link,imagelink,price,height,width FROM df3daysdiff
+        WHERE LOWER(stocktoday) LIKE LOWER('%In Stock%')
+        AND stock3daysago IS NULL
     """
-    SELECT * from alltemp
-    WHERE LOWER(stock) LIKE LOWER('%Returning to stock 3-4 weeks%')
-    AND DATE(jellycatdatecreated) = DATE(CURRENT_TIMESTAMP)
-    ORDER BY jellycatname ASC;
-"""
-)
-df_returning_next_week.write.format("delta").mode("overwrite").save("./spark-warehouse/returning-3-4-weeks")
-
-### more on the way
-df_more = spark.sql(
-    """
-    SELECT * from alltemp
-    WHERE LOWER(stock) LIKE LOWER('%more on the way%')
-    AND DATE(jellycatdatecreated) = DATE(CURRENT_TIMESTAMP)
-    ORDER BY jellycatname ASC;
-"""
-)
-df_more.write.format("delta").mode("overwrite").save("./spark-warehouse/more-on-the-way")
+    )
+    df_new_in.write.format("delta").mode("overwrite").save("./spark-warehouse/new-in")

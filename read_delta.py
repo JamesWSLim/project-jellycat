@@ -30,21 +30,15 @@ spark = configure_spark_with_delta_pip(builder).getOrCreate()
 
 # bronze_jellycat_version.show()
 
-bronzejellycat = spark.read.format("delta") \
-    .load("./spark-warehouse/bronzejellycat")
-bronzejellycat.createOrReplaceTempView("jellycatjoin")
-
-bronzesize = spark.read.format("delta") \
-    .load("./spark-warehouse/bronzesize")
-bronzesize.createOrReplaceTempView("sizejoin")
-
-joined_jellycat_size = spark.sql(
+df_restocked = spark.read.format("delta") \
+    .load("./spark-warehouse/3daysdiff")
+df_restocked.createOrReplaceTempView('df3daysdiff')
+df_new_in = spark.sql(
+        """
+        SELECT jellycatname,size,stocktoday,category,stock3daysago,link,imagelink,price,height,width FROM df3daysdiff
+        WHERE LOWER(stocktoday) LIKE LOWER('%In Stock%')
+        AND stock3daysago IS NULL
     """
-    SELECT t1.jellycatid,t1.jellycatname,t1.category,t1.link,t1.imagelink,t1.datecreated as jellycatdatecreated,
-    t2.size,t2.price,t2.stock,t2.height,t2.width
-    FROM jellycatjoin t1
-    LEFT JOIN sizejoin t2 on t1.jellycatid=t2.jellycatid
-    WHERE date(t1.datecreated) = '2024-01-09' 
-    """
-)
-joined_jellycat_size.show()
+    )
+df_new_in.show()
+# df_new_in.write.format("delta").mode("overwrite").save("./spark-warehouse/new-in")
