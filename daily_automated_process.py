@@ -2,18 +2,18 @@ import subprocess
 import datetime
 import git
 
-from daily_scraping import *
-subprocess.Popen('cd /Users/jameslim/Downloads/projects/jellycat-scraping/', shell=True)
-subprocess.Popen('source jellycat-env/bin/activate', shell=True)
+# from daily_scraping import *
+# subprocess.Popen('cd /Users/jameslim/Downloads/projects/jellycat-scraping/', shell=True)
+# subprocess.Popen('source jellycat-env/bin/activate', shell=True)
 
-### run docker compose
-with open("/tmp/output.log", "a") as output:
-    subprocess.call("docker compose up -d", shell=True, stdout=output, stderr=output)
+# ### run docker compose
+# with open("/tmp/output.log", "a") as output:
+#     subprocess.call("docker compose up -d", shell=True, stdout=output, stderr=output)
 
-daily_scraping()
+# daily_scraping()
 
-with open("/tmp/output.log", "a") as output:
-    subprocess.call("docker compose down", shell=True, stdout=output, stderr=output)
+# with open("/tmp/output.log", "a") as output:
+#     subprocess.call("docker compose down", shell=True, stdout=output, stderr=output)
 
 ### push updates to git
 try:
@@ -24,4 +24,3 @@ try:
     origin_master.push()
 except:
     print("Error while pushing code!")
-
