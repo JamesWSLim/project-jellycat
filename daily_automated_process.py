@@ -1,6 +1,7 @@
 import subprocess
 import datetime
 import git
+import time
 
 # from daily_scraping import *
 # subprocess.Popen('cd /Users/jameslim/Downloads/projects/jellycat-scraping/', shell=True)
@@ -15,6 +16,7 @@ import git
 # with open("/tmp/output.log", "a") as output:
 #     subprocess.call("docker compose down", shell=True, stdout=output, stderr=output)
 
+time.sleep(10)
 ### push updates to git
 try:
     repo = git.Repo("/Users/jameslim/Downloads/projects/jellycat-scraping/")
