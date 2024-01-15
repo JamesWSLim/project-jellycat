@@ -3,9 +3,6 @@ import pandas as pd
 from deltalake import DeltaTable
 import matplotlib.pyplot as plt
 import seaborn as sns
-import numpy
-import datetime
-from PIL import Image
 
 st.title('Jellycat Daily Stock, Price, and Information')
 

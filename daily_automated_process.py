@@ -2,26 +2,38 @@ import subprocess
 import datetime
 import git
 import time
+import logging
 
-# from daily_scraping import *
-# subprocess.Popen('cd /Users/jameslim/Downloads/projects/jellycat-scraping/', shell=True)
-# subprocess.Popen('source jellycat-env/bin/activate', shell=True)
+from daily_scraping import *
 
-# ### run docker compose
-# with open("/tmp/output.log", "a") as output:
-#     subprocess.call("docker compose up -d", shell=True, stdout=output, stderr=output)
+### go to path and start virtualenv
+subprocess.Popen('cd /Users/jameslim/Downloads/projects/jellycat-scraping/', shell=True)
+subprocess.Popen('source jellycat-env/bin/activate', shell=True)
 
-# daily_scraping()
+### run docker compose
+try:
+    with open("/tmp/output.log", "a") as output:
+        subprocess.call("docker compose up -d", shell=True, stdout=output, stderr=output)
+except:
+    print("Error while starting docker!")
 
-# with open("/tmp/output.log", "a") as output:
-#     subprocess.call("docker compose down", shell=True, stdout=output, stderr=output)
+try:
+    daily_scraping()
+except:
+    print("Error while scraping!")
 
-time.sleep(10)
+try:
+    with open("/tmp/output.log", "a") as output:
+        subprocess.call("docker compose down", shell=True, stdout=output, stderr=output)
+    time.sleep(10)
+except:
+    print("Error while closing docker!")
+
 ### push updates to git
 try:
     repo = git.Repo("/Users/jameslim/Downloads/projects/jellycat-scraping/")
     repo.git.add('-A')
-    repo.git.commit('-m', f"scraped and updated new data {datetime.datetime.now()}")
+    repo.git.commit('-m', f"scraped and updated new data on {datetime.datetime.now()}")
     origin_master = repo.remote(name='origin')
     origin_master.push()
 except:
