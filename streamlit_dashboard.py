@@ -10,7 +10,7 @@ st.markdown(
     """
     This app performs web scraping of Jellycat stock availability and information data :)
     
-    Daily updates are updated around 10am EST.
+    Daily data will be updated around 11am EST/EDT.
 """)
 
 ### Search/Select jellycat
