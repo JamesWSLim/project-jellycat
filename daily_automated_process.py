@@ -6,10 +6,6 @@ import logging
 
 from daily_scraping import *
 
-### go to path and start virtualenv
-subprocess.Popen('cd /Users/jameslim/Downloads/projects/jellycat-scraping/', shell=True)
-subprocess.Popen('source jellycat-env/bin/activate', shell=True)
-
 try:
     daily_scraping()
     print("scraping & ETL done!")
