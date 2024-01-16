@@ -9,6 +9,8 @@ st.title('Jellycat Daily Stock, Price, and Information')
 st.markdown(
     """
     This app performs web scraping of Jellycat stock availability and information data :)
+    
+    Daily updates are updated around 10am EST.
 """)
 
 ### Search/Select jellycat
@@ -34,8 +36,14 @@ selected_jellycat_df = df_price_tracker[(df_price_tracker["jellycatname"]==selec
 size_list = list(selected_jellycat_df["size"].unique())
 palette = sns.color_palette()
 fig = plt.figure(figsize=(14,5))
+plt.ylim(-2, 2)
 plt.xlabel("Date")
 plt.ylabel("Price")
+min_price = selected_jellycat_df["price"].min()
+max_price = selected_jellycat_df["price"].max()
+min_limit = round(float(min_price) - float(max_price-min_price)*0.1, 0)
+max_limit = round(float(max_price) + float(max_price-min_price)*0.1, 0)
+plt.ylim(min_limit, max_limit)
 sns.set_style("ticks")
 for i, size in enumerate(size_list):
     sns.lineplot(data=selected_jellycat_df[(selected_jellycat_df["size"]==size)],x="jellycatdatecreated",y='price',color=palette[i], label=size)
