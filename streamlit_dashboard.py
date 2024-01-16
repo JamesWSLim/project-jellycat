@@ -41,8 +41,8 @@ plt.xlabel("Date")
 plt.ylabel("Price")
 min_price = selected_jellycat_df["price"].min()
 max_price = selected_jellycat_df["price"].max()
-min_limit = round(float(min_price) - float(max_price-min_price)*0.1, 0)
-max_limit = round(float(max_price) + float(max_price-min_price)*0.1, 0)
+min_limit = float(min_price) - float(max_price-min_price)*0.1
+max_limit = float(max_price) + float(max_price-min_price)*0.1
 plt.ylim(min_limit, max_limit)
 sns.set_style("ticks")
 for i, size in enumerate(size_list):
