@@ -14,7 +14,7 @@ st.markdown(
 ### Search/Select jellycat
 df = DeltaTable("./spark-warehouse/all").to_pandas()
 most_recent_date = pd.to_datetime(df['jellycatdatecreated'].max())
-st.header(f'Display Jellycat Stock Availability, Price, and Information on {most_recent_date.date()}')
+st.header(f'Display Jellycat Stock Availability, Price, and Information as of {most_recent_date.date()}')
 df = df[df["jellycatdatecreated"] == most_recent_date]
 ### filter for jellycat name
 selected_jellycat = st.selectbox("Type to Search or Select your Jellycat", list(df["jellycatname"].unique()))
