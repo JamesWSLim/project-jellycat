@@ -11,4 +11,4 @@ etl_from_postgres.py
 etl_load_jellycat.py
 create_delta_tables.py
 jellycat_db.session.sql
-test1.log
+crontab.log
