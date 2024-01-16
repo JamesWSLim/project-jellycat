@@ -29,13 +29,13 @@ with col2:
     st.image(list(df_selected_jellycat["imagelink"])[0], caption=selected_jellycat)
 
 ### price tracker
-font = {'size': 12}
+font = {'size': 9}
 plt.rc('font', **font)
 df_price_tracker = DeltaTable("./spark-warehouse/all").to_pandas()
 selected_jellycat_df = df_price_tracker[(df_price_tracker["jellycatname"]==selected_jellycat)]
 size_list = list(selected_jellycat_df["size"].unique())
 palette = sns.color_palette()
-fig = plt.figure(figsize=(14,5))
+fig = plt.figure(figsize=(10,5))
 plt.ylim(-2, 2)
 plt.xlabel("Date")
 plt.ylabel("Price")
