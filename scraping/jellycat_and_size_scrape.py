@@ -9,17 +9,18 @@ from datetime import date
 
 def scrape_main_page():
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=False)
+        browser = playwright.chromium.launch(headless=True)
         page = browser.new_page()
         stealth_sync(page)
         page.goto('https://www.jellycat.com/us/all-animals/?sort=422&page=30')
         df = scrape_all_jellycats(page)
+        browser.close()
         return df
 
 def jellycat_sizes_by_id(df):
     ### run playwright
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=False)
+        browser = playwright.chromium.launch(headless=True)
         df_sizes = pd.DataFrame(columns =['jellycatid','jellycatname','size','price','stock'])
 
         ### loop through jellycat_ids
@@ -41,8 +42,10 @@ def jellycat_sizes_by_id(df):
                 ### error handling    
                 except PlaywrightTimeoutError:
                     print(row["link"])
+                    page.close()
                     continue
                 break
+        browser.close()
         return df_sizes
     
 def data_cleaning(df):

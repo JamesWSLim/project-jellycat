@@ -48,7 +48,7 @@ sns.set_style("ticks")
 for i, size in enumerate(size_list):
     sns.lineplot(data=selected_jellycat_df[(selected_jellycat_df["size"]==size)],x="jellycatdatecreated",y='price',color=palette[i], label=size)
 sns.despine(left=True)
-plt.legend(loc='upper right')
+plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 st.pyplot(fig)
 
 ### Returning stock
