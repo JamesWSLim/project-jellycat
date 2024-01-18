@@ -1,58 +1,0 @@
-/Users/jameslim/Downloads/projects/jellycat-scraping/daily_scraping.py:57: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
-  df = pd.read_sql_query(sql, conn)
-/Users/jameslim/Downloads/projects/jellycat-scraping/daily_scraping.py:99: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
-  df_sizes = pd.read_sql_query(sql, conn)
-:: loading settings :: url = jar:file:/Users/jameslim/Downloads/projects/jellycat-scraping/jellycat-env/lib/python3.11/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
-Ivy Default Cache set to: /Users/jameslim/.ivy2/cache
-The jars for the packages stored in: /Users/jameslim/.ivy2/jars
-io.delta#delta-spark_2.12 added as a dependency
-:: resolving dependencies :: org.apache.spark#spark-submit-parent-a6405b23-a95c-41c3-94c0-758fa4f6ac6e;1.0
-	confs: [default]
-	found io.delta#delta-spark_2.12;3.0.0 in central
-	found io.delta#delta-storage;3.0.0 in central
-	found org.antlr#antlr4-runtime;4.9.3 in central
-:: resolution report :: resolve 194ms :: artifacts dl 7ms
-	:: modules in use:
-	io.delta#delta-spark_2.12;3.0.0 from central in [default]
-	io.delta#delta-storage;3.0.0 from central in [default]
-	org.antlr#antlr4-runtime;4.9.3 from central in [default]
-	---------------------------------------------------------------------
-	|                  |            modules            ||   artifacts   |
-	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
-	---------------------------------------------------------------------
-	|      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
-	---------------------------------------------------------------------
-:: retrieving :: org.apache.spark#spark-submit-parent-a6405b23-a95c-41c3-94c0-758fa4f6ac6e
-	confs: [default]
-	0 artifacts copied, 3 already retrieved (0kB/5ms)
-24/01/18 10:24:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-Setting default log level to "WARN".
-To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
-[Stage 0:>                  (0 + 1) / 1][Stage 1:============>      (2 + 1) / 3]                                                                                [Stage 2:>                                                          (0 + 1) / 1]                                                                                24/01/18 10:25:04 ERROR NonFateSharingFuture: Failed to get result from future
-scala.runtime.NonLocalReturnControl
-24/01/18 10:25:05 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
-[Stage 5:>                                                         (0 + 8) / 50][Stage 5:===========>                                             (10 + 8) / 50][Stage 5:=========================>                               (22 + 8) / 50][Stage 5:==================================>                      (30 + 8) / 50][Stage 5:============================================>            (39 + 8) / 50]                                                                                [Stage 12:==========================>                             (24 + 8) / 50][Stage 12:=========================================>              (37 + 8) / 50][Stage 12:======================================================> (49 + 1) / 50]                                                                                24/01/18 10:25:14 ERROR NonFateSharingFuture: Failed to get result from future
-scala.runtime.NonLocalReturnControl
-[Stage 21:===================>                                    (17 + 8) / 50][Stage 21:============================>                           (25 + 8) / 50][Stage 21:============================================>           (40 + 8) / 50]                                                                                [Stage 28:===================>                                    (17 + 8) / 50][Stage 28:===================================>                    (32 + 8) / 50]                                                                                [Stage 38:>                                                         (0 + 7) / 7]                                                                                [Stage 41:================>                                       (15 + 8) / 50][Stage 41:===================================>                    (32 + 8) / 50]                                                                                [Stage 50:==========================>                             (24 + 8) / 50][Stage 50:=============================================>          (41 + 8) / 50]                                                                                [Stage 63:=================================>                      (30 + 8) / 50][Stage 63:=============================================>          (41 + 8) / 50]                                                                                [Stage 72:==========================>                             (24 + 8) / 50][Stage 72:====================================>                   (33 + 8) / 50]                                                                                [Stage 95:==========================>                             (24 + 8) / 50][Stage 95:======================================>                 (34 + 8) / 50]                                                                                [Stage 104:==========================>                            (24 + 8) / 50][Stage 104:============================================>          (40 + 8) / 50]                                                                                [Stage 127:=====================================>                 (34 + 8) / 50]                                                                                [Stage 136:=============================================>         (41 + 8) / 50]                                                                                [Stage 159:=====================================>                 (34 + 8) / 50]                                                                                [Stage 168:=======================================>               (36 + 9) / 50]                                                                                main page scraping started ;)
-618
-main page done ;)
-sizes page scraping started ;)
-0 Done :)
-50 Done :)
-100 Done :)
-150 Done :)
-200 Done :)
-250 Done :)
-300 Done :)
-350 Done :)
-400 Done :)
-450 Done :)
-500 Done :)
-/us/bashful-snow-tiger-bas3snt/
-550 Done :)
-/us/perry-polar-bear-pe6pb/
-600 Done :)
-/us/peanut-penguin-small-pns3pn/
-sizes page done ;)
-ETL done ;)
-scraping & ETL done!
