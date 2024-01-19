@@ -1,7 +1,7 @@
 <h1 align="center">Jellycat Project</h1>
 
 ## Description
-Jellycat Price Tracker & Information Project is an end-to-end automated data pipeline project from web scraping, ETL, to data analysis and dashboard. The goal of this project is to create an interactive and comprehensive dashboard to keep track of daily price, daily availability, and days before restocking of Jellycat products with the combination of different technologies, demonstrating the integration of data scraping, data pipeline and data analytics into real-life solution.
+Jellycat Project is an end-to-end automated data pipeline project from web scraping, ETL, to data analysis and dashboard. The goal of this project is to create an interactive and comprehensive dashboard to keep track of daily price, daily availability, and days before restocking of Jellycat products with the combination of different technologies, demonstrating the integration of data scraping, data pipeline and data analytics into real-life solution.
 ## Jellycat Dashboard (https://project-jellycat.streamlit.app/)
 
 ![](streamlit-streamlit_dashboard-2024-01-16-12-01-95.gif)
