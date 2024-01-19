@@ -14,3 +14,5 @@ jellycat_db.session.sql
 crontab.log
 docker_up.log
 docker_down.log
+docker_start.log
+docker_quit.log
