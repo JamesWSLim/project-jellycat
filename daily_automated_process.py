@@ -10,6 +10,3 @@ try:
     print("scraping & ETL done!")
 except:
     print("Error while scraping!")
-
-time.sleep(30)
-
