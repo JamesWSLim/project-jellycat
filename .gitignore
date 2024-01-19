@@ -12,4 +12,4 @@ etl_load_jellycat.py
 create_delta_tables.py
 jellycat_db.session.sql
 logs/
-shell-scripts/
+shell_scripts/
