@@ -10,10 +10,10 @@ Here are some applications used in the project:
 * **Playwright (web scraping)**: 
     * Cross-Browser Automation: automate browser actions across different browsers, ensuring consistent behavior
     * Headless Mode: You can run Playwright in headless mode for faster execution, suitable for server-side and CI/CD environments
-    * Isolation: Docker containers provide a lightweight and isolated environment for running applications, reducing potential conflicts and dependencies, as well as avoiding excessive consumption of resources from the host system
 * **PostgreSQL in Docker (Database to store scraped data)**:
     * ACID Compliance: ensuring data integrity
     * Extensibility: supports a wide range of data types and indexing options
+    * Isolation: Docker containers provide a lightweight and isolated environment for running applications, reducing potential conflicts and dependencies, as well as avoiding excessive consumption of resources from the host system
 * **Delta Lake with Spark(ETL pipeline)**:
     * Integration with Apache Spark: leverage Spark's speed and performance, scalability, and fault tolerance through resilient distributed datasets (RDDs), providing ACID transactions
     * Time Travel: Access/revert to earlier versions of data for audits, rollbacks, or reproduce
