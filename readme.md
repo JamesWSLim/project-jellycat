@@ -22,5 +22,5 @@ Here are some applications used in the project:
     * Data Integration: Streamlit seamlessly integrates with popular data science libraries like Pandas, NumPy, and Matplotlib, enabling you to incorporate data analysis and visualization directly into your app
     * Interactive Data Apps: easily turn your data analysis scripts into interactive web applications without the need for extensive web development knowledge
     * Simple Scripting: create interactive web applications using just a few lines of Python code, enabling rapid development and prototyping
-* **Crontab (Daily scraping & ETL automation)**:
+* **Crontab & Shell Scripting (Daily scraping & ETL automation)**:
     * Flexible Scheduling: provides flexible scheduling options, allowing you to run your data scraping job daily, weekly, or at any desired frequency
