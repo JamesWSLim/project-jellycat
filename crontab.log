@@ -1,0 +1,33 @@
+:: loading settings :: url = jar:file:/Users/jameslim/Downloads/projects/jellycat-scraping/jellycat-env/lib/python3.11/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /Users/jameslim/.ivy2/cache
+The jars for the packages stored in: /Users/jameslim/.ivy2/jars
+io.delta#delta-spark_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-36b596f9-3c72-42a2-a0bf-1373087bbb13;1.0
+	confs: [default]
+	found io.delta#delta-spark_2.12;3.0.0 in central
+	found io.delta#delta-storage;3.0.0 in central
+	found org.antlr#antlr4-runtime;4.9.3 in central
+:: resolution report :: resolve 192ms :: artifacts dl 7ms
+	:: modules in use:
+	io.delta#delta-spark_2.12;3.0.0 from central in [default]
+	io.delta#delta-storage;3.0.0 from central in [default]
+	org.antlr#antlr4-runtime;4.9.3 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-36b596f9-3c72-42a2-a0bf-1373087bbb13
+	confs: [default]
+	0 artifacts copied, 3 already retrieved (0kB/5ms)
+24/01/19 10:00:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+main page scraping started ;)
+612
+main page failed!
+sizes page scraping started ;)
+sizes page failed!
+ETL failed!
+scraping & ETL done!

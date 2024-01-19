@@ -11,8 +11,4 @@ etl_from_postgres.py
 etl_load_jellycat.py
 create_delta_tables.py
 jellycat_db.session.sql
-crontab.log
-docker_up.log
-docker_down.log
-docker_start.log
-docker_quit.log
+logs/
