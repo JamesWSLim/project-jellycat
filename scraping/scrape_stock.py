@@ -40,6 +40,6 @@ def scrape_stock_count(jellycatid, jellycatname, size, page):
 
 with sync_playwright() as playwright:
     browser = playwright.chromium.launch(headless=True)
-    link = 
-    scrape_size_and_stock
+    link = https://www.jellycat.com/us/bashful-bunny-with-daffodil-bb6df/
+    scrape_stock_count(1, "Bashful Bunny With Daffodil", "SMALL", page)
     browser.close()
