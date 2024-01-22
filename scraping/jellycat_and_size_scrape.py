@@ -28,6 +28,7 @@ def jellycat_sizes_by_id(df):
             while True:
                 try:
                     page = browser.new_page()
+                    page.set_default_timeout(3000)
                     stealth_sync(page)
                     jellycatid = row['jellycatid']
                     jellycatname = row['jellycatname']
@@ -37,7 +38,7 @@ def jellycat_sizes_by_id(df):
                     df_size = scrape_size_and_stock(jellycatid, jellycatname, page)
                     df_sizes = pd.concat([df_sizes, df_size])
                     if index % 50 == 0:
-                        print(f"{index} Done :)")
+                        print(f"size {index} Done :)")
                     page.close()
                 ### error handling    
                 except PlaywrightTimeoutError:

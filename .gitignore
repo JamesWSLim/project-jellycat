@@ -13,3 +13,6 @@ create_delta_tables.py
 jellycat_db.session.sql
 logs/
 shell_scripts/
+join_table.py
+scrape_stock.py
+docker_compose_up.sh
