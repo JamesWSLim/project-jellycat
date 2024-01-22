@@ -1,12 +1,14 @@
 from scraping.jellycat_and_size_scrape import *
 from medallion_bronze.bronze_jellycat import *
 from medallion_bronze.bronze_size import *
+from medallion_bronze.bronze_stock import *
 from medallion_silver.all_join import *
 
 from pyspark.sql import SparkSession
 from delta import *
 
 def daily_scraping():
+    ### jellycat main page scraping
     try:
         print("main page scraping started ;)")
         ### scrape main page
@@ -47,24 +49,24 @@ def daily_scraping():
     except:
         print("main page failed!")
 
-
+    ### sizes scraping
     try:
         print("sizes page scraping started ;)")
 
         ### Retrieve query results (to get primary keys)
         sql = '''select * 
             from jellycat'''
-        df = pd.read_sql_query(sql, conn)
+        df_jellycat = pd.read_sql_query(sql, conn)
 
         ### create a csv file with today's date for tracking
         date_today = date.today()
-        df.to_csv(f"./data/jellycat_with_primary_{date_today}.csv", index=False)
+        df_jellycat.to_csv(f"./data/jellycat_{date_today}.csv", index=False)
 
         ### retrieve needed columns
-        df_primary = df.reset_index()[["jellycatid", "jellycatname", "link"]]
+        df_jellycat = df_jellycat.reset_index()[["jellycatid", "jellycatname", "link"]]
 
         ### scrape jellycat sizes by jellycat_id
-        df_sizes = jellycat_sizes_by_id(df_primary)
+        df_sizes = jellycat_sizes_by_id(df_jellycat)
         df_sizes = data_cleaning(df_sizes)
 
         ### drop size table if exist with cascade (dropping all the foreign tables)
@@ -100,12 +102,58 @@ def daily_scraping():
 
         ### create a csv file with today's date for tracking
         date_today = date.today()
-        df_sizes.to_csv(f"./data/jellycat_sizes_with_primary_{date_today}.csv", index=False)
+        df_sizes.to_csv(f"./data/jellycat_sizes_{date_today}.csv", index=False)
         
         print("sizes page done ;)")
     
     except:
         print("sizes page failed!")
+
+    try:
+        print("stock page scraping started ;)")
+
+        df_jellycat_size = pd.merge(df_jellycat, df_sizes, on="jellycatid")
+        df_jellycat_size = df_jellycat_size[df_jellycat_size["stock"]=="In Stock"]
+        ### retrieve needed columns
+        df_jellycat_size = df_jellycat_size.reset_index()[["jellycatsizeid", "size", "link"]]
+        print(df_jellycat_size.head())
+
+        ### scrape jellycat stocks by jellycat_id
+        df_stocks = scrape_stock_count_by_sizes(df_jellycat_size)
+
+        ### drop stock table if exist with cascade (dropping all the foreign tables)
+        sql = """DROP TABLE IF EXISTS stock CASCADE"""
+        cursor = conn.cursor()
+        cursor.execute(sql)
+        conn.commit()
+
+        ### create stock table
+        sql = """CREATE TABLE stock (
+            jellycatstockid uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+            jellycatsizeid uuid,
+            stockcount INTEGER,
+            CONSTRAINT jellycatstockidfk FOREIGN KEY(jellycatsizeid) REFERENCES size(jellycatsizeid)
+        );"""
+        cursor = conn.cursor()
+        cursor.execute(sql)
+        conn.commit()
+
+        ### insert stocks data into postgresql
+        df_stocks.to_sql('stock', engine, if_exists='append', index=False)
+
+        ### Retrieve query results (to get primary keys)
+        sql = '''select * 
+            from stock'''
+        df_stocks = pd.read_sql_query(sql, conn)
+
+        ### create a csv file with today's date for tracking
+        date_today = date.today()
+        df_stocks.to_csv(f"./data/jellycat_stocks_{date_today}.csv", index=False)
+        
+        print("stock page done ;)")
+    
+    except:
+        print("stock page failed!")
 
     try:
         ### start spark engine
@@ -120,6 +168,7 @@ def daily_scraping():
         ### ingest data from postgresql to delta lake
         bronze_jellycat(spark)
         bronze_size(spark)
+        bronze_stock(spark)
 
         ### silver level
         silver_all_join(spark)
