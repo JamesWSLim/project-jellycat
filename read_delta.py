@@ -8,37 +8,28 @@ builder = pyspark.sql.SparkSession.builder.appName("Jellycat-ETL") \
 
 spark = configure_spark_with_delta_pip(builder).getOrCreate()
 
-# ### read data with Change Data Feed
-# bronze_jellycat_cdf = spark.read.format("delta") \
-#     .option("readChangeFeed", "true") \
-#     .option("startingVersion", 0) \
-#     .option("endingVersion", 10) \
-#     .load("./spark-warehouse/bronzejellycat")
+bronzejellycat = spark.read.format("delta") \
+    .load("./spark-warehouse/bronzejellycat")
+bronzejellycat.createOrReplaceTempView("jellycattemp")
+bronzejellycat.show()
 
-# bronze_size_cdf = spark.read.format("delta") \
-#     .option("readChangeFeed", "true") \
-#     .option("startingVersion", 0) \
-#     .option("endingVersion", 10) \
-#     .load("./spark-warehouse/bronzesize")
+bronzesize = spark.read.format("delta") \
+    .load("./spark-warehouse/bronzesize")
+bronzesize.createOrReplaceTempView("sizetemp")
+bronzesize.show()
 
-# bronze_size_cdf.show()
+bronzestock = spark.read.format("delta") \
+    .load("./spark-warehouse/bronzestock")
+bronzestock.createOrReplaceTempView("stocktemp")
+bronzestock.show()
 
-#### read data by version (time travel)
-# bronze_jellycat_version = spark.read.format("delta") \
-#     .option("versionAsOf", 1) \
-#     .load("./spark-warehouse/bronze_jellycat")
-
-# bronze_jellycat_version.show()
-
-df_restocked = spark.read.format("delta") \
-    .load("./spark-warehouse/3daysdiff")
-df_restocked.createOrReplaceTempView('df3daysdiff')
-df_new_in = spark.sql(
-        """
-        SELECT jellycatname,size,stocktoday,category,stock3daysago,link,imagelink,price,height,width FROM df3daysdiff
-        WHERE LOWER(stocktoday) LIKE LOWER('%In Stock%')
-        AND stock3daysago IS NULL
+### select all data
+all_df = spark.sql(
+    """SELECT t1.jellycatid,t1.jellycatname,t1.category,t1.link,t1.imagelink,t1.datecreated as jellycatdatecreated,
+    t2.jellycatsizeid,t2.size,t2.height,t2.width,t2.price,t2.stock,t2.datecreated as sizedatecreated, t3.stockcount
+    FROM jellycattemp t1
+    LEFT JOIN sizetemp t2 on t1.jellycatid=t2.jellycatid
+    LEFT JOIN stocktemp t3 on t2.jellycatsizeid=t3.jellycatsizeid
     """
-    )
-df_new_in.show()
-# df_new_in.write.format("delta").mode("overwrite").save("./spark-warehouse/new-in")
+)
+all_df.show()

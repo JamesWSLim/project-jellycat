@@ -1,4 +1,4 @@
-from scraping.jellycat_and_size_scrape import *
+from scraping.scrape_aggregate import *
 from medallion_bronze.bronze_jellycat import *
 from medallion_bronze.bronze_size import *
 from medallion_bronze.bronze_stock import *
@@ -109,17 +109,18 @@ def daily_scraping():
     except:
         print("sizes page failed!")
 
+    ### stock scraping
     try:
         print("stock page scraping started ;)")
 
         df_jellycat_size = pd.merge(df_jellycat, df_sizes, on="jellycatid")
         df_jellycat_size = df_jellycat_size[df_jellycat_size["stock"]=="In Stock"]
         ### retrieve needed columns
-        df_jellycat_size = df_jellycat_size.reset_index()[["jellycatsizeid", "size", "link"]]
-        print(df_jellycat_size.head())
+        df_jellycat_size = df_jellycat_size.reset_index()[["jellycatsizeid", "size", "height", "width", "link"]]
 
         ### scrape jellycat stocks by jellycat_id
         df_stocks = scrape_stock_count_by_sizes(df_jellycat_size)
+        df_stocks = df_stocks[["jellycatsizeid","stockcount"]]
 
         ### drop stock table if exist with cascade (dropping all the foreign tables)
         sql = """DROP TABLE IF EXISTS stock CASCADE"""

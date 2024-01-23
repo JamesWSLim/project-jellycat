@@ -12,12 +12,13 @@ def silver_all_join(spark):
     bronzesize.createOrReplaceTempView("sizetemp")
 
     ### select all data
-    all_df = spark.sql(
-        """SELECT t1.jellycatid,t1.jellycatname,t1.category,t1.link,t1.imagelink,t1.datecreated as jellycatdatecreated,
-        t2.size,t2.height,t2.width,t2.price,t2.stock,t2.datecreated as sizedatecreated
+    all_df = spark.sql("""
+        SELECT t1.jellycatid,t1.jellycatname,t1.category,t1.link,t1.imagelink,t1.datecreated as jellycatdatecreated,
+        t2.jellycatsizeid,t2.size,t2.height,t2.width,t2.price,t2.stock,t2.datecreated as sizedatecreated, t3.stockcount
         FROM jellycattemp t1
         LEFT JOIN sizetemp t2 on t1.jellycatid=t2.jellycatid
-        """
+        LEFT JOIN stocktemp t3 on t2.jellycatsizeid=t3.jellycatsizeid
+    """
     )
     all_df.createOrReplaceTempView("alltemp")
     all_df.write.format("delta").mode("overwrite").save("./spark-warehouse/all")
