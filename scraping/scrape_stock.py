@@ -12,9 +12,8 @@ def click_newletter_popup(page):
 def scrape_stock_count(jellycatsizeid, size, page):
 
     jellycatsizeid_list = []
-    size_list = []
     stock_count_list = []
-
+    
     size_button = page.get_by_text(size)
     size_button.click()
     buy_me_button = page.get_by_role("button", name="Buy Me")
@@ -29,10 +28,8 @@ def scrape_stock_count(jellycatsizeid, size, page):
     stock_count = page.locator(".header-itemcount").text_content()
     
     jellycatsizeid_list.append(jellycatsizeid)
-    size_list.append(size)
     stock_count_list.append(stock_count)
 
     df = pd.DataFrame({"jellycatsizeid": jellycatsizeid_list,
-                        'size': size_list, 
                         'stockcount': stock_count_list})
     return df

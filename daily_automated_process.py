@@ -1,5 +1,4 @@
 from datetime import date
-
 from daily_scraping import *
 
 try:

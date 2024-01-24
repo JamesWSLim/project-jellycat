@@ -1,8 +1,9 @@
-from scraping.jellycat_and_size_scrape import *
+from scraping.scrape_aggregate import *
 from medallion_bronze.bronze_jellycat import *
 from medallion_bronze.bronze_size import *
 from medallion_bronze.bronze_stock import *
-from medallion_silver.all_join import *
+from medallion_silver.silver import *
+from medallion_gold.gold import *
 
 from pyspark.sql import SparkSession
 from delta import *
@@ -115,8 +116,7 @@ def daily_scraping():
         df_jellycat_size = pd.merge(df_jellycat, df_sizes, on="jellycatid")
         df_jellycat_size = df_jellycat_size[df_jellycat_size["stock"]=="In Stock"]
         ### retrieve needed columns
-        df_jellycat_size = df_jellycat_size.reset_index()[["jellycatsizeid", "size", "link"]]
-        print(df_jellycat_size.head())
+        df_jellycat_size = df_jellycat_size.reset_index()
 
         ### scrape jellycat stocks by jellycat_id
         df_stocks = scrape_stock_count_by_sizes(df_jellycat_size)
@@ -170,9 +170,19 @@ def daily_scraping():
         bronze_size(spark)
         bronze_stock(spark)
 
+        builder = SparkSession \
+            .builder.appName("Jellycat-ETL") \
+            .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
+            .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
+
+        spark = configure_spark_with_delta_pip(builder).getOrCreate()
+        gold_aggregate(spark)
+        
         ### silver level
         silver_all_join(spark)
 
+        ### gold level
+        gold_aggregate(spark)
         print("ETL done ;)")
 
     except:
