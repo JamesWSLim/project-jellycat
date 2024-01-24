@@ -2,7 +2,7 @@ from scraping.scrape_aggregate import *
 from medallion_bronze.bronze_jellycat import *
 from medallion_bronze.bronze_size import *
 from medallion_bronze.bronze_stock import *
-from medallion_silver.all_join import *
+from medallion_silver.silver import *
 
 from pyspark.sql import SparkSession
 from delta import *
