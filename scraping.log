@@ -1,130 +1,0 @@
-/Users/jameslim/Downloads/projects/jellycat-scraping/daily_scraping.py:59: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
-  df_jellycat = pd.read_sql_query(sql, conn)
-/Users/jameslim/Downloads/projects/jellycat-scraping/daily_scraping.py:101: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
-  df_sizes = pd.read_sql_query(sql, conn)
-/Users/jameslim/Downloads/projects/jellycat-scraping/daily_scraping.py:148: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
-  df_stocks = pd.read_sql_query(sql, conn)
-:: loading settings :: url = jar:file:/Users/jameslim/Downloads/projects/jellycat-scraping/jellycat-env/lib/python3.11/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
-Ivy Default Cache set to: /Users/jameslim/.ivy2/cache
-The jars for the packages stored in: /Users/jameslim/.ivy2/jars
-io.delta#delta-spark_2.12 added as a dependency
-:: resolving dependencies :: org.apache.spark#spark-submit-parent-d21aed97-3558-48a0-ac9f-b74d67d9d458;1.0
-	confs: [default]
-	found io.delta#delta-spark_2.12;3.0.0 in central
-	found io.delta#delta-storage;3.0.0 in central
-	found org.antlr#antlr4-runtime;4.9.3 in central
-:: resolution report :: resolve 180ms :: artifacts dl 7ms
-	:: modules in use:
-	io.delta#delta-spark_2.12;3.0.0 from central in [default]
-	io.delta#delta-storage;3.0.0 from central in [default]
-	org.antlr#antlr4-runtime;4.9.3 from central in [default]
-	---------------------------------------------------------------------
-	|                  |            modules            ||   artifacts   |
-	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
-	---------------------------------------------------------------------
-	|      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
-	---------------------------------------------------------------------
-:: retrieving :: org.apache.spark#spark-submit-parent-d21aed97-3558-48a0-ac9f-b74d67d9d458
-	confs: [default]
-	0 artifacts copied, 3 already retrieved (0kB/5ms)
-24/01/23 11:08:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-Setting default log level to "WARN".
-To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
-[Stage 1:>                                                          (0 + 1) / 1]                                                                                24/01/23 11:08:18 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
-[Stage 4:>                                                         (0 + 8) / 50][Stage 4:=========>                                                (8 + 8) / 50][Stage 4:==================>                                      (16 + 8) / 50][Stage 4:===========================>                             (24 + 8) / 50][Stage 4:====================================>                    (32 + 8) / 50][Stage 4:======================================>                  (34 + 8) / 50]                                                                                [Stage 11:=================>                                      (16 + 8) / 50][Stage 11:==========================>                             (24 + 8) / 50][Stage 11:===================================>                    (32 + 8) / 50][Stage 11:================================================>       (43 + 7) / 50]                                                                                [Stage 19:=====================>                                  (19 + 9) / 50][Stage 19:============================================>           (40 + 8) / 50][Stage 19:=====================================================>  (48 + 2) / 50]                                                                                [Stage 26:=============================>                          (26 + 8) / 50][Stage 26:===============================================>        (42 + 8) / 50]                                                                                [Stage 34:===================================>                    (32 + 8) / 50]                                                                                [Stage 41:=========================>                              (23 + 9) / 50][Stage 41:===================================>                    (32 + 8) / 50][Stage 41:============================================>           (40 + 8) / 50]                                                                                main page scraping started ;)
-606
-main page done ;)
-sizes page scraping started ;)
-size 0 Done :)
-size 50 Done :)
-/us/cuddlebud-morgan-mole-cud3m/
-size 100 Done :)
-/us/little-monkey-l3m/
-/us/lavender-dragon-lav2dd/
-/us/lavender-dragon-lav2dd/
-size 150 Done :)
-/us/otto-sausage-dog-ot6sdp/
-size 200 Done :)
-size 250 Done :)
-/us/blossom-dusky-blue-bunny-with-personalised-red-jumper-jumprbl3dusk/
-/us/odyssey-octopus-ody2oc/
-/us/odyssey-octopus-ody2oc/
-/us/odyssey-octopus-ody2oc/
-size 300 Done :)
-/us/storm-octopus-st2oc/
-size 350 Done :)
-/us/fuddlewuddle-lion-fw6ln/
-size 400 Done :)
-size 450 Done :)
-/us/bashful-snow-tiger-bas3snt/
-/us/birdling-blue-jay-bir6blj/
-size 500 Done :)
-size 550 Done :)
-/us/perry-polar-bear-pe6pb/
-/us/peanut-penguin-small-pns3pn/
-/us/peanut-penguin-small-pns3pn/
-/us/peanut-penguin-small-pns3pn/
-/us/peanut-penguin-small-pns3pn/
-size 600 Done :)
-sizes page done ;)
-stock page scraping started ;)
-stock 0 Done :)
-https://www.jellycat.com/us/bashful-red-love-heart-bunny-bb3love/
-https://www.jellycat.com/us/loulou-love-bug-l6lbug/
-https://www.jellycat.com/us/bibbly-bobbly-sheep-b2sh/
-stock 50 Done :)
-https://www.jellycat.com/us/lapin-timide-et-ses-petites-aventures-livre-little-me-bk4lmf/
-https://www.jellycat.com/us/bashful-christmas-bunny-decoration-bas6cbor/
-https://www.jellycat.com/us/merry-mouse-book-bk4mer/
-https://www.jellycat.com/us/merry-mouse-book-bk4mer/
-https://www.jellycat.com/us/merry-mouse-book-bk4mer/
-https://www.jellycat.com/us/merry-mouse-book-bk4mer/
-https://www.jellycat.com/us/festive-folly-penguin-ffh6pen/
-https://www.jellycat.com/us/merry-mouse-skiing-mer3s/
-stock 100 Done :)
-https://www.jellycat.com/us/winter-warmer-pippa-black-labrador-pip3fbl/
-https://www.jellycat.com/us/amuseabean-bunny-ad3b/
-https://www.jellycat.com/us/bashful-luxe-bunny-rosa-bas3ros/
-https://www.jellycat.com/us/bashful-luxe-bunny-rosa-bas3ros/
-https://www.jellycat.com/us/bashful-luxe-bunny-rosa-bas3ros/
-https://www.jellycat.com/us/lavender-dragon-lav2dd/
-https://www.jellycat.com/us/pippa-black-labrador-pip3bl/
-stock 150 Done :)
-https://www.jellycat.com/us/loveme-lobster-lov3ml/
-https://www.jellycat.com/us/fishiful-orange-fish3o/
-stock 200 Done :)
-https://www.jellycat.com/us/oakley-owl-oak2o/
-https://www.jellycat.com/us/spindleshanks-crab-spin2c/
-https://www.jellycat.com/us/betty-corgi-bet3c/
-https://www.jellycat.com/us/cooper-doodle-dog-coo3lab/
-https://www.jellycat.com/us/cooper-doodle-dog-coo3lab/
-https://www.jellycat.com/us/cooper-doodle-dog-coo3lab/
-https://www.jellycat.com/us/cooper-doodle-dog-coo3lab/
-https://www.jellycat.com/us/harper-pup-har3pup/
-https://www.jellycat.com/us/hibernating-bunny-hib3b/
-stock 250 Done :)
-https://www.jellycat.com/us/rufus-bear-ruf2br/
-https://www.jellycat.com/us/blossom-jasmine-bunny-with-personalised-red-jumper-jumprbl4bnl/
-https://www.jellycat.com/us/if-i-were-a-pony-book-bb444py/
-https://www.jellycat.com/us/lingley-bunny-soother-ling4bs/
-https://www.jellycat.com/us/onyx-dragon-onyx2dd/
-stock 300 Done :)
-https://www.jellycat.com/us/bashful-tiger-bas3tig/
-https://www.jellycat.com/us/blossom-dusky-blue-with-personalised-cream-jumper-jumpcbl3dusk/
-https://www.jellycat.com/us/blossom-blush-bunny-with-personalised-navy-jumper-jumpnbl3blu/
-https://www.jellycat.com/us/bashful-dino-bas3dno/
-stock 350 Done :)
-https://www.jellycat.com/us/bashful-truffle-bunny-with-personalised-cream-jumper-jumpcbas3btr/
-https://www.jellycat.com/us/the-very-brave-lion-book-and-fuddlewuddle-lion-setbk4bl/
-https://www.jellycat.com/us/bumbly-bear-bum2br/
-https://www.jellycat.com/us/bartholomew-bear-barm3br/
-stock 400 Done :)
-https://www.jellycat.com/us/blossom-cream-bunny-bl3cbn/
-https://www.jellycat.com/us/bashful-pink-bunny-with-personalised-navy-jumper-jumpnbas4bp/
-stock 450 Done :)
-https://www.jellycat.com/us/bashful-cream-bunny-bas3bc/
-https://www.jellycat.com/us/merry-mouse-book-and-merry-mouse-setbk4mer/
-stock page done ;)
-ETL failed!
-scraping & ETL done!
-2024-01-23
