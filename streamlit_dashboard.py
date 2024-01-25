@@ -132,10 +132,11 @@ with maintab4:
     st.header(f'Returning Jellycats')
     df_out_of_stock = DeltaTable("./spark-warehouse/out-of-stock").to_pandas()
     returning_stock_list = sorted(df_out_of_stock["stock"].unique())
-    returning_stock_list.remove("Out of stock")
+    if "Out of stock" in returning_stock_list:
+        returning_stock_list.remove("Out of stock")
     selected_stock = st.selectbox('Returning options', returning_stock_list)
     df_returning_stock = df[df["stock"]==selected_stock]
-    st.dataframe(df_returning_stock.reset_index()[["jellycatname","size",'price',"category",'height','width']],use_container_width=True, hide_index=True)
+    st.dataframe(df_returning_stock.reset_index()[["jellycatname","category","size",'height','width','stock']],use_container_width=True, hide_index=True)
 
 with maintab5:
     ### Just restocked within last 3 days

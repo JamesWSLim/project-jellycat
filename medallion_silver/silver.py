@@ -111,3 +111,12 @@ def silver_all_join(spark):
     """
     )
     df_new_in.write.format("delta").mode("overwrite").save("./spark-warehouse/new-in")
+
+builder = SparkSession \
+        .builder.appName("Jellycat-ETL") \
+        .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
+        .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
+
+spark = configure_spark_with_delta_pip(builder).getOrCreate()
+
+silver_all_join(spark)
