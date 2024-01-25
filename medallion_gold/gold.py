@@ -33,10 +33,8 @@ def gold_aggregate(spark):
 
 builder = SparkSession \
             .builder.appName("Jellycat-ETL") \
-            .config("spark.jars", "postgresql-42.7.1.jar") \
             .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
             .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
 
 spark = configure_spark_with_delta_pip(builder).getOrCreate()
-
 gold_aggregate(spark)

@@ -107,6 +107,7 @@ with maintab3:
     size_list = [x.capitalize() for x in df_selected_jellycat_plot["size"].unique()]
     selected_size = st.selectbox("Select your size", size_list)
     df_selected_jellycat_plot = df_selected_jellycat_plot[df_selected_jellycat_plot["size"]==selected_size.upper()]
+    df_selected_jellycat_plot = df_selected_jellycat_plot.sort_values("jellycatdatecreated", ascending=True)
     tab1, tab2 = st.tabs(["Stock Count :bear:", "Price :moneybag:"])
     with tab1:
         fig = px.line(df_selected_jellycat_plot, x="jellycatdatecreated", y="stockcount", color="size",

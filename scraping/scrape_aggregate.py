@@ -43,7 +43,7 @@ def jellycat_sizes_by_id(df):
                     page.close()
                 ### error handling    
                 except PlaywrightTimeoutError:
-                    print(row["link"])
+                    print(f'https://www.jellycat.com{link}')
                     page.close()
                     continue
                 break
@@ -54,13 +54,14 @@ def scrape_stock_count_by_sizes(df_sizes):
 
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
-        df_stocks = pd.DataFrame(columns =['jellycatsizeid','size','stockcount'])
+        df_stocks = pd.DataFrame(columns =['jellycatsizeid','stockcount'])
 
         for index, row in df_sizes.iterrows():
             jellycatsizeid = row['jellycatsizeid']
             size = row['size']
             height = row['height']
             width = row['width']
+            
             if math.isnan(width):
                 if not math.isnan(height):
                     size = f'{size} - H{int(height)}"'
@@ -68,23 +69,31 @@ def scrape_stock_count_by_sizes(df_sizes):
                 size = f'{size} - H{int(height)}" X W{int(width)}"'
             link = row['link']
 
+            i=0
             while True:
-                try:
-                    page = browser.new_page()
-                    page.set_default_timeout(3000)
-                    stealth_sync(page)
-                    page.goto(f'https://www.jellycat.com{link}')
-                    df_stock = scrape_stock_count(jellycatsizeid, size, page)
-                    df_stocks = pd.concat([df_stocks, df_stock])
-                    if index % 50 == 0:
-                        print(f"stock {index} Done :)")
-                    page.close()
+                ### if loop more than 10 times, assign stock as 0. Some jellycats might sold out during the process
+                if i < 10:
+                    try:
+                        page = browser.new_page()
+                        page.set_default_timeout(3000)
+                        stealth_sync(page)
+                        page.goto(f'https://www.jellycat.com{link}')
+                        df_stock = scrape_stock_count(jellycatsizeid, size, page)
+                        df_stocks = pd.concat([df_stocks, df_stock])
+                        if index % 50 == 0:
+                            print(f"stock {index} Done :)")
+                        page.close()
 
-                ### error handling    
-                except PlaywrightTimeoutError:
-                    print(f'https://www.jellycat.com{link}')
-                    page.close()
-                    continue
+                    ### error handling    
+                    except PlaywrightTimeoutError:
+                        print(f'https://www.jellycat.com{link}')
+                        page.close()
+                        i+=1
+                        continue
+                else:
+                    df_stock = pd.DataFrame({"jellycatsizeid": [jellycatsizeid],
+                        'stockcount': [0]})
+                    df_stocks = pd.concat([df_stocks, df_stock])
                 break
         browser.close()
         return df_stocks
@@ -105,4 +114,3 @@ def data_cleaning(df):
     df["width"] = df["width"].str.replace("W", "").str.replace("\"", "")
     df = df[["jellycatid","jellycatname","size","price","stock","datecreated","height","width"]]
     return df
-
