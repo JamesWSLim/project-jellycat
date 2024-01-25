@@ -117,11 +117,7 @@ def daily_scraping():
         df_jellycat_size = pd.merge(df_jellycat, df_sizes, on="jellycatid")
         df_jellycat_size = df_jellycat_size[df_jellycat_size["stock"]=="In Stock"]
         ### retrieve needed columns
-<<<<<<< HEAD
         df_jellycat_size = df_jellycat_size.reset_index()
-=======
-        df_jellycat_size = df_jellycat_size.reset_index()[["jellycatsizeid", "size", "height", "width", "link"]]
->>>>>>> 5998c3913c77a66154b5b601831a37e5778143d9
 
         ### scrape jellycat stocks by jellycat_id
         df_stocks = scrape_stock_count_by_sizes(df_jellycat_size)
