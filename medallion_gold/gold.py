@@ -37,4 +37,5 @@ builder = SparkSession \
             .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
 
 spark = configure_spark_with_delta_pip(builder).getOrCreate()
+
 gold_aggregate(spark)
