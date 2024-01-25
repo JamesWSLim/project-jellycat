@@ -110,7 +110,7 @@ with maintab3:
     df_selected_jellycat_plot = df_selected_jellycat_plot.sort_values("jellycatdatecreated", ascending=True)
     tab1, tab2 = st.tabs(["Stock Count :bear:", "Price :moneybag:"])
     with tab1:
-        fig = px.line(df_selected_jellycat_plot, x="jellycatdatecreated", y="stockcount", color="size",
+        fig = px.line(df_selected_jellycat_plot, x="jellycatdatecreated", y="stockcount", color="size", symbol="size",
                         labels={
                         "jellycatdatecreated": "Date",
                         "price": "Stock Count"
@@ -119,7 +119,7 @@ with maintab3:
         st.plotly_chart(fig, use_container_width=True)
 
     with tab2:
-        fig = px.line(x=df_selected_jellycat_plot["jellycatdatecreated"], y=df_selected_jellycat_plot["price"],
+        fig = px.line(df_selected_jellycat_plot, x="jellycatdatecreated", y="price", color="size", symbol="size",
                         labels={
                         "jellycatdatecreated": "Date",
                         "price": "Price (USD)"
