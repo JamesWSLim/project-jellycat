@@ -59,9 +59,9 @@ def daily_scraping():
             from jellycat'''
         df_jellycat = pd.read_sql_query(sql, conn)
 
-        ### create a csv file with today's date for tracking
-        date_today = date.today()
-        df_jellycat.to_csv(f"./data/jellycat_{date_today}.csv", index=False)
+        # ### create a csv file with today's date for tracking
+        # date_today = date.today()
+        # df_jellycat.to_csv(f"./data/jellycat_{date_today}.csv", index=False)
 
         ### retrieve needed columns
         df_jellycat = df_jellycat.reset_index()[["jellycatid", "jellycatname", "link"]]

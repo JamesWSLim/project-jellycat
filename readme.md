@@ -4,8 +4,12 @@
 Jellycat Project is an end-to-end automated data pipeline project from web scraping, ETL, to data analysis, and dashboard. The goal of this project is to create an interactive and comprehensive dashboard to keep track of daily price & stock, product information, and various analysis of Jellycat products with the combination of different technologies, demonstrating the integration of data scraping, data pipeline and data analytics into real-life solution.
 ## Jellycat Dashboard (https://project-jellycat.streamlit.app/)
 
-![](streamlit-streamlit_dashboard-2024-01-16-12-01-95.gif)
+![](img/dashboard.gif)
 
+## Data Architecture
+Here is a flowchart of the data architecture. Various applications and platforms are implemented to create an end-to-end pipeline, from data collection to data visualization. \
+![](img/data_architecture.png)
+\
 Here are some applications used in the project:
 * **Playwright (web scraping)**: 
     * Cross-Browser Automation: automate browser actions across different browsers, ensuring consistent behavior
@@ -26,5 +30,13 @@ Here are some applications used in the project:
     * Flexible Scheduling: provides flexible scheduling options, allowing you to run your data scraping job daily, weekly, or at any desired frequency
 
 ## Data Schema
-Medallion Architecture is used in data pipeline to perform increamentally improving structure to ensure the quality of data going through layers. The achitecture starts with Bronze (raw integration), to Silver (Filtered, Cleaned, Augmented) and finally ends with Gold level (business-level aggregates).
+Medallion Architecture is used in data pipeline to perform increamentally improving structure to ensure the quality of data going through layers. The achitecture starts with Bronze (raw integration), to Silver (filtered, cleaned, augmented) and finally ends with Gold (business-level aggregates).
 
+![](img/medallion_architecture_schema.png)
+
+## Data Scraping
+Scraping is performed using Playwright and Selectolax for browsing control and html parsing. Scraping process started by scraping all jellycats from mainpage. Sizes are scraped by collecting all the sizes for each Jellycat products. Stocks are scraped from jellycats with available stocks. Scraping process is performed in headless mode (running in background). \
+Here are some examples of scraping process for mainpage and sizes (Browser automations are shown for demonstrating purpose only and daily scraping will be done in headless mode). \
+\
+![](img/mainpage_scraping.gif)
+![](img/size_scraping.gif)
