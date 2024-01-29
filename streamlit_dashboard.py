@@ -135,7 +135,6 @@ with maintab4:
     ### Returning stock
     st.header(f'Returning Jellycats')
     df_out_of_stock = DeltaTable("./spark-warehouse/out-of-stock").to_pandas()
-    df_out_of_stock["jellycatdatecreated"] = df_out_of_stock["jellycatdatecreated"] - pd.Timedelta(hours=5)
     returning_stock_list = sorted(df_out_of_stock["stock"].unique())
     if "Out of stock" in returning_stock_list:
         returning_stock_list.remove("Out of stock")
@@ -147,7 +146,6 @@ with maintab5:
     ### Just restocked within last 3 days
     st.header(f'Jellycats restocked within last 3 days')
     df_restocked_within_3_days = DeltaTable("./spark-warehouse/restocked-within-3-days").to_pandas()
-    df_restocked_within_3_days["jellycatdatecreated"] = df_restocked_within_3_days["jellycatdatecreated"] - pd.Timedelta(hours=5)
     st.dataframe(df_restocked_within_3_days.reset_index()[["jellycatname","size",'price',"category"]],use_container_width=True, hide_index=True)
     ### Just new in within last 3 days
     st.header(f'Jellycats new in within last 3 days')
