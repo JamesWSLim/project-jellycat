@@ -20,6 +20,7 @@ maintab1, maintab2, maintab3, maintab4, maintab5, maintab6 = st.tabs(["All Jelly
 
 with maintab1:
     df = DeltaTable("./spark-warehouse/all").to_pandas()
+    df["jellycatdatecreated"] = df["jellycatdatecreated"] - pd.Timedelta(hours=5)
     df["stockcount"].fillna(0, inplace=True)
     df["jellycatdatecreated"] = pd.to_datetime(df["jellycatdatecreated"]).dt.date
     most_recent_date = df['jellycatdatecreated'].max()
@@ -65,6 +66,7 @@ with maintab1:
 with maintab2:
     ### Search/Select jellycat
     df = DeltaTable("./spark-warehouse/all").to_pandas()
+    df["jellycatdatecreated"] = df["jellycatdatecreated"] - pd.Timedelta(hours=5)
     df["stockcount"].fillna(0, inplace=True)
     df["jellycatdatecreated"] = pd.to_datetime(df["jellycatdatecreated"]).dt.date
     most_recent_date = df['jellycatdatecreated'].max()
@@ -93,6 +95,7 @@ with maintab2:
 with maintab3:
     ### price and stock tracker
     df = DeltaTable("./spark-warehouse/all").to_pandas()
+    df["jellycatdatecreated"] = df["jellycatdatecreated"] - pd.Timedelta(hours=5)
     df["jellycatdatecreated"] = pd.to_datetime(df["jellycatdatecreated"]).dt.date
     df["stockcount"].fillna(0, inplace=True)
     ### filter for jellycat name
@@ -108,6 +111,7 @@ with maintab3:
     selected_size = st.selectbox("Select your size", size_list)
     df_selected_jellycat_plot = df_selected_jellycat_plot[df_selected_jellycat_plot["size"]==selected_size.upper()]
     df_selected_jellycat_plot = df_selected_jellycat_plot.sort_values("jellycatdatecreated", ascending=True)
+    st.dataframe(df_selected_jellycat_plot)
     tab1, tab2 = st.tabs(["Stock Count :bear:", "Price :moneybag:"])
     with tab1:
         fig = px.line(df_selected_jellycat_plot, x="jellycatdatecreated", y="stockcount", color="size", symbol="size",
@@ -131,6 +135,7 @@ with maintab4:
     ### Returning stock
     st.header(f'Returning Jellycats')
     df_out_of_stock = DeltaTable("./spark-warehouse/out-of-stock").to_pandas()
+    df_out_of_stock["jellycatdatecreated"] = df_out_of_stock["jellycatdatecreated"] - pd.Timedelta(hours=5)
     returning_stock_list = sorted(df_out_of_stock["stock"].unique())
     if "Out of stock" in returning_stock_list:
         returning_stock_list.remove("Out of stock")
@@ -142,6 +147,7 @@ with maintab5:
     ### Just restocked within last 3 days
     st.header(f'Jellycats restocked within last 3 days')
     df_restocked_within_3_days = DeltaTable("./spark-warehouse/restocked-within-3-days").to_pandas()
+    df_restocked_within_3_days["jellycatdatecreated"] = df_restocked_within_3_days["jellycatdatecreated"] - pd.Timedelta(hours=5)
     st.dataframe(df_restocked_within_3_days.reset_index()[["jellycatname","size",'price',"category"]],use_container_width=True, hide_index=True)
     ### Just new in within last 3 days
     st.header(f'Jellycats new in within last 3 days')
