@@ -16,7 +16,7 @@ st.markdown(
 """)
 
 maintab1, maintab2, maintab3, maintab4, maintab5, maintab6 = st.tabs(["All Jellycats", "Jellycat Information",
-                                                                        "Price & Stock Tracker", "Returning Jellycats", "Sold Out/New In", "Analysis"])
+                                                                      "Price & Stock Tracker", "Returning Jellycats", "Sold Out/New In", "Analysis"])
 
 with maintab1:
     df = DeltaTable("./spark-warehouse/all").to_pandas()
