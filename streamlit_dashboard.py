@@ -188,20 +188,31 @@ with maintab5:
                 })
 
 with maintab6:
-    st.header(f'Revenue by category on {most_recent_date}')
-    df_agg_category = DeltaTable("./spark-warehouse/revenue-agg-category").to_pandas()
-    fig = px.pie(df_agg_category, values="totalrevenue", names="category")
-    st.plotly_chart(fig, use_container_width=True)
-    
-    st.header(f'Units sold by category on {most_recent_date}')
-    fig = px.pie(df_agg_category, values="totalunitsold", names="category")
-    st.plotly_chart(fig, use_container_width=True)
+    period_list = ["monthly","daily"]
+    type_list = ["size","category"]
+    filterperiod, filtersizecategory = st.columns(2, gap="large")
+    with filterperiod:
+        period_filter = st.selectbox("Select period", period_list)
+    with filtersizecategory:
+        type_filter = st.selectbox("Select type", type_list)       
 
-    st.header(f'Revenue by size on {most_recent_date}')
-    df_agg_size = DeltaTable("./spark-warehouse/revenue-agg-size").to_pandas()
-    fig = px.pie(df_agg_size, values="totalrevenue", names="size")
-    st.plotly_chart(fig, use_container_width=True)
+    if (period_filter == "monthly"):
+        df_agg = DeltaTable(f"./spark-warehouse/revenue-agg-{type_filter}").to_pandas()
+        st.header(f'Revenue by {type_filter} in {most_recent_date}')
+        fig = px.pie(df_agg, values="totalrevenue", names=type_filter)
+        st.plotly_chart(fig, use_container_width=True)
+    if (period_filter == "daily"):
+        pass
     
-    st.header(f'Units sold by size on {most_recent_date}')
-    fig = px.pie(df_agg_size, values="totalunitsold", names="size")
-    st.plotly_chart(fig, use_container_width=True)
+    # st.header(f'Units sold by category on {most_recent_date}')
+    # fig = px.pie(df_agg_category, values="totalunitsold", names="category")
+    # st.plotly_chart(fig, use_container_width=True)
+
+    # st.header(f'Revenue by size on {most_recent_date}')
+    # df_agg_size = DeltaTable("./spark-warehouse/revenue-agg-size").to_pandas()
+    # fig = px.pie(df_agg_size, values="totalrevenue", names="size")
+    # st.plotly_chart(fig, use_container_width=True)
+    
+    # st.header(f'Units sold by size on {most_recent_date}')
+    # fig = px.pie(df_agg_size, values="totalunitsold", names="size")
+    # st.plotly_chart(fig, use_container_width=True)

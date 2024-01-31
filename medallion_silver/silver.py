@@ -28,33 +28,32 @@ def silver_all_join(spark):
     all_df.createOrReplaceTempView("alltemp")
     all_df.write.format("delta").mode("overwrite").save("./spark-warehouse/all")
 
-    ### unit sold vs yesterday
-    df_unit_sold = spark.sql(
-        """
-        SELECT t1.jellycatname,t1.category,t1.link,t1.imagelink,t1.jellycatdatecreated,
-        t1.size,t1.height,t1.width,t1.price,t1.stockcount as stockeyesterday,t2.stockcount as stocktoday,
-        t2.stockcount-t1.stockcount as unitsold FROM alltemp t1
-        LEFT JOIN (
-            SELECT * FROM alltemp
-            WHERE DATE(jellycatdatecreated)=DATEADD(day, -1, DATE(CURRENT_TIMESTAMP))
-            AND stockcount > 0) t2
-            ON t2.jellycatname=t1.jellycatname AND t2.size=t1.size
-        WHERE DATE(t1.jellycatdatecreated) = DATE(CURRENT_TIMESTAMP)
-        ORDER BY unitsold DESC;
+    ### daily unit sold diff
+    df_revenue = spark.sql(
+    """
+        WITH previous_stockcount_cte AS (
+            SELECT jellycatname,jellycatdatecreated,size,price,category,
+            LAG(stockcount) OVER (PARTITION BY jellycatname,size ORDER BY date(jellycatdatecreated)) previous_stockcount,
+            stockcount
+            from alltemp
+        ),
+        previous_stockcount_no_null_cte (
+            SELECT jellycatname,jellycatdatecreated,size,price,category,
+            coalesce(previous_stockcount,0) as previous_stockcount,
+            coalesce(stockcount,0) as stockcount
+            FROM previous_stockcount_cte
+        ),
+        stockdiff AS (
+            SELECT jellycatname,jellycatdatecreated,size,price,category,
+            previous_stockcount-stockcount AS unitsold FROM previous_stockcount_no_null_cte
+            where previous_stockcount-stockcount>0
+        )
+        SELECT jellycatname, jellycatdatecreated,size,price,category,unitsold,
+        unitsold*price AS revenue
+        FROM stockdiff
     """
     )
-    df_unit_sold.createOrReplaceTempView("unitsoldtemp")
-    df_unit_sold.write.format("delta").mode("overwrite").save("./spark-warehouse/unit-sold")
-
-    ### revenue earned from yesteday
-    df_revenue_day = spark.sql(
-        """
-        SELECT jellycatname,category,link,imagelink,jellycatdatecreated,
-        size,height,width,price,stockeyesterday,stocktoday,unitsold,unitsold*price AS revenue FROM unitsoldtemp
-    """
-    )
-    df_revenue_day.write.format("delta").mode("overwrite").save("./spark-warehouse/revenue-day")
-    df_revenue_day.write.format("delta").mode("append").save("./spark-warehouse/revenue-all")
+    df_revenue.write.format("delta").mode("overwrite").save("./spark-warehouse/daily-revenue")
 
     ### out of stock
     df_out_of_stock = spark.sql(
@@ -102,7 +101,6 @@ def silver_all_join(spark):
     )
     df_outofstock_within_3_days.write.format("delta").mode("overwrite").save("./spark-warehouse/outofstock-within-3-days")
 
-    
     df_new_in = spark.sql(
         """
         SELECT jellycatname,size,stocktoday,category,stock3daysago,link,imagelink,price,height,width FROM df3daysdiff

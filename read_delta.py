@@ -23,14 +23,14 @@ spark = configure_spark_with_delta_pip(builder).getOrCreate()
 # bronzestock.createOrReplaceTempView("stocktemp")
 # bronzestock.show()
 
-df_revenue_day = spark.read.format("delta") \
-    .load("./spark-warehouse/revenue-day")
-df_revenue_day.createOrReplaceTempView("revenuedaytemp")
+df_all = spark.read.format("delta") \
+    .load("./spark-warehouse/all")
+df_all.createOrReplaceTempView("all")
 
-df_unit_sold = spark.sql(
+df = spark.sql(
     """
-        SELECT * FROM revenuedaytemp
-        ORDER BY revenue DESC;
+        SELECT * FROM all
+        WHERE date(jellycatdatecreated) = '2024-01-30';
     """
     )
-df_unit_sold.show()
+df.show()
