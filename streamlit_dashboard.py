@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import numpy as np
+import datetime
 
 st.title('Jellycat Daily Stock, Price, and Information')
 
@@ -101,10 +102,15 @@ with maintab3:
     ### filter for jellycat name
     selected_jellycat = st.selectbox("Type to Search or Select your Jellycat", list(df["jellycatname"].unique()))
     df_selected_jellycat = df[(df["jellycatname"]==selected_jellycat)]
+    st.dataframe(df_selected_jellycat["imagelink"])
+
     ### display image
+    image = df_selected_jellycat["imagelink"].tolist()
+    st.image('https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png', caption=selected_jellycat)
     col1, col2, col3 = st.columns(3)
     with col2:
-        st.image(list(df_selected_jellycat["imagelink"])[0], caption=selected_jellycat)
+        image = df_selected_jellycat["imagelink"].tolist()
+        st.image('https://www.jellycat.com/images/products/medium/FP3FAB.jpg', caption=selected_jellycat)
     df_selected_jellycat_display = df_selected_jellycat.reset_index()[["size",'price','stockcount','stock',"category",'height','width']]
     df_selected_jellycat_plot = df[(df["jellycatname"]==selected_jellycat)]
     size_list = [x.capitalize() for x in df_selected_jellycat_plot["size"].unique()]
@@ -134,6 +140,7 @@ with maintab4:
     ### Returning stock
     st.header(f'Returning Jellycats')
     df_out_of_stock = DeltaTable("./spark-warehouse/out-of-stock").to_pandas()
+    df_out_of_stock["jellycatdatecreated"] = pd.to_datetime(df_out_of_stock["jellycatdatecreated"]).dt.date
     most_recent_date = df_out_of_stock['jellycatdatecreated'].max()
     df_out_of_stock = df_out_of_stock[df_out_of_stock["jellycatdatecreated"] == most_recent_date]
     returning_stock_list = sorted(df_out_of_stock["stock"].unique())
@@ -188,22 +195,36 @@ with maintab5:
                 })
 
 with maintab6:
-    period_list = ["monthly","daily"]
+    period_list = ["month","day"]
     type_list = ["size","category"]
     filterperiod, filtersizecategory = st.columns(2, gap="large")
     with filterperiod:
         period_filter = st.selectbox("Select period", period_list)
     with filtersizecategory:
-        type_filter = st.selectbox("Select type", type_list)       
+        type_filter = st.selectbox("Select type", type_list)
+    month = {'1':'January','2':'February','3':'March','4':'April',
+            '5':'May','6':'June','7':'July','8':'August',
+            '9':'September','10':'October','11':'November','12':'December'}
 
-    if (period_filter == "monthly"):
-        df_agg = DeltaTable(f"./spark-warehouse/revenue-agg-{type_filter}").to_pandas()
-        st.header(f'Revenue by {type_filter} in {most_recent_date}')
+    if period_filter == "month":
+        most_recent_month = most_recent_date.month
+        df_agg = DeltaTable(f"./spark-warehouse/revenue-agg-{type_filter}-{period_filter}").to_pandas()
+        st.header(f'Monthly Revenue by {type_filter} in {month[str(most_recent_month)]}')
         fig = px.pie(df_agg, values="totalrevenue", names=type_filter)
         st.plotly_chart(fig, use_container_width=True)
-    if (period_filter == "daily"):
-        pass
-    
+        st.header(f'Monthly Units Sold by {type_filter} in {month[str(most_recent_month)]}')
+        fig = px.pie(df_agg, values="totalunitsold", names=type_filter)
+        st.plotly_chart(fig, use_container_width=True)
+
+    if (period_filter == "day"):
+        df_agg = DeltaTable(f"./spark-warehouse/revenue-agg-{type_filter}-{period_filter}").to_pandas()
+        st.header(f'Monthly Revenue by {type_filter} on {most_recent_date}')
+        fig = px.pie(df_agg, values="totalrevenue", names=type_filter)
+        st.plotly_chart(fig, use_container_width=True)
+        st.header(f'Monthly Units Sold by {type_filter} on {most_recent_date}')
+        fig = px.pie(df_agg, values="totalunitsold", names=type_filter)
+        st.plotly_chart(fig, use_container_width=True)
+
     # st.header(f'Units sold by category on {most_recent_date}')
     # fig = px.pie(df_agg_category, values="totalunitsold", names="category")
     # st.plotly_chart(fig, use_container_width=True)
