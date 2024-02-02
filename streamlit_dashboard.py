@@ -215,10 +215,10 @@ with maintab6:
 
     if (period_filter == "day"):
         df_agg = DeltaTable(f"./spark-warehouse/revenue-agg-{type_filter}-{period_filter}").to_pandas()
-        st.header(f'Monthly Revenue by {type_filter} on {most_recent_date}')
+        st.header(f'Daily Revenue by {type_filter} on {most_recent_date}')
         fig = px.pie(df_agg, values="totalrevenue", names=type_filter)
         st.plotly_chart(fig, use_container_width=True)
-        st.header(f'Monthly Units Sold by {type_filter} on {most_recent_date}')
+        st.header(f'Daily Units Sold by {type_filter} on {most_recent_date}')
         fig = px.pie(df_agg, values="totalunitsold", names=type_filter)
         st.plotly_chart(fig, use_container_width=True)
 
