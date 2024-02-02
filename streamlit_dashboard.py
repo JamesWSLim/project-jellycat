@@ -102,15 +102,12 @@ with maintab3:
     ### filter for jellycat name
     selected_jellycat = st.selectbox("Type to Search or Select your Jellycat", list(df["jellycatname"].unique()))
     df_selected_jellycat = df[(df["jellycatname"]==selected_jellycat)]
-    st.dataframe(df_selected_jellycat["imagelink"])
 
     ### display image
-    image = df_selected_jellycat["imagelink"].tolist()
-    st.image('https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png', caption=selected_jellycat)
     col1, col2, col3 = st.columns(3)
     with col2:
         image = df_selected_jellycat["imagelink"].tolist()
-        st.image('https://www.jellycat.com/images/products/medium/FP3FAB.jpg', caption=selected_jellycat)
+        st.image(image[0], caption=selected_jellycat)
     df_selected_jellycat_display = df_selected_jellycat.reset_index()[["size",'price','stockcount','stock',"category",'height','width']]
     df_selected_jellycat_plot = df[(df["jellycatname"]==selected_jellycat)]
     size_list = [x.capitalize() for x in df_selected_jellycat_plot["size"].unique()]
