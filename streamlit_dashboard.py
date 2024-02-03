@@ -221,16 +221,3 @@ with maintab6:
         st.header(f'Daily Units Sold by {type_filter} on {most_recent_date}')
         fig = px.pie(df_agg, values="totalunitsold", names=type_filter)
         st.plotly_chart(fig, use_container_width=True)
-
-    # st.header(f'Units sold by category on {most_recent_date}')
-    # fig = px.pie(df_agg_category, values="totalunitsold", names="category")
-    # st.plotly_chart(fig, use_container_width=True)
-
-    # st.header(f'Revenue by size on {most_recent_date}')
-    # df_agg_size = DeltaTable("./spark-warehouse/revenue-agg-size").to_pandas()
-    # fig = px.pie(df_agg_size, values="totalrevenue", names="size")
-    # st.plotly_chart(fig, use_container_width=True)
-    
-    # st.header(f'Units sold by size on {most_recent_date}')
-    # fig = px.pie(df_agg_size, values="totalunitsold", names="size")
-    # st.plotly_chart(fig, use_container_width=True)
