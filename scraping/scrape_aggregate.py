@@ -10,7 +10,7 @@ from datetime import date
 
 def scrape_main_page():
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=False)
+        browser = playwright.chromium.launch(headless=True)
         page = browser.new_page()
         stealth_sync(page)
         page.goto('https://www.jellycat.com/us/all-animals/?sort=422&page=30')
@@ -21,7 +21,7 @@ def scrape_main_page():
 def jellycat_sizes_by_id(df):
     ### run playwright
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=False)
+        browser = playwright.chromium.launch(headless=True)
         df_sizes = pd.DataFrame(columns =['jellycatid','jellycatname','size','price','stock'])
 
         ### loop through jellycat_ids
@@ -53,7 +53,7 @@ def jellycat_sizes_by_id(df):
 def scrape_stock_count_by_sizes(df_sizes):
 
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=False)
+        browser = playwright.chromium.launch(headless=True)
         df_stocks = pd.DataFrame(columns =['jellycatsizeid','stockcount'])
 
         for index, row in df_sizes.iterrows():
