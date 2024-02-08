@@ -18,3 +18,4 @@ scrape_stock.py
 docker_compose_up.sh
 scraping.log
 csv_to_postgres.py
+csv_data
