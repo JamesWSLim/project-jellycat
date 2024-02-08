@@ -61,7 +61,7 @@ def daily_scraping():
 
         ### create a csv file with today's date for tracking
         date_today = date.today()
-        df_jellycat.to_csv(f"./data/jellycat_{date_today}.csv", index=False)
+        df_jellycat.to_csv(f"csv_data/jellycat_{date_today}.csv", index=False)
 
         ### retrieve needed columns
         df_jellycat = df_jellycat.reset_index()[["jellycatid", "jellycatname", "link"]]
@@ -103,7 +103,7 @@ def daily_scraping():
 
         ### create a csv file with today's date for tracking
         date_today = date.today()
-        df_sizes.to_csv(f"./data/jellycat_sizes_{date_today}.csv", index=False)
+        df_sizes.to_csv(f"csv_data/jellycat_sizes_{date_today}.csv", index=False)
         
         print("sizes page done ;)")
     
@@ -166,7 +166,7 @@ def daily_scraping():
 
         ### create a csv file with today's date for tracking
         date_today = date.today()
-        df_stocks.to_csv(f"./data/jellycat_stocks_{date_today}.csv", index=False)
+        df_stocks.to_csv(f"csv_data/jellycat_stocks_{date_today}.csv", index=False)
         
         print("stock page done ;)")
     

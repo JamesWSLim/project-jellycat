@@ -17,8 +17,8 @@ def scrape_size_and_stock(jellycatid, jellycatname, page):
     sizes_element_outer = page.locator(".f-13.nogaps")
     sizes_element = sizes_element_outer.locator(".pointer.width6.height6.inline-block.mr0-5.mb0-5.f-upper").all()
 
-    ### for sizes more than 5, wait 3 seconds and close popup
-    if len(sizes_element) > 5:
+    ### for sizes more than 3, wait 3 seconds and close popup
+    if len(sizes_element) > 3:
         time.sleep(3)
         click_newletter_popup(page)
 
