@@ -110,6 +110,7 @@ with maintab3:
         st.image(image[0], caption=selected_jellycat)
     df_selected_jellycat_display = df_selected_jellycat.reset_index()[["size",'price','stockcount','stock',"category",'height','width']]
     df_selected_jellycat_plot = df[(df["jellycatname"]==selected_jellycat)]
+    df_selected_jellycat_plot.dropna(subset=["price"], how='all', inplace=True)
     size_list = [x.capitalize() for x in df_selected_jellycat_plot["size"].unique()]
     selected_size = st.selectbox("Select your size", size_list)
     df_selected_jellycat_plot = df_selected_jellycat_plot[df_selected_jellycat_plot["size"]==selected_size.upper()]
